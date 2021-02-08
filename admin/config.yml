@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: z101ctrl/z101ctrl.github.io
-  branch: master
+  branch: gh-pages
   site_domain: adoring-wescoff-c57266.netlify.app
 
 media_folder: "images/uploads"
