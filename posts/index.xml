@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on z101ctrl</title>
-    <link>z101ctrl.github.io/posts/</link>
+    <link>https://z101ctrl.github.io/posts/</link>
     <description>Recent content in Posts on z101ctrl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© z101ctrl</copyright>
-    <lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="z101ctrl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="https://z101ctrl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resumen análisis 1</title>
-      <link>z101ctrl.github.io/posts/resumen/</link>
+      <link>https://z101ctrl.github.io/posts/resumen/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
       
-      <guid>z101ctrl.github.io/posts/resumen/</guid>
+      <guid>https://z101ctrl.github.io/posts/resumen/</guid>
       <description>Resumen realizado con el nuevo programa de la materia.
 Continuidad Sea $f:\mathbb{R}^{2}\to \mathbb{R}$ y $\left( a,b \right) \in D$. Decimos que $f$ es continua en $\left( a,b \right)$ sii:
 $$ \lim_{\left( x,y \right) \to \left( 0,0 \right) } f\left( x,y \right) = f\left( a,b \right) . $$
@@ -22,10 +22,10 @@ Límite por definición Se dice que $\lim_{\left( x,y \right) \to \left( a,b \ri
     
     <item>
       <title>Resumen física 4</title>
-      <link>z101ctrl.github.io/posts/resumenf4/</link>
+      <link>https://z101ctrl.github.io/posts/resumenf4/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
       
-      <guid>z101ctrl.github.io/posts/resumenf4/</guid>
+      <guid>https://z101ctrl.github.io/posts/resumenf4/</guid>
       <description> Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. </description>
     </item>
     

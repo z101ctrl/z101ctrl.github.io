@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>z101ctrl</title>
-    <link>z101ctrl.github.io/</link>
+    <link>https://z101ctrl.github.io/</link>
     <description>Recent content on z101ctrl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© z101ctrl</copyright>
-    <lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="z101ctrl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="https://z101ctrl.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>z101ctrl.github.io/about/</link>
+      <link>https://z101ctrl.github.io/about/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>z101ctrl.github.io/about/</guid>
+      <guid>https://z101ctrl.github.io/about/</guid>
       <description>I am a Physics student at UBA (Universidad de Buenos Aires) and a huge computer science enthusiast. In this page i&amp;rsquo;ll be uploading several university-related stuff + other things. If you notice something wrong or just want to contact me, feel free to send me an e-mail.</description>
     </item>
     
     <item>
       <title></title>
-      <link>z101ctrl.github.io/archives/</link>
+      <link>https://z101ctrl.github.io/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>z101ctrl.github.io/archives/</guid>
+      <guid>https://z101ctrl.github.io/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resumen análisis 1</title>
-      <link>z101ctrl.github.io/posts/resumen/</link>
+      <link>https://z101ctrl.github.io/posts/resumen/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
       
-      <guid>z101ctrl.github.io/posts/resumen/</guid>
+      <guid>https://z101ctrl.github.io/posts/resumen/</guid>
       <description>Resumen realizado con el nuevo programa de la materia.
 Continuidad Sea $f:\mathbb{R}^{2}\to \mathbb{R}$ y $\left( a,b \right) \in D$. Decimos que $f$ es continua en $\left( a,b \right)$ sii:
 $$ \lim_{\left( x,y \right) \to \left( 0,0 \right) } f\left( x,y \right) = f\left( a,b \right) . $$
@@ -40,10 +40,10 @@ Límite por definición Se dice que $\lim_{\left( x,y \right) \to \left( a,b \ri
     
     <item>
       <title>Resumen física 4</title>
-      <link>z101ctrl.github.io/posts/resumenf4/</link>
+      <link>https://z101ctrl.github.io/posts/resumenf4/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
       
-      <guid>z101ctrl.github.io/posts/resumenf4/</guid>
+      <guid>https://z101ctrl.github.io/posts/resumenf4/</guid>
       <description> Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. </description>
     </item>
     
