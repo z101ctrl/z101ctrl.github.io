@@ -26,7 +26,9 @@ Límite por definición Se dice que $\lim_{\left( x,y \right) \to \left( a,b \ri
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
       
       <guid>https://z101ctrl.github.io/posts/resumenf4/</guid>
-      <description> Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. </description>
+      <description>Apuntes tomados 2C de 2022, dado por C. Giribet.
+Termodinámica Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. Primer principio de la termodinámica Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor. $$ dE = - p_{ext} dV + dQ \underbrace{=}_{\text{Reversible}} -p dV + dQ. $$
+Calor específico o capacidad calorífica Capacidad calorífica: totalidad de la sustancia. Calor específico: por unidad Se define como $$ C_{X} = \frac{\delta Q}{dT}\big\rvert_{X} $$ con $\delta Q$ diferencial inexacto y $X$ proceso reversible.</description>
     </item>
     
   </channel>
