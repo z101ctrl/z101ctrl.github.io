@@ -39,13 +39,23 @@ Límite por definición Se dice que $\lim_{\left( x,y \right) \to \left( a,b \ri
     </item>
     
     <item>
+      <title>Resumen cálculo numérico</title>
+      <link>https://z101ctrl.github.io/posts/notascalculo/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/notascalculo/</guid>
+      <description>Error de truncado $$ \Tau = \frac{x\left( t+h \right) - x\left( t \right)}{h} - F\left(t,x\left( t \right) \right) = x&amp;rsquo;&amp;rsquo;\left( L \right) \frac{h}{2} $$
+Teorema Dado $\Tau$ el error truncado. Si $\left| F\left( t,x \right) - f\left( t,y \right) \right| \le k\left| x-y \right| \implies max \left| x_i - x\left( t_{i} \right) \right| \le \frac{\Tau}{k} e^{k\left( T -t_0 \right) } $ Errores Error absoluto: $\left| x - fl\left( x \right) \right|$ Error relativo: $ \left| \frac{x - fl\left( x \right) }{x} \right|$ Método de euler $$ x_{i+1} = x_{i} + x_{i}&amp;lsquo;h $$</description>
+    </item>
+    
+    <item>
       <title>Resumen física 4</title>
       <link>https://z101ctrl.github.io/posts/resumenf4/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
       
       <guid>https://z101ctrl.github.io/posts/resumenf4/</guid>
       <description>Apuntes tomados 2C de 2022, dado por C. Giribet.
-Termodinámica Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. Primer principio de la termodinámica Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor. $$ dE = - p_{ext} dV + dQ \underbrace{=}_{\text{Reversible}} -p dV + dQ. $$
+- Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. Primer principio de la termodinámica Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor. $$ dE = - p_{ext} dV + dQ \underbrace{=}_{\text{Reversible}} -p dV + dQ. $$
 Calor específico o capacidad calorífica Capacidad calorífica: totalidad de la sustancia. Calor específico: por unidad Se define como $$ C_{X} = \frac{\delta Q}{dT}\big\rvert_{X} $$ con $\delta Q$ diferencial inexacto y $X$ proceso reversible.</description>
     </item>
     
