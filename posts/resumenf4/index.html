@@ -76,10 +76,36 @@
 		
 
 		<section class="body">
-			<p>Apuntes tomados 2C de 2022, dado por C. Giribet.</p>
-<ul>
-<li>Para un proceso reversible: $P_{int} = P_{ext} \equiv P$.</li>
-</ul>
+			<p>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.</p>
+<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#primer-principio-de-la-termodinámica">Primer principio de la termodinámica</a></li>
+    <li><a href="#calor-específico-o-capacidad-calorífica">Calor específico o capacidad calorífica</a>
+      <ul>
+        <li><a href="#para-un-gas-ideal">Para un gas ideal</a></li>
+        <li><a href="#diferencia-de-energía-para-un-gas-ideal">Diferencia de energía para un gas ideal</a></li>
+      </ul>
+    </li>
+    <li><a href="#segundo-principio-de-la-termodinámica">Segundo principio de la termodinámica</a></li>
+    <li><a href="#fuente-térmica">Fuente térmica</a></li>
+    <li><a href="#eficiencia-de-una-máquina-térmica">Eficiencia de una máquina térmica</a></li>
+    <li><a href="#desigualdad-de-clausius">Desigualdad de Clausius</a></li>
+    <li><a href="#potenciales-termodinámicos">Potenciales termodinámicos</a>
+      <ul>
+        <li><a href="#entalpía-left-h-right-">Entalpía $\left( H \right) $</a></li>
+        <li><a href="#función-de-helmholtz-o-energía-libre-de-helmholtz-left-f-right-">Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $</a></li>
+        <li><a href="#función-de-gibbs-o-energía-libre-de-gibbs-left-g-right-">Función de Gibbs o energía libre de Gibbs $\left( G \right) $</a></li>
+      </ul>
+    </li>
+    <li><a href="#relaciones-de-maxwell">Relaciones de Maxwell</a></li>
+    <li><a href="#teorema-de-equipartición">Teorema de equipartición</a></li>
+  </ul>
+</nav>
+</div>
+
+<p>Para un proceso reversible: $P_{int} = P_{ext} \equiv P$.</p>
 <h2 id="primer-principio-de-la-termodinámica">Primer principio de la termodinámica</h2>
 <p>Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor.
 $$
@@ -131,6 +157,9 @@ $$</p>
 \eta = \frac{\text{beneficio}}{\text{costo}}
 $$
 con $\eta  &lt; 1$.</p>
+<ul>
+<li>Un ciclo: $\Delta U = 0$.</li>
+</ul>
 <h2 id="desigualdad-de-clausius">Desigualdad de Clausius</h2>
 <p>Vale para un ciclo
 $$
@@ -142,6 +171,77 @@ $$
 \oint \frac{dQ}{T} \big\rvert_{R}= 0 \implies \oint dS = 0  .
 $$
 Siendo $T_{sist} = T_{Fuente} \equiv T$ y $dS = \frac{dQ}{T}$ el diferencial de <em>entropía</em>.</p>
+<h2 id="potenciales-termodinámicos">Potenciales termodinámicos</h2>
+<p>Podemos definir ciertas funciones de estado que nos sean de utilidad en ciertos procesos. Estas son funciones de estado ya que dependen de otras funciones de estado.</p>
+<h3 id="entalpía-left-h-right-">Entalpía $\left( H \right) $</h3>
+<p>Vinculado al calor $Q$ intercambiado en un proceso isobárico.
+$$
+H = E + pV
+$$</p>
+<h3 id="función-de-helmholtz-o-energía-libre-de-helmholtz-left-f-right-">Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $</h3>
+<p>Conveniente cuando $T$ y $V$ son variables independientes y alguna de ellas es cte.
+$$
+F = E - TS
+$$</p>
+<h3 id="función-de-gibbs-o-energía-libre-de-gibbs-left-g-right-">Función de Gibbs o energía libre de Gibbs $\left( G \right) $</h3>
+<p>Útil en los problemas que $T$ y $p$ son variables independientes y alguno de ellos cte.
+$$
+\begin{aligned}
+G &amp;=  E + pV - TS .\\
+G &amp;= H - TS . \\
+G &amp;= F + pV.
+\end{aligned}
+$$</p>
+<h2 id="relaciones-de-maxwell">Relaciones de Maxwell</h2>
+<p>Derivan del hecho que $\forall$ función de estado se cumple $\frac{\partial^{2} f}{\partial x \partial y} = \frac{\partial^{2} f}{\partial y \partial x}$.</p>
+<ol>
+<li>
+<p>Usando $E$:
+$$
+\frac{\partial T}{\partial V}\Big\rvert_{S} = - \frac{\partial p}{\partial S}\Big\rvert_{V}.
+$$</p>
+</li>
+<li>
+<p>Usando $H$:
+$$
+\frac{\partial T}{\partial p}\Big\rvert_{S} = - \frac{\partial V}{\partial S}\Big\rvert_{p}.
+$$</p>
+</li>
+<li>
+<p>Usando $F$:
+$$
+\frac{\partial S}{\partial V}\Big\rvert_{T} = - \frac{\partial p}{\partial T}\Big\rvert_{V}.
+$$</p>
+</li>
+<li>
+<p>Usando $G$:
+$$
+\frac{\partial S}{\partial p}\Big\rvert_{T} = - \frac{\partial V}{\partial T}\Big\rvert_{p}.
+$$</p>
+</li>
+</ol>
+<h2 id="teorema-de-equipartición">Teorema de equipartición</h2>
+<p>Sabiendo que la energía de un sistema es una función de sus coordenadas y momentos, con $f$ grados de libertad $\implies E\left( q_{1}, \ldots, q_{f};p_{1}, \ldots, p_{f} \right)$.</p>
+<ol>
+<li>
+<p>Valor medio de la energía en función de un solo de los parámetros separable es
+$$
+\left&lt; \epsilon_{s} \right&gt; = \frac{\int \epsilon_{s} e^{-\beta \epsilon_{s}} dp_{s}}{\int e^{-\beta \epsilon_{s}} dp_{s}} .
+$$</p>
+</li>
+<li>
+<p>Valor medio de cualquier término separable de la enerǵia se puede calcular como
+$$
+\left&lt; \epsilon_{s}\right&gt; = \frac{-\frac{\partial I}{\partial \beta} }{I} = - \frac{\partial }{\partial \beta}\left( \ln I \right)  = - \frac{\partial }{\partial \beta}\left[ \ln\left( \int e^{-\beta\epsilon_{s}} dp_{s} \right)  \right] .
+$$</p>
+</li>
+<li>
+<p>Asumiendo que $\epsilon_{s}\left( p_{s} \right)  = b p_{s}^{2} $ (dependencia cuadrática) con $p_{s}$ parámetro del que depende la energía total, entonces vale
+$$
+\left&lt;\epsilon \right&gt; = \frac{1}{2}kT.
+$$</p>
+</li>
+</ol>
 
 		</section>
 

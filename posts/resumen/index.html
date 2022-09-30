@@ -77,6 +77,93 @@
 
 		<section class="body">
 			<p>Resumen realizado con el nuevo programa de la materia.</p>
+<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#continuidad">Continuidad</a></li>
+    <li><a href="#límite-por-definición">Límite por definición</a>
+      <ul>
+        <li><a href="#trucos-con-los-limites">Trucos con los limites</a></li>
+      </ul>
+    </li>
+    <li><a href="#límites-iterados">Límites iterados</a></li>
+    <li><a href="#aproximación-por-curvas">Aproximación por curvas</a></li>
+    <li><a href="#continuidad-1">Continuidad</a></li>
+    <li><a href="#derivadas-parciales">Derivadas parciales</a></li>
+    <li><a href="#teorema-de-clairaut-schwarz">Teorema de Clairaut-Schwarz</a></li>
+    <li><a href="#gradiente">Gradiente</a></li>
+    <li><a href="#diferenciabilidad">Diferenciabilidad</a>
+      <ul>
+        <li><a href="#definición">Definición</a></li>
+      </ul>
+    </li>
+    <li><a href="#clase-ck">Clase $C^{k}$</a></li>
+    <li><a href="#plano-tangente">Plano tangente</a></li>
+    <li><a href="#regla-de-la-cadena">Regla de la cadena</a></li>
+    <li><a href="#derivada-direccional">Derivada direccional</a>
+      <ul>
+        <li><a href="#teorema">Teorema</a></li>
+      </ul>
+    </li>
+    <li><a href="#teorema-de-la-función-implícita">Teorema de la función implícita</a></li>
+    <li><a href="#plano-tangente-de-manera-implícita">Plano tangente de manera implícita</a>
+      <ul>
+        <li><a href="#idea">Idea</a></li>
+        <li><a href="#definición-1">Definición</a></li>
+      </ul>
+    </li>
+    <li><a href="#polinomio-de-taylor">Polinomio de Taylor</a>
+      <ul>
+        <li><a href="#definición-para-órden-n-1-variable">Definición para órden n (1 variable)</a></li>
+        <li><a href="#propiedades">Propiedades</a></li>
+      </ul>
+    </li>
+    <li><a href="#resto">Resto</a>
+      <ul>
+        <li><a href="#propiedad">Propiedad</a></li>
+        <li><a href="#fórmula-de-lagrange-del-resto">Fórmula de Lagrange del resto</a></li>
+      </ul>
+    </li>
+    <li><a href="#definición-para-orden-n-varias-variables">Definición para orden n (varias variables)</a>
+      <ul>
+        <li><a href="#propiedad-1">Propiedad</a></li>
+      </ul>
+    </li>
+    <li><a href="#matriz-hessiana">Matriz Hessiana</a></li>
+    <li><a href="#teorema-de-lagrange-del-resto">Teorema de Lagrange del resto.</a></li>
+    <li><a href="#extremos-locales">Extremos locales</a></li>
+    <li><a href="#puntos-críticos">Puntos críticos</a></li>
+    <li><a href="#criterio-del-hessiano">Criterio del Hessiano</a></li>
+    <li><a href="#teorema-de-weierstrass">Teorema de Weierstrass</a>
+      <ul>
+        <li><a href="#versión-1">Versión 1</a></li>
+        <li><a href="#version-2">Version 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiplicadores-de-lagrange">Multiplicadores de Lagrange</a>
+      <ul>
+        <li><a href="#una-restricción">Una restricción</a></li>
+        <li><a href="#dos-restricciones">Dos restricciones</a></li>
+      </ul>
+    </li>
+    <li><a href="#suma-de-riemann">Suma de Riemann</a>
+      <ul>
+        <li><a href="#en-mathbbr">En $\mathbb{R}$</a></li>
+        <li><a href="#en-mathbbr2">En $\mathbb{R}^{2}$</a></li>
+        <li><a href="#en-mathbbr3">En $\mathbb{R}^{3}$</a></li>
+      </ul>
+    </li>
+    <li><a href="#cambio-de-variable">Cambio de variable</a>
+      <ul>
+        <li><a href="#jacobiano-en-mathbbr2">Jacobiano en $\mathbb{R}^{2}$</a></li>
+        <li><a href="#jacobiano-en-mathbbr3">Jacobiano en $\mathbb{R}^{3}$</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
 <h2 id="continuidad">Continuidad</h2>
 <p>Sea $f:\mathbb{R}^{2}\to \mathbb{R}$ y $\left( a,b \right) \in D$. Decimos que $f$ es continua en $\left( a,b \right)$ sii:</p>
 <p>$$
@@ -133,6 +220,9 @@ $$</p>
 <li>Existen las derivadas parciales en $\left( x_{0}, y_{0} \right)$.</li>
 <li></li>
 </ol>
+<p>$$
+\lim_{\left( x,y \right)  \to \left( x_0,y_0 \right) } \frac{f\left( x,y \right) - f\left( x_0, y_0 \right) - \nabla f\left( x_0, y_0 \right) \cdot \left( x-x_0, y- y_0 \right) }{|\left( x - x_0, y - y_0 \right) |} = 0 .
+$$</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <h2 id="clase-ck">Clase $C^{k}$</h2>
