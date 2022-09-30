@@ -55,7 +55,7 @@ Teorema Dado $\Tau$ el error truncado. Si $\left| F\left( t,x \right) - f\left( 
       
       <guid>https://z101ctrl.github.io/posts/resumenf4/</guid>
       <description>Apuntes tomados 2C de 2022, dado por C. Giribet.
-- Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. Primer principio de la termodinámica Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor. $$ dE = - p_{ext} dV + dQ \underbrace{=}_{\text{Reversible}} -p dV + dQ. $$
+Para un proceso reversible: $P_{int} = P_{ext} \equiv P$. Primer principio de la termodinámica Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor. $$ dE = - p_{ext} dV + dQ \underbrace{=}_{\text{Reversible}} -p dV + dQ. $$
 Calor específico o capacidad calorífica Capacidad calorífica: totalidad de la sustancia. Calor específico: por unidad Se define como $$ C_{X} = \frac{\delta Q}{dT}\big\rvert_{X} $$ con $\delta Q$ diferencial inexacto y $X$ proceso reversible.</description>
     </item>
     
