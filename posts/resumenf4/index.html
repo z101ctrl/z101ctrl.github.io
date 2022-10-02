@@ -92,14 +92,17 @@
     <li><a href="#fuente-térmica">Fuente térmica</a></li>
     <li><a href="#eficiencia-de-una-máquina-térmica">Eficiencia de una máquina térmica</a></li>
     <li><a href="#desigualdad-de-clausius">Desigualdad de Clausius</a></li>
+    <li><a href="#otro-enunciado-para-el-segundo-principio">Otro enunciado para el segundo principio</a></li>
     <li><a href="#potenciales-termodinámicos">Potenciales termodinámicos</a>
       <ul>
         <li><a href="#entalpía-left-h-right-">Entalpía $\left( H \right) $</a></li>
         <li><a href="#función-de-helmholtz-o-energía-libre-de-helmholtz-left-f-right-">Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $</a></li>
         <li><a href="#función-de-gibbs-o-energía-libre-de-gibbs-left-g-right-">Función de Gibbs o energía libre de Gibbs $\left( G \right) $</a></li>
+        <li><a href="#relaciones-de-maxwell">Relaciones de Maxwell</a></li>
+        <li><a href="#potencial-químico">Potencial químico</a></li>
       </ul>
     </li>
-    <li><a href="#relaciones-de-maxwell">Relaciones de Maxwell</a></li>
+    <li><a href="#tercer-principio-de-la-termodinámica">Tercer principio de la termodinámica</a></li>
     <li><a href="#teorema-de-equipartición">Teorema de equipartición</a></li>
   </ul>
 </nav>
@@ -171,6 +174,11 @@ $$
 \oint \frac{dQ}{T} \big\rvert_{R}= 0 \implies \oint dS = 0  .
 $$
 Siendo $T_{sist} = T_{Fuente} \equiv T$ y $dS = \frac{dQ}{T}$ el diferencial de <em>entropía</em>.</p>
+<h2 id="otro-enunciado-para-el-segundo-principio">Otro enunciado para el segundo principio</h2>
+<blockquote>
+<p>No es posible ningún proceso en el cual disminuya la entropía del universo.</p>
+</blockquote>
+<p>Siendo el sistema <em>universo</em>  el sistema aislado más &ldquo;pequeño&rdquo; que uno pueda definir.</p>
 <h2 id="potenciales-termodinámicos">Potenciales termodinámicos</h2>
 <p>Podemos definir ciertas funciones de estado que nos sean de utilidad en ciertos procesos. Estas son funciones de estado ya que dependen de otras funciones de estado.</p>
 <h3 id="entalpía-left-h-right-">Entalpía $\left( H \right) $</h3>
@@ -182,7 +190,8 @@ $$</p>
 <p>Conveniente cuando $T$ y $V$ son variables independientes y alguna de ellas es cte.
 $$
 F = E - TS
-$$</p>
+$$
+Se denomina energía libre debido a que me impone una cota para el trabajo que puede dar un sistema, mediante la relación $W \le - \Delta F$ en un proceso con $T^{f} = T^{i} \equiv T_0$.</p>
 <h3 id="función-de-gibbs-o-energía-libre-de-gibbs-left-g-right-">Función de Gibbs o energía libre de Gibbs $\left( G \right) $</h3>
 <p>Útil en los problemas que $T$ y $p$ son variables independientes y alguno de ellos cte.
 $$
@@ -191,8 +200,9 @@ G &amp;=  E + pV - TS .\\
 G &amp;= H - TS . \\
 G &amp;= F + pV.
 \end{aligned}
-$$</p>
-<h2 id="relaciones-de-maxwell">Relaciones de Maxwell</h2>
+$$
+Se denomina energía libre debido a que me impone una cota para el trabajo no volumétrico (trabajo que no está ligado al $dV$) mediante la relación $W_{NV} \le - \Delta G$  en un proceso con $p^{i} = p^{f}$ y $T^{i} = T^{f}$.</p>
+<h3 id="relaciones-de-maxwell">Relaciones de Maxwell</h3>
 <p>Derivan del hecho que $\forall$ función de estado se cumple $\frac{\partial^{2} f}{\partial x \partial y} = \frac{\partial^{2} f}{\partial y \partial x}$.</p>
 <ol>
 <li>
@@ -220,6 +230,21 @@ $$
 $$</p>
 </li>
 </ol>
+<h3 id="potencial-químico">Potencial químico</h3>
+<p>Del análisis del equilibrio de fases y considerando a $S$ como prop. extensiva ($dS_1 + dS_2 = 0$) se desprende que
+$$
+dE = T dS - p dV + \mu dN,
+$$
+teniendo en cuenta que puede haber transferencia de partículas de una fase a otra y completando el primer principio.</p>
+<p>Donde
+$$
+\mu \equiv -T \frac{\partial S}{\partial N}\Big\rvert_{V,E} = \frac{\partial E}{\partial N}\Big\rvert_{S,V}
+$$
+es el potencial químico.</p>
+<h2 id="tercer-principio-de-la-termodinámica">Tercer principio de la termodinámica</h2>
+<blockquote>
+<p>En el cero absoluto, la entropía de un sistema puede siempre considerarse igual a cero.</p>
+</blockquote>
 <h2 id="teorema-de-equipartición">Teorema de equipartición</h2>
 <p>Sabiendo que la energía de un sistema es una función de sus coordenadas y momentos, con $f$ grados de libertad $\implies E\left( q_{1}, \ldots, q_{f};p_{1}, \ldots, p_{f} \right)$.</p>
 <ol>
