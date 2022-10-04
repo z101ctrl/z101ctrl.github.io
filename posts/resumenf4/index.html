@@ -103,6 +103,13 @@
       </ul>
     </li>
     <li><a href="#tercer-principio-de-la-termodinámica">Tercer principio de la termodinámica</a></li>
+    <li><a href="#mecánica-estadística">Mecánica estadística</a>
+      <ul>
+        <li><a href="#propiedades">Propiedades</a></li>
+        <li><a href="#distribución-de-maxwell-boltzmann">Distribución de Maxwell-Boltzmann</a></li>
+        <li><a href="#integrales-útiles">Integrales útiles</a></li>
+      </ul>
+    </li>
     <li><a href="#teorema-de-equipartición">Teorema de equipartición</a></li>
   </ul>
 </nav>
@@ -245,6 +252,67 @@ es el potencial químico.</p>
 <blockquote>
 <p>En el cero absoluto, la entropía de un sistema puede siempre considerarse igual a cero.</p>
 </blockquote>
+<h2 id="mecánica-estadística">Mecánica estadística</h2>
+<p>Vamos a tomar el número de partículas como un diferencial o <em>infinitésimo macroscópico</em>, es decir que será grande pero mucho menor que el $N$ total.</p>
+<p>Probabilidad de tener una partícula entre $\left( x, x+dx \right)$:
+$$
+\frac{dN_{v}}{N} = f\left( x \right) dx
+$$
+siendo $f\left( x \right)$ una densidad de probabilidad a la que llamamos  <em>función de distribución de la variable $x$</em>. Análogo a que $P = \frac{\text{Casos favorables}}{\text{Casos totales}}$.</p>
+<h3 id="propiedades">Propiedades</h3>
+<ol>
+<li>
+<p>Por ser probabilidad está normalizada
+$$
+\int_{\forall x} \frac{dN_{x}}{N} = \int_{\forall x} f\left( x \right) dx = 1.
+$$</p>
+</li>
+<li>
+<p>Promedio de una variable será
+$$
+\left&lt;x \right&gt; = \int_{\forall x} x \frac{dN_{x}}{N} = \int_{\forall x} x f\left( x \right) dx.
+$$</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<p><em>Intuición: suma diferencial de la variable por la probabilidad de que esté ahí.</em></p>
+<ol start="3">
+<li>Probabilidad de que una partícula tenga variable entre $\left( x_1 \le x\le x_2 \right)$</li>
+</ol>
+<p>$$
+P\left( x_1 \le x\le x_2 \right) = \int_{x_{1}}^{x_{2}} \frac{dN_{x}}{N} = \int_{x_{1}}^{x_{2}} f\left( x \right) dx
+$$
+<em>Intuición: sumo las probabilidades.</em></p>
+<ol start="4">
+<li>Número total de partículas
+$$
+N\left( x_1 \le x\le x_2 \right) = N \int_{x_{1}}^{x_{2}} \frac{dN_{x}}{N} = N\int_{x_{1}}^{x_{2}} f\left( x \right) dx.
+$$</li>
+</ol>
+<h3 id="distribución-de-maxwell-boltzmann">Distribución de Maxwell-Boltzmann</h3>
+<p>Para una partícula cuya energía $\epsilon$ depende de $q_{f}$ posiciones y $p_{f}$ momentos se tiene
+$$
+dn_{\epsilon} = A e^{-\beta \epsilon(\vec{q}, \vec{p})} d^{f}q d^{f}p \enspace,
+$$
+con $dn_{\epsilon}$ la distribución para una sola partícula que cumple
+$$
+\int_{\forall \vec{q}, \vec{p}}  = N = A \int_{\forall \vec{q}, \vec{p}} e^{-\beta\left( \vec{q}, \vec{p} \right)} d^{f}q d^{f}p \enspace.
+$$
+<em>Notación: $d^{f}v = dv_1 \cdot \left( \ldots \right) \cdot dv_f$.</em></p>
+<h3 id="integrales-útiles">Integrales útiles</h3>
+<ul>
+<li>$I_{\alpha} = \int_{0}^{\infty} v^{\gamma} e^{-\gamma v} dv$.</li>
+<li>$I_0 = \int_{0}^{\infty} e^{-\gamma v} dv = \frac{\pi}{2} \gamma^{-\frac{1}{2}}$.</li>
+<li>$I_1 = \int_{0}^{\infty} v e^{-\gamma v} dv = \frac{1}{2} \gamma^{-1}$.</li>
+</ul>
+<p>Para sacar los términos pares e impares puedo utilizar que
+$$
+\begin{cases}
+I_2 = - \frac{dI_0}{d\gamma} \\
+I_3 = - \frac{dI_1}{d\gamma}
+\end{cases}
+$$
+y así con los términos siguientes.</p>
 <h2 id="teorema-de-equipartición">Teorema de equipartición</h2>
 <p>Sabiendo que la energía de un sistema es una función de sus coordenadas y momentos, con $f$ grados de libertad $\implies E\left( q_{1}, \ldots, q_{f};p_{1}, \ldots, p_{f} \right)$.</p>
 <ol>
