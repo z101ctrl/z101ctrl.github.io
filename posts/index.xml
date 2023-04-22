@@ -29,17 +29,6 @@ Table Of Contents Continuidad Límite por definición Trucos con los limites Lí
     </item>
     
     <item>
-      <title>Resumen cálculo numérico</title>
-      <link>https://z101ctrl.github.io/posts/notascalculo/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
-      
-      <guid>https://z101ctrl.github.io/posts/notascalculo/</guid>
-      <description>Error de truncado $$ \Tau = \frac{x\left( t+h \right) - x\left( t \right)}{h} - F\left(t,x\left( t \right) \right) = x&amp;rsquo;&amp;rsquo;\left( L \right) \frac{h}{2} $$
-Errores Error absoluto: $\left| x - fl\left( x \right) \right|$ Error relativo: $ \left| \frac{x - fl\left( x \right) }{x} \right|$ Método de euler $$ x_{i+1} = x_{i} + x_{i}&amp;lsquo;h $$
-Método de Taylor de orden 2 $$ x_{i+1} = x_{i} + h\left[ f\left( t_{i},x_{i} \right) + \frac{h}{2}f\left( x_{i},t_{i} \right) \right] $$</description>
-    </item>
-    
-    <item>
       <title>Resumen física 4</title>
       <link>https://z101ctrl.github.io/posts/resumenf4/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
