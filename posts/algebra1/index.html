@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html><head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Resumen cálculo numérico - z101ctrl</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Notas de la cursada de cálculo numérico con Sandra Martinez" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Notas álgebra 1 - z101ctrl</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Notas sobre conceptos de álgebra I." />
 	<meta property="og:image" content=""/>
-	<meta property="og:title" content="Resumen cálculo numérico" />
-<meta property="og:description" content="Notas de la cursada de cálculo numérico con Sandra Martinez" />
+	<meta property="og:title" content="Notas álgebra 1" />
+<meta property="og:description" content="Notas sobre conceptos de álgebra I." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://z101ctrl.github.io/posts/notascalculo/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://z101ctrl.github.io/posts/algebra1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-03-18T12:13:32+05:30" />
 <meta property="article:modified_time" content="2018-03-18T12:13:32+05:30" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Resumen cálculo numérico"/>
-<meta name="twitter:description" content="Notas de la cursada de cálculo numérico con Sandra Martinez"/>
+<meta name="twitter:title" content="Notas álgebra 1"/>
+<meta name="twitter:description" content="Notas sobre conceptos de álgebra I."/>
 <script src="https://z101ctrl.github.io/js/feather.min.js"></script>
 	
 	
@@ -69,66 +69,28 @@
 <main>
 	<article>
 		<div class="title">
-			<h1 class="title">Resumen cálculo numérico</h1>
+			<h1 class="title">Notas álgebra 1</h1>
 			<div class="meta">Posted on Mar 18, 2018</div>
 		</div>
 		
 
 		<section class="body">
-			<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h1 id="error-de-truncado">Error de truncado</h1>
-<p>$$
-\Tau = \frac{x\left( t+h \right) - x\left( t \right)}{h}  - F\left(t,x\left( t \right)  \right) = x&rsquo;&rsquo;\left( L \right) \frac{h}{2}
-$$</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h1 id="errores">Errores</h1>
-<ul>
-<li>Error absoluto: $\left| x - fl\left( x \right)  \right|$</li>
-<li>Error relativo: $ \left| \frac{x - fl\left( x \right) }{x} \right|$</li>
-</ul>
-<h1 id="método-de-euler">Método de euler</h1>
-<p>$$
-x_{i+1} = x_{i} + x_{i}&lsquo;h
-$$</p>
-<h1 id="método-de-taylor-de-orden-2">Método de Taylor de orden 2</h1>
-<p>$$
-x_{i+1} = x_{i} + h\left[ f\left( t_{i},x_{i} \right) + \frac{h}{2}f\left( x_{i},t_{i} \right)  \right]
-$$</p>
-<h2 id="teorema">Teorema</h2>
-<p>Para el método de un paso asociado a $\Phi\left( t,y,h \right)$ Lipchitz en $y$ con constante $K$
-$$
-\left| \Phi\left( t,y,h \right) - \Phi\left( t,\tilde{y} \right) \right| \le K\left| y - \tilde{y} \right|
-$$
-con $t \in \left[ t_0, T \right]$. Se tiene
-$$
-\left| y\left( T \right) - y_{N}\right| \le \frac{\tau_{max}}{K}\left( e^{K\left( T -t_0 \right) } - 1  \right)
-$$</p>
-<p>con $\tau_{max} = max\left| \tau_{i} \right|$ errores de truncado locales.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="clasificacion">Clasificacion</h2>
-<ul>
-<li>Consistencia: $\lim_{n \to 0} \tau_{max} = 0$.</li>
-<li>Convergencia: $\lim_{n \to 0}  = max\left| x_{i} - x\left( t \right) \right|$.</li>
-</ul>
-<h2 id="aproximación-de-problemas-de-contorno">Aproximación de problemas de contorno</h2>
-<p>Queremos resolver</p>
-<p>$$
-\begin{cases}
-x&rsquo;&rsquo; &amp;= f\left( t, x, x&rsquo; \right) ;\
-x\left( a \right)  &amp;= \alpha ;\
-x\left( b \right) &amp;= \beta ;\
-\end{cases}
-$$</p>
-<p>aproximando nos queda</p>
-<p>$$
-\begin{aligned}
-x_{0}&amp;=\alpha\
-a&amp;=b
-\end{aligned}
-$$</p>
+			<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#relaciones">Relaciones</a>
+      <ul>
+        <li><a href="#definición">Definición</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<h2 id="relaciones">Relaciones</h2>
+<h3 id="definición">Definición</h3>
+<p>Sean $A$ y  $B$ conjuntos. Una  relación $\mathcal{R}$ de $A$ en  $B$ es un subconjunto cualquiera es un subconjunto cualquiera $\mathcal{R}$ del producto cartesiano $A \times B$.  $\mathcal{R}$ relación de $A$ en $B$ si $\mathcal{R} \in \mathcal{P}\left( A\times B \right)$.</p>
 
 		</section>
 

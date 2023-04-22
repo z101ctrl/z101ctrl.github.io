@@ -10,7 +10,6 @@
 <meta property="og:url" content="https://z101ctrl.github.io/posts/resumenf4/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-03-18T12:13:32+05:30" />
 <meta property="article:modified_time" content="2018-03-18T12:13:32+05:30" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Resumen física 4"/>
 <meta name="twitter:description" content="Resumen para física 4, cursada C. Giribet."/>
@@ -76,7 +75,7 @@
 		
 
 		<section class="body">
-			<p>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.</p>
+			<p>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.</p>
 <div>
     <h2>Table Of Contents</h2>
     <nav id="TableOfContents">
@@ -112,9 +111,28 @@
     </li>
     <li><a href="#teorema-de-equipartición">Teorema de equipartición</a></li>
   </ul>
+
+  <ul>
+    <li><a href="#cuerpo-negro">Cuerpo negro</a>
+      <ul>
+        <li><a href="#stefan-boltzmann">Stefan-Boltzmann</a></li>
+        <li><a href="#efecto-fotoeléctrico">Efecto fotoeléctrico</a></li>
+        <li><a href="#efecto-compton">Efecto Compton</a></li>
+        <li><a href="#ley-de-wien">Ley de Wien</a></li>
+      </ul>
+    </li>
+    <li><a href="#dispersión-de-rutherford">Dispersión de Rutherford</a></li>
+    <li><a href="#teoría-atómica-de-bohr">Teoría atómica de Bohr</a></li>
+    <li><a href="#formalismo-de-schrödinger">Formalismo de Schrödinger</a>
+      <ul>
+        <li><a href="#relaciones-entre-funciones-de-onda">Relaciones entre funciones de onda</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 </div>
 
+<h1 id="termodinámica">Termodinámica</h1>
 <p>Para un proceso reversible: $P_{int} = P_{ext} \equiv P$.</p>
 <h2 id="primer-principio-de-la-termodinámica">Primer principio de la termodinámica</h2>
 <p>Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor.
@@ -301,7 +319,7 @@ $$
 <em>Notación: $d^{f}v = dv_1 \cdot \left( \ldots \right) \cdot dv_f$.</em></p>
 <h3 id="integrales-útiles">Integrales útiles</h3>
 <ul>
-<li>$I_{\alpha} = \int_{0}^{\infty} v^{\gamma} e^{-\gamma v} dv$.</li>
+<li>$I_{\alpha} = \int_{0}^{\infty} v^{\alpha} e^{-\gamma v} dv$.</li>
 <li>$I_0 = \int_{0}^{\infty} e^{-\gamma v} dv = \frac{\pi}{2} \gamma^{-\frac{1}{2}}$.</li>
 <li>$I_1 = \int_{0}^{\infty} v e^{-\gamma v} dv = \frac{1}{2} \gamma^{-1}$.</li>
 </ul>
@@ -335,6 +353,64 @@ $$
 $$</p>
 </li>
 </ol>
+<h1 id="cuántica">Cuántica</h1>
+<h2 id="cuerpo-negro">Cuerpo negro</h2>
+<h3 id="stefan-boltzmann">Stefan-Boltzmann</h3>
+<p>Emisión de un cuerpo negro es
+$$
+W = \sigma T^{4}
+$$
+siendo $W$ energía emitida por unidad de área y unidad de tiempo, $\sigma = 0,567 \times 10^{-4} \frac{erg}{cm^{2}K^{4}} $ cte. de Stefan-Boltzmann y $T$ la temperatura.</p>
+<h3 id="efecto-fotoeléctrico">Efecto fotoeléctrico</h3>
+<p>Energía cinética máxima que adquiere un electrón
+$$
+T_{max} = h \nu - W ,
+$$
+siendo $h$ la cte. de Planck, $\nu$ la frecuencia incidente y $W$ el potencial necesario para &ldquo;arrancar&rdquo; el electrón.
+Para un electrón el potencial frenador $V_0$ será
+$$
+eV_0 = h\nu - W.
+$$</p>
+<h3 id="efecto-compton">Efecto Compton</h3>
+<p>Nos relaciona la longitud de onda incidente con la que sale al &ldquo;chocar&rdquo; con un electrón. Siendo esto
+$$
+\left( \lambda - \lambda_0 \right) = \frac{2h}{mc} \sin^{2}\left( \frac{\theta}{2} \right),
+$$
+siendo $\lambda_0$ la long. de onda incidente, $\lambda$ la long. de onda saliente.</p>
+<h3 id="ley-de-wien">Ley de Wien</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="dispersión-de-rutherford">Dispersión de Rutherford</h2>
+<p><img src="/rutherford.png" alt="Rutherford">
+$$
+R = \frac{Z e^{2}}{E} + \left( \left( \frac{Ze^{2}}{E} \right)^{2} + s^{2} \right)^{\frac{1}{2}}  = \frac{L^{2}}{\mu^{2}E} + \left( \left( \frac{L^{2}}{\mu^{2}E} \right)^{2} + \frac{2Ze^{2}}{E} \right)^{\frac{1}{2}}
+$$
+Siendo $R$ la distancia de máximo acercamiento, $Z$ la cantidad de átomos en el núcleo, $E$ la energía de la párticula incidente y $L$ el valor de su impulso angular.
+$$
+\tan\left( \frac{\phi}{2} \right) = \frac{R}{2s} = \frac{\frac{L^{2}}{\mu^{2}E} + \left( \left( \frac{L^{2}}{\mu^{2}E} \right)^{2} + \frac{2Ze^{2}}{E} \right)^{\frac{1}{2}}}{2}
+$$</p>
+<h2 id="teoría-atómica-de-bohr">Teoría atómica de Bohr</h2>
+<p>$$
+E_{n} = - \frac{\mu}{2} \frac{\left( Ze^{2} \right)^{2}}{n^{2}\hbar^{2}}
+$$
+Siendo $\mu$ la masa reducida $Z$ la cantidad de protones y $n$ el nivel de energía.
+Los radios permitidos serán
+$$
+r_{n} = \frac{n^{2} \hbar^{2}}{\mu Z e^{2}} .
+$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="formalismo-de-schrödinger">Formalismo de Schrödinger</h2>
+<h3 id="relaciones-entre-funciones-de-onda">Relaciones entre funciones de onda</h3>
+<p>$$
+\begin{aligned}
+\psi\left( x,y,z \right) = \frac{1}{h^{\frac{3}{2}}} \int_{-\infty}^{\infty} \phi\left( p_{x}, p_{y}, p_{z} \right) \exp\left(i\frac{\vec{p}\vec{x}}{h} \right) d^{3}p \\
+\phi\left( p_{x}, p_{y}, p_{z} \right) = \frac{1}{h^{\frac{3}{2}}} \int_{-\infty}^{\infty} \psi\left( x,y,z \right) \exp\left( -i\frac{\vec{p}\vec{x}}{h} \right)  d^{3}x
+\end{aligned}
+$$</p>
+<ul>
+<li>Operador hermítico  $\Leftrightarrow  \hat{F}^{*} = \hat{F}^{t}$.</li>
+</ul>
 
 		</section>
 
@@ -357,7 +433,7 @@ $$</p>
   <div style="display:flex"><a class="soc" href="https://github.com/z101ctrl" title="GitHub"><i data-feather="github"></i></a>
     <a class="border"></a></div>
   <div class="footer-info">
-    2022  © z101ctrl |  <a
+    2023  © z101ctrl |  <a
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
