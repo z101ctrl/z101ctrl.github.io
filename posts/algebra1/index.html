@@ -79,18 +79,36 @@
     <h2>Table Of Contents</h2>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#relaciones">Relaciones</a>
+    <li><a href="#definición">Definición</a></li>
+    <li><a href="#relación-en-un-conjunto">Relación en un conjunto</a>
       <ul>
-        <li><a href="#definición">Definición</a></li>
+        <li><a href="#tipos-de-relaciones">Tipos de relaciones</a></li>
+        <li><a href="#relaciones-de-orden-y-equivalencia">Relaciones de orden y equivalencia</a></li>
       </ul>
     </li>
   </ul>
 </nav>
 </div>
 
-<h2 id="relaciones">Relaciones</h2>
-<h3 id="definición">Definición</h3>
+<h1 id="relaciones">Relaciones</h1>
+<h2 id="definición">Definición</h2>
 <p>Sean $A$ y  $B$ conjuntos. Una  relación $\mathcal{R}$ de $A$ en  $B$ es un subconjunto cualquiera es un subconjunto cualquiera $\mathcal{R}$ del producto cartesiano $A \times B$.  $\mathcal{R}$ relación de $A$ en $B$ si $\mathcal{R} \in \mathcal{P}\left( A\times B \right)$.</p>
+<h2 id="relación-en-un-conjunto">Relación en un conjunto</h2>
+<p>Sea $A$ un conjunto. Se dice que  $\mathcal{R}$ es una relación en $A$ cuando $\mathcal{R}\subseteq A\times A$.</p>
+<h3 id="tipos-de-relaciones">Tipos de relaciones</h3>
+<p>Sean $A$ conjunto y  $\mathcal{R}$ relación en $A$.</p>
+<ul>
+<li>$\mathcal{R}$ <strong>reflexiva</strong>  si $\left( x,x \right) \in \mathcal{R}$, $\forall x \in A$.</li>
+<li>$\mathcal{R}$ <strong>simétrica</strong> si $\forall x,y \in A$, $x\mathcal{R}y \implies y\mathcal{R} x$.</li>
+<li>$\mathcal{R}$ <strong>antisimétrica</strong>  si $\forall x,y \in A$, $x\mathcal{R}y \quad \wedge \quad y \mathcal{R} x \implies x = y$.</li>
+<li>$\mathcal{R}$ <strong>transitiva</strong> si $\forall x,y,z \in A$, $x\mathcal{R}y \quad \wedge \quad y \mathcal{R}z \implies x\mathcal{R}z$.</li>
+</ul>
+<h3 id="relaciones-de-orden-y-equivalencia">Relaciones de orden y equivalencia</h3>
+<p>Sean $A$ conjunto y $\mathcal{R}$ relación en $A$.</p>
+<ul>
+<li>$\mathcal{R}$ relación de equivalencia $\LeftRightarrow$ reflexiva, simétrica y transitiva.</li>
+<li>$\mathcal{R}$ relación de orden $\LeftRightarrow$ reflexiva, antisimétrica y transitiva.</li>
+</ul>
 
 		</section>
 

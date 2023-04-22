@@ -32,7 +32,8 @@
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
       
       <guid>https://z101ctrl.github.io/posts/algebra1/</guid>
-      <description>Table Of Contents Relaciones Definición Relaciones Definición Sean $A$ y $B$ conjuntos. Una relación $\mathcal{R}$ de $A$ en $B$ es un subconjunto cualquiera es un subconjunto cualquiera $\mathcal{R}$ del producto cartesiano $A \times B$. $\mathcal{R}$ relación de $A$ en $B$ si $\mathcal{R} \in \mathcal{P}\left( A\times B \right)$.</description>
+      <description>Table Of Contents Definición Relación en un conjunto Tipos de relaciones Relaciones de orden y equivalencia Relaciones Definición Sean $A$ y $B$ conjuntos. Una relación $\mathcal{R}$ de $A$ en $B$ es un subconjunto cualquiera es un subconjunto cualquiera $\mathcal{R}$ del producto cartesiano $A \times B$. $\mathcal{R}$ relación de $A$ en $B$ si $\mathcal{R} \in \mathcal{P}\left( A\times B \right)$.
+Relación en un conjunto Sea $A$ un conjunto. Se dice que $\mathcal{R}$ es una relación en $A$ cuando $\mathcal{R}\subseteq A\times A$.</description>
     </item>
     
     <item>
