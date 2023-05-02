@@ -89,6 +89,14 @@
       </ul>
     </li>
   </ul>
+
+  <ul>
+    <li><a href="#divisibilidad">Divisibilidad</a></li>
+    <li><a href="#números-primos-y-compuestos">Números primos y compuestos</a></li>
+    <li><a href="#congruencia">Congruencia</a></li>
+    <li><a href="#algoritmo-de-división">Algoritmo de división</a></li>
+    <li><a href="#congruencia-y-resto">Congruencia y resto</a></li>
+  </ul>
 </nav>
 </div>
 
@@ -123,6 +131,45 @@ $$</p>
 <p>$f$ <strong>sobreyectiva</strong> si $\forall y \in B \quad \exists$ al menos un elemento $x \in A$ para el cual $f\left( x \right)  =y$. De otra manera, $f$ sobreyectiva si  $\text{Im}\left( f \right) = B$.</p>
 <h4 id="biyectividad">Biyectividad</h4>
 <p>$f$ <strong>biyectiva</strong> si a la vez inyectiva y sobreyectiva. Es decir $\forall  y \in B \quad \exists !$  $x \in A$ para el cual $f\left( x \right) = y $.</p>
+<h1 id="números-enteros">Números enteros</h1>
+<h2 id="divisibilidad">Divisibilidad</h2>
+<p>Sean $a,d \in \mathbb{Z}$ con $d \neq 0$. Se dice que  $d$ divide a $a$, y se nota $d  \mid a$ si
+$$
+d  \mid a \Leftrightarrow \exists k \in \mathbb{Z} : a = k \cdot d.
+$$</p>
+<ul>
+<li><em>Notación</em>: conjunto de divisores de un entero $a$ se nota  $\text{Div}\left( a \right)$.</li>
+</ul>
+<h2 id="números-primos-y-compuestos">Números primos y compuestos</h2>
+<p>$a \in \mathbb{Z}$ <strong>número primo</strong>  si $a \neq 0, \pm 1$ y tiene únicamente 4 divisores.</p>
+<p>$a \in \mathbb{Z}$ <strong>número compuesto</strong> si $a \neq 0, \pm 1$ y tiene más de 4 divisores.</p>
+<h2 id="congruencia">Congruencia</h2>
+<p>Sea $d \in  \mathbb{Z}$ con $d \neq 0$. Dados $a,b \in  \mathbb{Z}$ se dice que $a$ es congruente  $b$ módulo  $d$ si  $d | a - b$.
+$$
+a \equiv b \pmod d  \Leftrightarrow d  \mid a - b
+$$</p>
+<ul>
+<li><em>Notación</em>: $a \equiv b \pmod d$ o  $a \equiv b \left( d \right)$.</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="algoritmo-de-división">Algoritmo de división</h2>
+<p>Dados $a, d \in \mathbb{Z}$, existen $k, r \in  \mathbb{Z}$ que satisfacen
+$$
+a = k \cdot d + r
+$$
+con $0 \le r &lt; \left| d \right| $. Además, $k$ y $r$ son únicos.</p>
+<ul>
+<li>Notación: $r_{d}\left( a \right)$, es el resto de dividir a $a$ por  $d$.</li>
+</ul>
+<h2 id="congruencia-y-resto">Congruencia y resto</h2>
+<p>Sea  $d \in \mathbb{Z}$ distinto de $0$. Entonces</p>
+<ol>
+<li>$a \equiv r_{d}\left( a \right) \pmod d$, $\forall a \in \mathbb{Z}$.</li>
+<li>$a \equiv r d$ con $0 \le r &lt; \left| d \right| \implies r = r_{d}\left( a \right)$.</li>
+<li>$r_1 \equiv r_2 \pmod d$ con $0 \le r_1, r_2 &lt; \left| d \right| \implies r_1 = r_2$.</li>
+<li>$a \equiv b \pmod d \Leftrightarrow r_{d}\left( a \right) = r_{d}\left( b \right)$.</li>
+</ol>
 
 		</section>
 
