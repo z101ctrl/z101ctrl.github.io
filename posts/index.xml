@@ -18,6 +18,15 @@
     </item>
     
     <item>
+      <title>Notas cálculo numérico</title>
+      <link>https://z101ctrl.github.io/posts/calculo_numerico/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/calculo_numerico/</guid>
+      <description>Table Of Contents Cota para el error global para métodos de un paso Convergencia Norma de una matriz Número de condición de una matriz Aplicación Condición de una matriz y matrices singulares Métodos de un paso Cota para el error global para métodos de un paso Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable.</description>
+    </item>
+    
+    <item>
       <title>Resumen análisis 1</title>
       <link>https://z101ctrl.github.io/posts/resumen/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>

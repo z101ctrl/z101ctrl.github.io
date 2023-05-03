@@ -11,7 +11,7 @@
     <item>
       <title>About</title>
       <link>https://z101ctrl.github.io/about/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://z101ctrl.github.io/about/</guid>
       <description>I am a Data Science student at UBA (Universidad de Buenos Aires) and a huge computer science enthusiast. In this page i&amp;rsquo;ll be uploading several university-related stuff + other things. If you notice something wrong or just want to contact me, feel free to send me an e-mail.</description>
@@ -33,6 +33,15 @@
       
       <guid>https://z101ctrl.github.io/posts/algebra1/</guid>
       <description>Table Of Contents Definición Relación en un conjunto Tipos de relaciones Relaciones de orden y equivalencia Funciones Clasificación de funciones Divisibilidad Números primos y compuestos Congruencia Algoritmo de división Congruencia y resto Relaciones Definición Sean $A$ y $B$ conjuntos. Una relación $\mathcal{R}$ de $A$ en $B$ es un subconjunto cualquiera es un subconjunto cualquiera $\mathcal{R}$ del producto cartesiano $A \times B$. $\mathcal{R}$ relación de $A$ en $B$ si $\mathcal{R} \in \mathcal{P}\left( A\times B \right)$.</description>
+    </item>
+    
+    <item>
+      <title>Notas cálculo numérico</title>
+      <link>https://z101ctrl.github.io/posts/calculo_numerico/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/calculo_numerico/</guid>
+      <description>Table Of Contents Cota para el error global para métodos de un paso Convergencia Norma de una matriz Número de condición de una matriz Aplicación Condición de una matriz y matrices singulares Métodos de un paso Cota para el error global para métodos de un paso Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable.</description>
     </item>
     
     <item>
