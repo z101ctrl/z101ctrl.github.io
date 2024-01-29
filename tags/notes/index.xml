@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on z101ctrl</title>
+    <link>https://z101ctrl.github.io/tags/notes/</link>
+    <description>Recent content in notes on z101ctrl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2023–2024, Franco Zalazar; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="https://z101ctrl.github.io/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notas cálculo numérico</title>
+      <link>https://z101ctrl.github.io/posts/calculo-numerico/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/calculo-numerico/</guid>
+      <description>.toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.getElementById(&#39;toc&#39;); var arrowIcon = document.getElementById(&#39;arrow-icon&#39;); tocDiv.style.display = &#39;block&#39;; tocTitle.addEventListener(&#39;click&#39;, function() { if (tocDiv.style.display === &#39;none&#39; || tocDiv.style.display === &#39;&#39;) { tocDiv.style.display = &#39;block&#39;; } else { tocDiv.style.display = &#39;none&#39;; } }); });   &amp;#9658; Table Of Contents   Cota para el error global para métodos de un paso Convergencia   Norma de una matriz Número de condición de una matriz  Aplicación Condición de una matriz y matrices singulares Chebyshev en $[a,b]$       Métodos de un paso Cota para el error global para métodos de un paso Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable.</description>
+    </item>
+    
+    <item>
+      <title>Notas álgebra 1</title>
+      <link>https://z101ctrl.github.io/posts/algebra-1/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/algebra-1/</guid>
+      <description>.toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.getElementById(&#39;toc&#39;); var arrowIcon = document.getElementById(&#39;arrow-icon&#39;); tocDiv.style.display = &#39;block&#39;; tocTitle.addEventListener(&#39;click&#39;, function() { if (tocDiv.style.display === &#39;none&#39; || tocDiv.style.display === &#39;&#39;) { tocDiv.style.display = &#39;block&#39;; } else { tocDiv.style.display = &#39;none&#39;; } }); });   &amp;#9658; Table Of Contents   Definición Relación en un conjunto  Tipos de relaciones Relaciones de orden y equivalencia Funciones Clasificación de funciones     Divisibilidad Números primos y compuestos Congruencia Algoritmo de división Congruencia y resto     Relaciones Definición Sean $A$ y $B$ conjuntos.</description>
+    </item>
+    
+    <item>
+      <title>Resumen análisis 1</title>
+      <link>https://z101ctrl.github.io/posts/resumen-analisis-1/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/resumen-analisis-1/</guid>
+      <description>Resumen realizado con el nuevo programa de la materia.
+ .toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.getElementById(&#39;toc&#39;); var arrowIcon = document.getElementById(&#39;arrow-icon&#39;); tocDiv.style.display = &#39;block&#39;; tocTitle.addEventListener(&#39;click&#39;, function() { if (tocDiv.style.display === &#39;none&#39; || tocDiv.style.display === &#39;&#39;) { tocDiv.style.display = &#39;block&#39;; } else { tocDiv.</description>
+    </item>
+    
+    <item>
+      <title>Resumen física 4</title>
+      <link>https://z101ctrl.github.io/posts/resumen-f4/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/resumen-f4/</guid>
+      <description>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.
+ .toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.</description>
+    </item>
+    
+  </channel>
+</rss>
