@@ -1,0 +1,106 @@
+---
+title: "Notas álgebra 1"
+date: 2018-03-18T12:13:32+05:30
+description: "Notas sobre conceptos de álgebra I."
+tags: [resumen]
+math: true 
+katex: true
+---
+
+<!--
+- Divisibilidad.
+- Numeros primos y coprimos.
+- Congruencia.
+- Algoritmo de división. 
+- Congruencia y resto.
+- Máximo común divisor.
+- Algoritmo de euclides.
+-->
+
+{{< toc >}}
+
+# Relaciones
+## Definición
+Sean $A$ y  $B$ conjuntos. Una  relación $\mathcal{R}$ de $A$ en  $B$ es un subconjunto cualquiera es un subconjunto cualquiera $\mathcal{R}$ del producto cartesiano $A \times B$.  $\mathcal{R}$ relación de $A$ en $B$ si $\mathcal{R} \in \mathcal{P}\left( A\times B \right)$.
+
+## Relación en un conjunto
+Sea $A$ un conjunto. Se dice que  $\mathcal{R}$ es una relación en $A$ cuando $\mathcal{R}\subseteq A\times A$.
+
+### Tipos de relaciones
+Sean $A$ conjunto y  $\mathcal{R}$ relación en $A$.
+- $\mathcal{R}$ **reflexiva**  si $\left( x,x \right) \in \mathcal{R}$, $\forall x \in A$.
+- $\mathcal{R}$ **simétrica** si $\forall x,y \in A$, $x\mathcal{R}y \implies y\mathcal{R} x$.
+- $\mathcal{R}$ **antisimétrica**  si $\forall x,y \in A$, $x\mathcal{R}y \ \wedge \ y \mathcal{R} x \implies x = y$.
+- $\mathcal{R}$ **transitiva** si $\forall x,y,z \in A$, $x\mathcal{R}y \ \wedge \ y \mathcal{R}z \implies x\mathcal{R}z$.
+
+### Relaciones de orden y equivalencia
+Sean $A$ conjunto y $\mathcal{R}$ relación en $A$.
+- $\mathcal{R}$ relación de equivalencia $\Leftrightarrow$ reflexiva, simétrica y transitiva.
+- $\mathcal{R}$ relación de orden $\Leftrightarrow$ reflexiva, antisimétrica y transitiva.
+
+
+### Funciones
+Sean $A$ y $B$ conjuntos, y sea  $\mathcal{R}$ una relación de $A$ en $B$. $\mathcal{R}$ función si 
+$$
+\forall x \in A, \\ \exists ! y \in  B :  x\mathcal{R}y
+$$ 
+
+### Clasificación de funciones
+
+#### Inyectividad
+$f$ **inyectiva** si $\forall y \in B \quad \exists$ a lo sumo un elemento $x\in A$ para el cual $f\left( x \right)  = y$. De otra manera, si $\forall x,x' \in A$ tales que $f\left( x \right) = f\left( x' \right)$ se tiene que $x=x'$.
+
+#### Sobreyectividad
+$f$ **sobreyectiva** si $\forall y \in B \quad \exists$ al menos un elemento $x \in A$ para el cual $f\left( x \right)  =y$. De otra manera, $f$ sobreyectiva si  $\text{Im}\left( f \right) = B$.
+
+#### Biyectividad
+$f$ **biyectiva** si a la vez inyectiva y sobreyectiva. Es decir $\forall  y \in B \quad \exists !$  $x \in A$ para el cual $f\left( x \right) = y $.
+
+# Números enteros
+## Divisibilidad
+Sean $a,d \in \mathbb{Z}$ con $d \neq 0$. Se dice que  $d$ divide a $a$, y se nota $d  \mid a$ si
+$$
+d  \mid a \Leftrightarrow \exists k \in \mathbb{Z} : a = k \cdot d.
+$$ 
+
+- *Notación*: conjunto de divisores de un entero $a$ se nota  $\text{Div}\left( a \right)$.
+
+## Números primos y compuestos
+$a \in \mathbb{Z}$ **número primo**  si $a \neq 0, \pm 1$ y tiene únicamente 4 divisores.
+
+$a \in \mathbb{Z}$ **número compuesto** si $a \neq 0, \pm 1$ y tiene más de 4 divisores.
+
+## Congruencia
+Sea $d \in  \mathbb{Z}$ con $d \neq 0$. Dados $a,b \in  \mathbb{Z}$ se dice que $a$ es congruente  $b$ módulo  $d$ si  $d | a - b$.
+$$
+a \equiv b \pmod d  \Leftrightarrow d  \mid a - b
+$$ 
+
+- *Notación*: $a \equiv b \pmod d$ o  $a \equiv b \left( d \right)$.
+
+<!--
+### Propiedades
+Sea $d \in  \mathbb{Z}$ $d \neq 0$: 
+1.  $\forall a_1, a_2, b_1, b_2 \in  \mathbb{Z}$, 
+$$
+a_1 \equiv b_1\pmod d \wedge a_2 \equiv b_2\pmod d \implies a_1 + a_2  \equiv b_1 + b_2 \pmod d
+$$ 
+
+-->
+
+## Algoritmo de división
+Dados $a, d \in \mathbb{Z}$, existen $k, r \in  \mathbb{Z}$ que satisfacen
+$$
+a = k \cdot d + r 
+$$ 
+con $0 \le r < \left| d \right| $. Además, $k$ y $r$ son únicos. 
+
+- Notación: $r_{d}\left( a \right)$, es el resto de dividir a $a$ por  $d$.
+
+## Congruencia y resto 
+
+Sea  $d \in \mathbb{Z}$ distinto de $0$. Entonces
+1.  $a \equiv r_{d}\left( a \right) \pmod d$, $\forall a \in \mathbb{Z}$.
+2.  $a \equiv r d$ con $0 \le r < \left| d \right| \implies r = r_{d}\left( a \right)$.
+3. $r_1 \equiv r_2 \pmod d$ con $0 \le r_1, r_2 < \left| d \right| \implies r_1 = r_2$.
+4. $a \equiv b \pmod d \Leftrightarrow r_{d}\left( a \right) = r_{d}\left( b \right)$.

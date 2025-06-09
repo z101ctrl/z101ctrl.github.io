@@ -1,50 +1,175 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>notes on z101ctrl</title>
-    <link>https://z101ctrl.github.io/tags/notes/</link>
-    <description>Recent content in notes on z101ctrl</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2023–2024, Franco Zalazar; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="https://z101ctrl.github.io/tags/notes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Notas cálculo numérico</title>
-      <link>https://z101ctrl.github.io/posts/calculo-numerico/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
-      
-      <guid>https://z101ctrl.github.io/posts/calculo-numerico/</guid>
-      <description>.toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.getElementById(&#39;toc&#39;); var arrowIcon = document.getElementById(&#39;arrow-icon&#39;); tocDiv.style.display = &#39;block&#39;; tocTitle.addEventListener(&#39;click&#39;, function() { if (tocDiv.style.display === &#39;none&#39; || tocDiv.style.display === &#39;&#39;) { tocDiv.style.display = &#39;block&#39;; } else { tocDiv.style.display = &#39;none&#39;; } }); });   &amp;#9658; Table Of Contents   Cota para el error global para métodos de un paso Convergencia   Norma de una matriz Número de condición de una matriz  Aplicación Condición de una matriz y matrices singulares Chebyshev en $[a,b]$       Métodos de un paso Cota para el error global para métodos de un paso Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable.</description>
-    </item>
-    
-    <item>
-      <title>Notas álgebra 1</title>
-      <link>https://z101ctrl.github.io/posts/algebra-1/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
-      
-      <guid>https://z101ctrl.github.io/posts/algebra-1/</guid>
-      <description>.toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.getElementById(&#39;toc&#39;); var arrowIcon = document.getElementById(&#39;arrow-icon&#39;); tocDiv.style.display = &#39;block&#39;; tocTitle.addEventListener(&#39;click&#39;, function() { if (tocDiv.style.display === &#39;none&#39; || tocDiv.style.display === &#39;&#39;) { tocDiv.style.display = &#39;block&#39;; } else { tocDiv.style.display = &#39;none&#39;; } }); });   &amp;#9658; Table Of Contents   Definición Relación en un conjunto  Tipos de relaciones Relaciones de orden y equivalencia Funciones Clasificación de funciones     Divisibilidad Números primos y compuestos Congruencia Algoritmo de división Congruencia y resto     Relaciones Definición Sean $A$ y $B$ conjuntos.</description>
-    </item>
-    
-    <item>
-      <title>Resumen análisis 1</title>
-      <link>https://z101ctrl.github.io/posts/resumen-analisis-1/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
-      
-      <guid>https://z101ctrl.github.io/posts/resumen-analisis-1/</guid>
-      <description>Resumen realizado con el nuevo programa de la materia.
- .toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.getElementById(&#39;toc&#39;); var arrowIcon = document.getElementById(&#39;arrow-icon&#39;); tocDiv.style.display = &#39;block&#39;; tocTitle.addEventListener(&#39;click&#39;, function() { if (tocDiv.style.display === &#39;none&#39; || tocDiv.style.display === &#39;&#39;) { tocDiv.style.display = &#39;block&#39;; } else { tocDiv.</description>
-    </item>
-    
-    <item>
-      <title>Resumen física 4</title>
-      <link>https://z101ctrl.github.io/posts/resumen-f4/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
-      
-      <guid>https://z101ctrl.github.io/posts/resumen-f4/</guid>
-      <description>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.
- .toggle-toc { cursor: pointer; display: flex; justify-content: flex-start; align-items: center; } #toc { margin-top: 16px; } .arrow-icon { margin-left: 8px; transition: transform 0.3s ease; transform: rotate(90deg); }   document.addEventListener(&#39;DOMContentLoaded&#39;, function() { var tocTitle = document.getElementById(&#39;toc-title&#39;); var tocDiv = document.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on z101ctrl</title><link>https://z101ctrl.github.io/tags/notes/</link><description>Recent content in Notes on z101ctrl</description><generator>Hugo</generator><language>en-us</language><copyright>© z101ctrl</copyright><lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="https://z101ctrl.github.io/tags/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Notas cálculo numérico</title><link>https://z101ctrl.github.io/posts/calculo_numerico/</link><pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate><guid>https://z101ctrl.github.io/posts/calculo_numerico/</guid><description>&lt;div>
+ &lt;h2>Table Of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#cota-para-el-error-global-para-métodos-de-un-paso">Cota para el error global para métodos de un paso&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#convergencia">Convergencia&lt;/a>&lt;/li>
+ &lt;/ul>
+
+ &lt;ul>
+ &lt;li>&lt;a href="#norma-de-una-matriz">Norma de una matriz&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#número-de-condición-de-una-matriz">Número de condición de una matriz&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#aplicación">Aplicación&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#condición-de-una-matriz-y-matrices-singulares">Condición de una matriz y matrices singulares&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#chebyshev-en-ab">Chebyshev en $[a,b]$&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h1 id="métodos-de-un-paso">Métodos de un paso&lt;/h1>
+&lt;h2 id="cota-para-el-error-global-para-métodos-de-un-paso">Cota para el error global para métodos de un paso&lt;/h2>
+&lt;p>Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable. Entonces, se tiene
+$$
+\left| x\left( T \right) -x_{n} \right| \le \frac{\tau_{max}}{K}\left( e^{K\left( T-t_0 \right) } -1 \right)
+$$
+donde $\tau_{max} = \max_{1 \le i \le n}{\left| \tau_{i} \right|}$ el error de truncado local en el paso $i$ y $K$ la cte. de Lipschitz.&lt;/p></description></item><item><title>Resumen análisis 1</title><link>https://z101ctrl.github.io/posts/resumen_analisis_1/</link><pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate><guid>https://z101ctrl.github.io/posts/resumen_analisis_1/</guid><description>&lt;p>Resumen realizado con el nuevo programa de la materia.&lt;/p>
+&lt;div>
+ &lt;h2>Table Of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#continuidad">Continuidad&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#límite-por-definición">Límite por definición&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#trucos-con-los-limites">Trucos con los limites&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#límites-iterados">Límites iterados&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#aproximación-por-curvas">Aproximación por curvas&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#continuidad-1">Continuidad&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#derivadas-parciales">Derivadas parciales&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#teorema-de-clairaut-schwarz">Teorema de Clairaut-Schwarz&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#gradiente">Gradiente&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#diferenciabilidad">Diferenciabilidad&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#definición">Definición&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#clase-ck">Clase $C^{k}$&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#plano-tangente">Plano tangente&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#regla-de-la-cadena">Regla de la cadena&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#derivada-direccional">Derivada direccional&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#teorema">Teorema&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#teorema-de-la-función-implícita">Teorema de la función implícita&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#plano-tangente-de-manera-implícita">Plano tangente de manera implícita&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#idea">Idea&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#definición-1">Definición&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#polinomio-de-taylor">Polinomio de Taylor&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#definición-para-órden-n-1-variable">Definición para órden n (1 variable)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#propiedades">Propiedades&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#resto">Resto&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#propiedad">Propiedad&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#fórmula-de-lagrange-del-resto">Fórmula de Lagrange del resto&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#definición-para-orden-n-varias-variables">Definición para orden n (varias variables)&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#propiedad-1">Propiedad&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#matriz-hessiana">Matriz Hessiana&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#teorema-de-lagrange-del-resto">Teorema de Lagrange del resto.&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#extremos-locales">Extremos locales&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#puntos-críticos">Puntos críticos&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#criterio-del-hessiano">Criterio del Hessiano&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#teorema-de-weierstrass">Teorema de Weierstrass&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#versión-1">Versión 1&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#version-2">Version 2&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#multiplicadores-de-lagrange">Multiplicadores de Lagrange&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#una-restricción">Una restricción&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#dos-restricciones">Dos restricciones&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#suma-de-riemann">Suma de Riemann&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#en-mathbbr">En $\mathbb{R}$&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#en-mathbbr2">En $\mathbb{R}^{2}$&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#en-mathbbr3">En $\mathbb{R}^{3}$&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#cambio-de-variable">Cambio de variable&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#jacobiano-en-mathbbr2">Jacobiano en $\mathbb{R}^{2}$&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#jacobiano-en-mathbbr3">Jacobiano en $\mathbb{R}^{3}$&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h2 id="continuidad">Continuidad&lt;/h2>
+&lt;p>Sea $f:\mathbb{R}^{2}\to \mathbb{R}$ y $\left( a,b \right) \in D$. Decimos que $f$ es continua en $\left( a,b \right)$ sii:&lt;/p></description></item><item><title>Resumen física 4</title><link>https://z101ctrl.github.io/posts/resumen_f4/</link><pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate><guid>https://z101ctrl.github.io/posts/resumen_f4/</guid><description>&lt;p>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.&lt;/p>
+&lt;div>
+ &lt;h2>Table Of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#primer-principio-de-la-termodinámica">Primer principio de la termodinámica&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#calor-específico-o-capacidad-calorífica">Calor específico o capacidad calorífica&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#para-un-gas-ideal">Para un gas ideal&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#diferencia-de-energía-para-un-gas-ideal">Diferencia de energía para un gas ideal&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#segundo-principio-de-la-termodinámica">Segundo principio de la termodinámica&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#fuente-térmica">Fuente térmica&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#eficiencia-de-una-máquina-térmica">Eficiencia de una máquina térmica&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#desigualdad-de-clausius">Desigualdad de Clausius&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#otro-enunciado-para-el-segundo-principio">Otro enunciado para el segundo principio&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#potenciales-termodinámicos">Potenciales termodinámicos&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#entalpía-left-h-right-">Entalpía $\left( H \right) $&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#función-de-helmholtz-o-energía-libre-de-helmholtz-left-f-right-">Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#función-de-gibbs-o-energía-libre-de-gibbs-left-g-right-">Función de Gibbs o energía libre de Gibbs $\left( G \right) $&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#relaciones-de-maxwell">Relaciones de Maxwell&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#potencial-químico">Potencial químico&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#tercer-principio-de-la-termodinámica">Tercer principio de la termodinámica&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#mecánica-estadística">Mecánica estadística&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#propiedades">Propiedades&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#distribución-de-maxwell-boltzmann">Distribución de Maxwell-Boltzmann&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#integrales-útiles">Integrales útiles&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#teorema-de-equipartición">Teorema de equipartición&lt;/a>&lt;/li>
+ &lt;/ul>
+
+ &lt;ul>
+ &lt;li>&lt;a href="#cuerpo-negro">Cuerpo negro&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#stefan-boltzmann">Stefan-Boltzmann&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#efecto-fotoeléctrico">Efecto fotoeléctrico&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#efecto-compton">Efecto Compton&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ley-de-wien">Ley de Wien&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#dispersión-de-rutherford">Dispersión de Rutherford&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#teoría-atómica-de-bohr">Teoría atómica de Bohr&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#formalismo-de-schrödinger">Formalismo de Schrödinger&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#relaciones-entre-funciones-de-onda">Relaciones entre funciones de onda&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h1 id="termodinámica">Termodinámica&lt;/h1>
+&lt;p>Para un proceso reversible: $P_{int} = P_{ext} \equiv P$.&lt;/p></description></item></channel></rss>
