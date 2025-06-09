@@ -1,0 +1,267 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Server setup-z101ctrl</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="During the COVID pandemic I found myself with quite an amount of free time, so I became really obsessed with linux systems. Aproximately one and a half year ago I got an old Lenovo into my hands, so I opted to repurpose it into a server.
+In this post I&rsquo;m describing the general setup of my server, that has been running with almost no downtime for ten months Firstly, I decided to put Debian as it has already well tested stable software in its repositories." />
+  <meta name="author" content="z101ctrl" /><link rel="preload stylesheet" as="style" href="https://z101ctrl.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/theme.png" />
+
+  <link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/47115021?v=4e8ac53c42a326bd803508b2cb88fe1f8?s=160&amp;d=identicon" />
+
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/github.svg" /><link rel="preload" as="image" href="https://z101ctrl.github.io/rss.svg" />
+
+  <script
+    defer
+    src="https://z101ctrl.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script><link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script><script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+
+  
+  <link
+    rel="icon"
+    href="https://z101ctrl.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://z101ctrl.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.92.2" /><meta itemprop="name" content="Server setup">
+<meta itemprop="description" content="Notas sobre conceptos de álgebra I."><meta itemprop="datePublished" content="2018-03-18T12:13:32+05:30" />
+<meta itemprop="dateModified" content="2018-03-18T12:13:32+05:30" />
+<meta itemprop="wordCount" content="558">
+<meta itemprop="keywords" content="resumen," /><meta property="og:title" content="Server setup" />
+<meta property="og:description" content="Notas sobre conceptos de álgebra I." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://z101ctrl.github.io/posts/personal-server/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-03-18T12:13:32+05:30" />
+<meta property="article:modified_time" content="2018-03-18T12:13:32+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Server setup"/>
+<meta name="twitter:description" content="Notas sobre conceptos de álgebra I."/>
+
+  <link rel="canonical" href="https://z101ctrl.github.io/posts/personal-server/" />
+</head>
+<body class="text-black duration-200 ease-out dark:text-white"><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="https://z101ctrl.github.io/"
+      >z101ctrl</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none dark:bg-black"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >Home</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/posts"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/notes"
+        >Class Notes</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About me</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/z101ctrl"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://z101ctrl.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >rss</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Server setup</h1><div class="text-xs antialiased opacity-60"><time>Mar 18, 2018</time></div></header>
+
+  <section><p>During the COVID pandemic I found myself with quite an amount of free time, so I became really obsessed with linux systems. Aproximately one and a half year ago I got an old Lenovo into my hands, so I opted to repurpose it into a server.</p>
+<p>In this post I&rsquo;m describing the general setup of my server, that has been running with almost no downtime for ten months
+Firstly, I decided to put Debian as it has already well tested stable software in its repositories.
+As I already had mounted a server before, I realized that installing services one by one wasn&rsquo;t really worth it as if there&rsquo;s any problem with the machine you&rsquo;d have to redo the installation process all over again.</p>
+<p>Knowing that, I decided to use docker, as it allows to install software in its virtual machine-like environment by specyfing the services you want to install in a single file.</p>
+<p>I also knew that I didn&rsquo;t want to expose my server to the internet, so opening ports was no option for me. Instead, I opted to access via a VPN. At first I tried self-hosting a Wireguard instance, but it didn&rsquo;t prevail due to my university network not letting me communicate via UDP connections. Setting up the connection via HTTP didn&rsquo;t work either. Then tried Tailscale, but I discarded it for the exact same reason. Finally, after a long research, I came across ZeroTier. It not only worked flawlessly, as it also had several advantages over the previously mentioned services.</p>
+<ol>
+<li>For using Wireguard you need an static IP address (currently my internet provider goes through a CGNAT), which not many internet providers give you. ZeroTier doesn&rsquo;t need that as it informs whatever IP address you have to the ZeroTier central server.</li>
+<li>ZeroTier uses UDP hole punching, so the university network connection problem is essentially fixed with that.</li>
+<li>As I&rsquo;m using the official ZeroTier servers, I can easilly add new devices from their webpage. This being an advantage and a disadvantage at the same time, as I really wanted to self-host everything.</li>
+</ol>
+<p>Having that, I proceded to install the services that I needed. Those being:</p>
+<ul>
+<li>Nextcloud: google drive like functionality.</li>
+<li>Jellyfin: media center for storing music, movies, etc.</li>
+<li>Portainer: nice GUI manager for the docker images.</li>
+<li>Ntfy: I use this to send push notifications to my cellphone when i have to run long processes. This + TMUX is a game changer. Also, it has nice integrations.</li>
+<li>Nginx Proxy Manager: reverse proxy manager, more on this later.</li>
+<li>Transmission: torrent downloader for downloading totally legal things.</li>
+<li>Homarr: nice home page where I have all my services displayed.</li>
+</ul>
+<p>[Foto de homarr]</p>
+<p>Nice, but now each time I want to access my server I have to write my ugly IP address. For solving that I configured a DNS entry using DuckDNS + Let&rsquo;s Encrypt for the SSL certificates, so instead of writing &ldquo;186.x.x.x&rdquo; I&rsquo;ll have to write &ldquo;genericname.duckdns.org&rdquo;. Much better.</p>
+<p>Another problem was that each time I wanted to access certain service I had to write it by specifying the port in which the service is listening. For this I configured the Nginx Proxy Manager, so if i want to access my jellyfin instance instead of writing &ldquo;genericname.duckdns.org:171&rdquo; I&rsquo;ll have to write &ldquo;jellyfin.genericname.duckdns.org&rdquo;.</p>
+<p><a href="https://en.wikipedia.org/wiki/UDP_hole_punching">UDP hole punching - Wikipedia</a>
+<a href="https://en.wikipedia.org/wiki/Reverse_proxy">Reverse proxy - Wikipedia</a>
+<a href="https://es.wikipedia.org/wiki/Carrier_Grade_NAT">Carrier Grade NAT - Wikipedia, la enciclopedia libre</a></p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://z101ctrl.github.io/tags/resumen"
+      >resumen</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://z101ctrl.github.io/posts/resumenf4/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Resumen física 4</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">© z101ctrl</div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

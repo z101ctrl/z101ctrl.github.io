@@ -1,0 +1,580 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Resumen física 4-z101ctrl</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.
+ Table Of Contents  Primer principio de la termodinámica Calor específico o capacidad calorífica  Para un gas ideal Diferencia de energía para un gas ideal   Segundo principio de la termodinámica Fuente térmica Eficiencia de una máquina térmica Desigualdad de Clausius Otro enunciado para el segundo principio Potenciales termodinámicos  Entalpía $\left( H \right) $ Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $ Función de Gibbs o energía libre de Gibbs $\left( G \right) $ Relaciones de Maxwell Potencial químico   Tercer principio de la termodinámica Mecánica estadística  Propiedades Distribución de Maxwell-Boltzmann Integrales útiles   Teorema de equipartición   Cuerpo negro  Stefan-Boltzmann Efecto fotoeléctrico Efecto Compton Ley de Wien   Dispersión de Rutherford Teoría atómica de Bohr Formalismo de Schrödinger  Relaciones entre funciones de onda      Termodinámica Para un proceso reversible: $P_{int} = P_{ext} \equiv P$." />
+  <meta name="author" content="z101ctrl" /><link rel="preload stylesheet" as="style" href="https://z101ctrl.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/theme.png" />
+
+  <link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/47115021?v=4e8ac53c42a326bd803508b2cb88fe1f8?s=160&amp;d=identicon" />
+
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/github.svg" /><link rel="preload" as="image" href="https://z101ctrl.github.io/rss.svg" />
+
+  <script
+    defer
+    src="https://z101ctrl.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script><link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script><script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+
+  
+  <link
+    rel="icon"
+    href="https://z101ctrl.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://z101ctrl.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.92.2" /><meta itemprop="name" content="Resumen física 4">
+<meta itemprop="description" content="Resumen para física 4, cursada C. Giribet."><meta itemprop="datePublished" content="2018-03-18T12:13:32+05:30" />
+<meta itemprop="dateModified" content="2018-03-18T12:13:32+05:30" />
+<meta itemprop="wordCount" content="1632">
+<meta itemprop="keywords" content="resumen," /><meta property="og:title" content="Resumen física 4" />
+<meta property="og:description" content="Resumen para física 4, cursada C. Giribet." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://z101ctrl.github.io/posts/resumenf4/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-03-18T12:13:32+05:30" />
+<meta property="article:modified_time" content="2018-03-18T12:13:32+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Resumen física 4"/>
+<meta name="twitter:description" content="Resumen para física 4, cursada C. Giribet."/>
+
+  <link rel="canonical" href="https://z101ctrl.github.io/posts/resumenf4/" />
+</head>
+<body class="text-black duration-200 ease-out dark:text-white"><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="https://z101ctrl.github.io/"
+      >z101ctrl</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none dark:bg-black"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >Home</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/posts"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/notes"
+        >Class Notes</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About me</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/z101ctrl"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://z101ctrl.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >rss</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Resumen física 4</h1><div class="text-xs antialiased opacity-60"><time>Mar 18, 2018</time></div></header>
+
+  <section><p>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.</p>
+<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#primer-principio-de-la-termodinámica">Primer principio de la termodinámica</a></li>
+    <li><a href="#calor-específico-o-capacidad-calorífica">Calor específico o capacidad calorífica</a>
+      <ul>
+        <li><a href="#para-un-gas-ideal">Para un gas ideal</a></li>
+        <li><a href="#diferencia-de-energía-para-un-gas-ideal">Diferencia de energía para un gas ideal</a></li>
+      </ul>
+    </li>
+    <li><a href="#segundo-principio-de-la-termodinámica">Segundo principio de la termodinámica</a></li>
+    <li><a href="#fuente-térmica">Fuente térmica</a></li>
+    <li><a href="#eficiencia-de-una-máquina-térmica">Eficiencia de una máquina térmica</a></li>
+    <li><a href="#desigualdad-de-clausius">Desigualdad de Clausius</a></li>
+    <li><a href="#otro-enunciado-para-el-segundo-principio">Otro enunciado para el segundo principio</a></li>
+    <li><a href="#potenciales-termodinámicos">Potenciales termodinámicos</a>
+      <ul>
+        <li><a href="#entalpía-left-h-right-">Entalpía $\left( H \right) $</a></li>
+        <li><a href="#función-de-helmholtz-o-energía-libre-de-helmholtz-left-f-right-">Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $</a></li>
+        <li><a href="#función-de-gibbs-o-energía-libre-de-gibbs-left-g-right-">Función de Gibbs o energía libre de Gibbs $\left( G \right) $</a></li>
+        <li><a href="#relaciones-de-maxwell">Relaciones de Maxwell</a></li>
+        <li><a href="#potencial-químico">Potencial químico</a></li>
+      </ul>
+    </li>
+    <li><a href="#tercer-principio-de-la-termodinámica">Tercer principio de la termodinámica</a></li>
+    <li><a href="#mecánica-estadística">Mecánica estadística</a>
+      <ul>
+        <li><a href="#propiedades">Propiedades</a></li>
+        <li><a href="#distribución-de-maxwell-boltzmann">Distribución de Maxwell-Boltzmann</a></li>
+        <li><a href="#integrales-útiles">Integrales útiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#teorema-de-equipartición">Teorema de equipartición</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#cuerpo-negro">Cuerpo negro</a>
+      <ul>
+        <li><a href="#stefan-boltzmann">Stefan-Boltzmann</a></li>
+        <li><a href="#efecto-fotoeléctrico">Efecto fotoeléctrico</a></li>
+        <li><a href="#efecto-compton">Efecto Compton</a></li>
+        <li><a href="#ley-de-wien">Ley de Wien</a></li>
+      </ul>
+    </li>
+    <li><a href="#dispersión-de-rutherford">Dispersión de Rutherford</a></li>
+    <li><a href="#teoría-atómica-de-bohr">Teoría atómica de Bohr</a></li>
+    <li><a href="#formalismo-de-schrödinger">Formalismo de Schrödinger</a>
+      <ul>
+        <li><a href="#relaciones-entre-funciones-de-onda">Relaciones entre funciones de onda</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<h1 id="termodinámica">Termodinámica</h1>
+<p>Para un proceso reversible: $P_{int} = P_{ext} \equiv P$.</p>
+<h2 id="primer-principio-de-la-termodinámica">Primer principio de la termodinámica</h2>
+<p>Principio de conservación de la energía en versión termodinámica, ahora tenemos en cuenta el calor.
+$$
+dE = - p_{ext} dV + dQ \underbrace{=}_{\text{Reversible}} -p dV + dQ.
+$$</p>
+<h2 id="calor-específico-o-capacidad-calorífica">Calor específico o capacidad calorífica</h2>
+<ul>
+<li>Capacidad calorífica: totalidad de la sustancia.</li>
+<li>Calor específico: por unidad</li>
+</ul>
+<p>Se define como
+$$
+C_{X} = \frac{\delta Q}{dT}\big\rvert_{X}
+$$
+con $\delta Q$ diferencial inexacto y $X$ proceso reversible.</p>
+<p><em>Criollo: nos dice cuánto del calor que recibe el sistema &ldquo;se va&rdquo; a la temperatura.</em></p>
+<h3 id="para-un-gas-ideal">Para un gas ideal</h3>
+<ul>
+<li>$C_{v} =  \frac{dE}{dT} = \frac{3}{2} Nk$</li>
+<li>$C_{P} = C_{V} + Nk = \frac{5}{2}Nk$</li>
+<li>$TV^{\left( \gamma - 1 \right)} = TV^{\frac{2}{3}} = cte$.</li>
+<li>$PV^{\gamma} = PV^{\frac{5}{3}} = cte$
+con $\gamma = \frac{C_{P}}{C_{V}}=\frac{5}{3}$ factor de las adiabáticas.</li>
+</ul>
+<h3 id="diferencia-de-energía-para-un-gas-ideal">Diferencia de energía para un gas ideal</h3>
+<p>$$
+dE = C_{V} dT \implies \Delta E = C_{V} \Delta T.
+$$</p>
+<h2 id="segundo-principio-de-la-termodinámica">Segundo principio de la termodinámica</h2>
+<p>No es posible convertir calor $Q$ en trabajo $W$ a una determinada $T$ cte. sin otro cambio en el sistema o en el medioambiente.</p>
+<ul>
+<li>Postulado Lord Kelvin</li>
+</ul>
+<blockquote>
+<p>Es imposible efectuar una transformación cuyo único resultado final sea transformar en trabajo el calor extraído de una única fuente con la misma temperatura en todos sus puntos.</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ul>
+<li>Postulado Clausius</li>
+</ul>
+<blockquote>
+<p>Es imposible efectuar una transformación cuyo único resultado final sea transferir calor de un cuerpo frío a otro más caliente.</p>
+</blockquote>
+<h2 id="fuente-térmica">Fuente térmica</h2>
+<p>Sistema mucho más grande que otro cuyos parámetros termodinámicos no varían considerablemente ante una interacción.</p>
+<h2 id="eficiencia-de-una-máquina-térmica">Eficiencia de una máquina térmica</h2>
+<p>$$
+\eta = \frac{\text{beneficio}}{\text{costo}}
+$$
+con $\eta  &lt; 1$.</p>
+<ul>
+<li>Un ciclo: $\Delta U = 0$.</li>
+</ul>
+<h2 id="desigualdad-de-clausius">Desigualdad de Clausius</h2>
+<p>Vale para un ciclo
+$$
+\oint \frac{dQ}{T_{F}} \le 0
+$$
+siendo $T_{F}$ la temperatura de las fuentes.</p>
+<p>Particularmente para un ciclo reversible
+$$
+\oint \frac{dQ}{T} \big\rvert_{R}= 0 \implies \oint dS = 0  .
+$$
+Siendo $T_{sist} = T_{Fuente} \equiv T$ y $dS = \frac{dQ}{T}$ el diferencial de <em>entropía</em>.</p>
+<h2 id="otro-enunciado-para-el-segundo-principio">Otro enunciado para el segundo principio</h2>
+<blockquote>
+<p>No es posible ningún proceso en el cual disminuya la entropía del universo.</p>
+</blockquote>
+<p>Siendo el sistema <em>universo</em>  el sistema aislado más &ldquo;pequeño&rdquo; que uno pueda definir.</p>
+<h2 id="potenciales-termodinámicos">Potenciales termodinámicos</h2>
+<p>Podemos definir ciertas funciones de estado que nos sean de utilidad en ciertos procesos. Estas son funciones de estado ya que dependen de otras funciones de estado.</p>
+<h3 id="entalpía-left-h-right-">Entalpía $\left( H \right) $</h3>
+<p>Vinculado al calor $Q$ intercambiado en un proceso isobárico.
+$$
+H = E + pV
+$$</p>
+<h3 id="función-de-helmholtz-o-energía-libre-de-helmholtz-left-f-right-">Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $</h3>
+<p>Conveniente cuando $T$ y $V$ son variables independientes y alguna de ellas es cte.
+$$
+F = E - TS
+$$
+Se denomina energía libre debido a que me impone una cota para el trabajo que puede dar un sistema, mediante la relación $W \le - \Delta F$ en un proceso con $T^{f} = T^{i} \equiv T_0$.</p>
+<h3 id="función-de-gibbs-o-energía-libre-de-gibbs-left-g-right-">Función de Gibbs o energía libre de Gibbs $\left( G \right) $</h3>
+<p>Útil en los problemas que $T$ y $p$ son variables independientes y alguno de ellos cte.
+$$
+\begin{aligned}
+G &amp;=  E + pV - TS .\\
+G &amp;= H - TS . \\
+G &amp;= F + pV.
+\end{aligned}
+$$
+Se denomina energía libre debido a que me impone una cota para el trabajo no volumétrico (trabajo que no está ligado al $dV$) mediante la relación $W_{NV} \le - \Delta G$  en un proceso con $p^{i} = p^{f}$ y $T^{i} = T^{f}$.</p>
+<h3 id="relaciones-de-maxwell">Relaciones de Maxwell</h3>
+<p>Derivan del hecho que $\forall$ función de estado se cumple $\frac{\partial^{2} f}{\partial x \partial y} = \frac{\partial^{2} f}{\partial y \partial x}$.</p>
+<ol>
+<li>
+<p>Usando $E$:
+$$
+\frac{\partial T}{\partial V}\Big\rvert_{S} = - \frac{\partial p}{\partial S}\Big\rvert_{V}.
+$$</p>
+</li>
+<li>
+<p>Usando $H$:
+$$
+\frac{\partial T}{\partial p}\Big\rvert_{S} = - \frac{\partial V}{\partial S}\Big\rvert_{p}.
+$$</p>
+</li>
+<li>
+<p>Usando $F$:
+$$
+\frac{\partial S}{\partial V}\Big\rvert_{T} = - \frac{\partial p}{\partial T}\Big\rvert_{V}.
+$$</p>
+</li>
+<li>
+<p>Usando $G$:
+$$
+\frac{\partial S}{\partial p}\Big\rvert_{T} = - \frac{\partial V}{\partial T}\Big\rvert_{p}.
+$$</p>
+</li>
+</ol>
+<h3 id="potencial-químico">Potencial químico</h3>
+<p>Del análisis del equilibrio de fases y considerando a $S$ como prop. extensiva ($dS_1 + dS_2 = 0$) se desprende que
+$$
+dE = T dS - p dV + \mu dN,
+$$
+teniendo en cuenta que puede haber transferencia de partículas de una fase a otra y completando el primer principio.</p>
+<p>Donde
+$$
+\mu \equiv -T \frac{\partial S}{\partial N}\Big\rvert_{V,E} = \frac{\partial E}{\partial N}\Big\rvert_{S,V}
+$$
+es el potencial químico.</p>
+<h2 id="tercer-principio-de-la-termodinámica">Tercer principio de la termodinámica</h2>
+<blockquote>
+<p>En el cero absoluto, la entropía de un sistema puede siempre considerarse igual a cero.</p>
+</blockquote>
+<h2 id="mecánica-estadística">Mecánica estadística</h2>
+<p>Vamos a tomar el número de partículas como un diferencial o <em>infinitésimo macroscópico</em>, es decir que será grande pero mucho menor que el $N$ total.</p>
+<p>Probabilidad de tener una partícula entre $\left( x, x+dx \right)$:
+$$
+\frac{dN_{v}}{N} = f\left( x \right) dx
+$$
+siendo $f\left( x \right)$ una densidad de probabilidad a la que llamamos  <em>función de distribución de la variable $x$</em>. Análogo a que $P = \frac{\text{Casos favorables}}{\text{Casos totales}}$.</p>
+<h3 id="propiedades">Propiedades</h3>
+<ol>
+<li>
+<p>Por ser probabilidad está normalizada
+$$
+\int_{\forall x} \frac{dN_{x}}{N} = \int_{\forall x} f\left( x \right) dx = 1.
+$$</p>
+</li>
+<li>
+<p>Promedio de una variable será
+$$
+\left&lt;x \right&gt; = \int_{\forall x} x \frac{dN_{x}}{N} = \int_{\forall x} x f\left( x \right) dx.
+$$</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<p><em>Intuición: suma diferencial de la variable por la probabilidad de que esté ahí.</em></p>
+<ol start="3">
+<li>Probabilidad de que una partícula tenga variable entre $\left( x_1 \le x\le x_2 \right)$</li>
+</ol>
+<p>$$
+P\left( x_1 \le x\le x_2 \right) = \int_{x_{1}}^{x_{2}} \frac{dN_{x}}{N} = \int_{x_{1}}^{x_{2}} f\left( x \right) dx
+$$
+<em>Intuición: sumo las probabilidades.</em></p>
+<ol start="4">
+<li>Número total de partículas
+$$
+N\left( x_1 \le x\le x_2 \right) = N \int_{x_{1}}^{x_{2}} \frac{dN_{x}}{N} = N\int_{x_{1}}^{x_{2}} f\left( x \right) dx.
+$$</li>
+</ol>
+<h3 id="distribución-de-maxwell-boltzmann">Distribución de Maxwell-Boltzmann</h3>
+<p>Para una partícula cuya energía $\epsilon$ depende de $q_{f}$ posiciones y $p_{f}$ momentos se tiene
+$$
+dn_{\epsilon} = A e^{-\beta \epsilon(\vec{q}, \vec{p})} d^{f}q d^{f}p \enspace,
+$$
+con $dn_{\epsilon}$ la distribución para una sola partícula que cumple
+$$
+\int_{\forall \vec{q}, \vec{p}} dn_{\epsilon}  = N = A \int_{\forall \vec{q}, \vec{p}} e^{-\beta\left( \vec{q}, \vec{p} \right)} d^{f}q d^{f}p \enspace.
+$$
+<em>Notación: $d^{f}v = dv_1 \cdot \left( \ldots \right) \cdot dv_f$.</em></p>
+<h3 id="integrales-útiles">Integrales útiles</h3>
+<ul>
+<li>$I_{\alpha} = \int_{0}^{\infty} v^{\alpha} e^{-\gamma v} dv$.</li>
+<li>$I_0 = \int_{0}^{\infty} e^{-\gamma v} dv = \frac{\pi}{2} \gamma^{-\frac{1}{2}}$.</li>
+<li>$I_1 = \int_{0}^{\infty} v e^{-\gamma v} dv = \frac{1}{2} \gamma^{-1}$.</li>
+</ul>
+<p>Para sacar los términos pares e impares puedo utilizar que
+$$
+\begin{cases}
+I_2 = - \frac{dI_0}{d\gamma} \\
+I_3 = - \frac{dI_1}{d\gamma}
+\end{cases}
+$$
+y así con los términos pares e impares siguientes.</p>
+<h2 id="teorema-de-equipartición">Teorema de equipartición</h2>
+<p>Sabiendo que la energía de un sistema es una función de sus coordenadas y momentos, con $f$ grados de libertad $\implies E\left( q_{1}, \ldots, q_{f};p_{1}, \ldots, p_{f} \right)$.</p>
+<ol>
+<li>
+<p>Valor medio de la energía en función de un solo de los parámetros separable es
+$$
+\left&lt; \epsilon_{s} \right&gt; = \frac{\int \epsilon_{s} e^{-\beta \epsilon_{s}} dp_{s}}{\int e^{-\beta \epsilon_{s}} dp_{s}} .
+$$</p>
+</li>
+<li>
+<p>Valor medio de cualquier término separable de la enerǵia se puede calcular como
+$$
+\left&lt; \epsilon_{s}\right&gt; = \frac{-\frac{\partial I}{\partial \beta} }{I} = - \frac{\partial }{\partial \beta}\left( \ln I \right)  = - \frac{\partial }{\partial \beta}\left[ \ln\left( \int e^{-\beta\epsilon_{s}} dp_{s} \right)  \right] .
+$$</p>
+</li>
+<li>
+<p>Asumiendo que $\epsilon_{s}\left( p_{s} \right)  = b p_{s}^{2} $ (dependencia cuadrática) con $p_{s}$ parámetro del que depende la energía total, entonces vale
+$$
+\left&lt;\epsilon \right&gt; = \frac{1}{2}kT.
+$$</p>
+</li>
+</ol>
+<h1 id="cuántica">Cuántica</h1>
+<h2 id="cuerpo-negro">Cuerpo negro</h2>
+<h3 id="stefan-boltzmann">Stefan-Boltzmann</h3>
+<p>Emisión de un cuerpo negro es
+$$
+W = \sigma T^{4}
+$$
+siendo $W$ energía emitida por unidad de área y unidad de tiempo, $\sigma = 0,567 \times 10^{-4} \frac{erg}{cm^{2}K^{4}} $ cte. de Stefan-Boltzmann y $T$ la temperatura.</p>
+<h3 id="efecto-fotoeléctrico">Efecto fotoeléctrico</h3>
+<p>Energía cinética máxima que adquiere un electrón
+$$
+T_{max} = h \nu - W ,
+$$
+siendo $h$ la cte. de Planck, $\nu$ la frecuencia incidente y $W$ el potencial necesario para &ldquo;arrancar&rdquo; el electrón.
+Para un electrón el potencial frenador $V_0$ será
+$$
+eV_0 = h\nu - W.
+$$</p>
+<h3 id="efecto-compton">Efecto Compton</h3>
+<p>Nos relaciona la longitud de onda incidente con la que sale al &ldquo;chocar&rdquo; con un electrón. Siendo esto
+$$
+\left( \lambda - \lambda_0 \right) = \frac{2h}{mc} \sin^{2}\left( \frac{\theta}{2} \right),
+$$
+siendo $\lambda_0$ la long. de onda incidente, $\lambda$ la long. de onda saliente.</p>
+<h3 id="ley-de-wien">Ley de Wien</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="dispersión-de-rutherford">Dispersión de Rutherford</h2>
+<p><img src="/rutherford.png" alt="Rutherford">
+$$
+R = \frac{Z e^{2}}{E} + \left( \left( \frac{Ze^{2}}{E} \right)^{2} + s^{2} \right)^{\frac{1}{2}}  = \frac{L^{2}}{\mu^{2}E} + \left( \left( \frac{L^{2}}{\mu^{2}E} \right)^{2} + \frac{2Ze^{2}}{E} \right)^{\frac{1}{2}}
+$$
+Siendo $R$ la distancia de máximo acercamiento, $Z$ la cantidad de átomos en el núcleo, $E$ la energía de la párticula incidente y $L$ el valor de su impulso angular.
+$$
+\tan\left( \frac{\phi}{2} \right) = \frac{R}{2s} = \frac{\frac{L^{2}}{\mu^{2}E} + \left( \left( \frac{L^{2}}{\mu^{2}E} \right)^{2} + \frac{2Ze^{2}}{E} \right)^{\frac{1}{2}}}{2}
+$$</p>
+<h2 id="teoría-atómica-de-bohr">Teoría atómica de Bohr</h2>
+<p>$$
+E_{n} = - \frac{\mu}{2} \frac{\left( Ze^{2} \right)^{2}}{n^{2}\hbar^{2}}
+$$
+Siendo $\mu$ la masa reducida $Z$ la cantidad de protones y $n$ el nivel de energía.
+Los radios permitidos serán
+$$
+r_{n} = \frac{n^{2} \hbar^{2}}{\mu Z e^{2}} .
+$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="formalismo-de-schrödinger">Formalismo de Schrödinger</h2>
+<h3 id="relaciones-entre-funciones-de-onda">Relaciones entre funciones de onda</h3>
+<p>$$
+\begin{aligned}
+\psi\left( x,y,z \right) = \frac{1}{h^{\frac{3}{2}}} \int_{-\infty}^{\infty} \phi\left( p_{x}, p_{y}, p_{z} \right) \exp\left(i\frac{\vec{p}\vec{x}}{h} \right) d^{3}p \\
+\phi\left( p_{x}, p_{y}, p_{z} \right) = \frac{1}{h^{\frac{3}{2}}} \int_{-\infty}^{\infty} \psi\left( x,y,z \right) \exp\left( -i\frac{\vec{p}\vec{x}}{h} \right)  d^{3}x
+\end{aligned}
+$$</p>
+<ul>
+<li>Operador hermítico  $\Leftrightarrow  \hat{F}^{*} = \hat{F}^{t}$.</li>
+</ul>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://z101ctrl.github.io/tags/resumen"
+      >resumen</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://z101ctrl.github.io/posts/resumen/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Resumen análisis 1</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="https://z101ctrl.github.io/posts/personal-server/"
+      ><span>Server setup</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">© z101ctrl</div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>
