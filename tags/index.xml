@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on z101ctrl</title>
+    <link>https://z101ctrl.github.io/tags/</link>
+    <description>Recent content in Tags on z101ctrl</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© z101ctrl</copyright>
+    <lastBuildDate>Sun, 22 Jun 2025 12:13:32 +0530</lastBuildDate>
+    <atom:link href="https://z101ctrl.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes</title>
+      <link>https://z101ctrl.github.io/tags/notes/</link>
+      <pubDate>Sun, 22 Jun 2025 12:13:32 +0530</pubDate>
+      <guid>https://z101ctrl.github.io/tags/notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posts</title>
+      <link>https://z101ctrl.github.io/tags/posts/</link>
+      <pubDate>Sun, 18 Jun 2023 12:13:32 +0530</pubDate>
+      <guid>https://z101ctrl.github.io/tags/posts/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

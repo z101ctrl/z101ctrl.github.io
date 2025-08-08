@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books &amp; Papers on z101ctrl</title>
+    <link>https://z101ctrl.github.io/books/</link>
+    <description>Recent content in Books &amp; Papers on z101ctrl</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© z101ctrl</copyright>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://z101ctrl.github.io/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atomic Habits</title>
+      <link>https://z101ctrl.github.io/books/atomic-habits-copy/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://z101ctrl.github.io/books/atomic-habits-copy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fundamentals of Software Architecture: An Engineering Approach</title>
+      <link>https://z101ctrl.github.io/books/fundamentals-of-systems-architecture/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://z101ctrl.github.io/books/fundamentals-of-systems-architecture/</guid>
+      <description>&lt;p&gt;Read this book mainly because I really wanted to understand how the microservices architecture worked. It has some nice metrics for measuring code modularity. Seems like a good reference book.&lt;/p&gt;&#xA;&lt;p&gt;Main takeways are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Take network reliability, latency, bandwith capabilities, network security, network distribution and transport costs into account when designing. Do not take anything for granted.&lt;/li&gt;&#xA;&lt;li&gt;If you choose to have distributed systems that induces a team architecture also.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>A Singularly Valuable Decomposition: The SVD of a Matrix</title>
+      <link>https://z101ctrl.github.io/books/svd/</link>
+      <pubDate>Tue, 12 Feb 2002 00:00:00 +0000</pubDate>
+      <guid>https://z101ctrl.github.io/books/svd/</guid>
+      <description>&lt;p&gt;A great paper that gave me a really good intuition behind the SVD decomposition and also some interesting historical notes. Highly recommended read.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

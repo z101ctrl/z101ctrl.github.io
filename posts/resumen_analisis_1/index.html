@@ -1,0 +1,670 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Resumen análisis 1-z101ctrl</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Resumen realizado con el nuevo programa de la materia.
+
+    Table Of Contents
+    
+  
+    Continuidad
+    Límite por definición
+      
+        Trucos con los limites
+      
+    
+    Límites iterados
+    Aproximación por curvas
+    Continuidad
+    Derivadas parciales
+    Teorema de Clairaut-Schwarz
+    Gradiente
+    Diferenciabilidad
+      
+        Definición
+      
+    
+    Clase $C^{k}$
+    Plano tangente
+    Regla de la cadena
+    Derivada direccional
+      
+        Teorema
+      
+    
+    Teorema de la función implícita
+    Plano tangente de manera implícita
+      
+        Idea
+        Definición
+      
+    
+    Polinomio de Taylor
+      
+        Definición para órden n (1 variable)
+        Propiedades
+      
+    
+    Resto
+      
+        Propiedad
+        Fórmula de Lagrange del resto
+      
+    
+    Definición para orden n (varias variables)
+      
+        Propiedad
+      
+    
+    Matriz Hessiana
+    Teorema de Lagrange del resto.
+    Extremos locales
+    Puntos críticos
+    Criterio del Hessiano
+    Teorema de Weierstrass
+      
+        Versión 1
+        Version 2
+      
+    
+    Multiplicadores de Lagrange
+      
+        Una restricción
+        Dos restricciones
+      
+    
+    Suma de Riemann
+      
+        En $\mathbb{R}$
+        En $\mathbb{R}^{2}$
+        En $\mathbb{R}^{3}$
+      
+    
+    Cambio de variable
+      
+        Jacobiano en $\mathbb{R}^{2}$
+        Jacobiano en $\mathbb{R}^{3}$
+      
+    
+  
+
+
+
+Continuidad
+Sea $f:\mathbb{R}^{2}\to \mathbb{R}$ y $\left( a,b \right) \in D$. Decimos que $f$ es continua en $\left( a,b \right)$ sii:" />
+  <meta name="author" content="z101ctrl" /><link rel="preload stylesheet" as="style" href="https://z101ctrl.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/theme.png" />
+
+  <link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/47115021?v=4e8ac53c42a326bd803508b2cb88fe1f8?s=160&amp;d=identicon" />
+
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/github.svg" /><link rel="preload" as="image" href="https://z101ctrl.github.io/rss.svg" />
+
+  <script
+    defer
+    src="https://z101ctrl.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script><link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script><script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+
+  
+  <link
+    rel="icon"
+    href="https://z101ctrl.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://z101ctrl.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.148.1">
+  <meta itemprop="name" content="Resumen análisis 1">
+  <meta itemprop="description" content="Resumen para análisis 1">
+  <meta itemprop="datePublished" content="2020-03-18T12:13:32+05:30">
+  <meta itemprop="dateModified" content="2020-03-18T12:13:32+05:30">
+  <meta itemprop="wordCount" content="2165">
+  <meta itemprop="keywords" content="Notes"><meta property="og:url" content="https://z101ctrl.github.io/posts/resumen_analisis_1/">
+  <meta property="og:site_name" content="z101ctrl">
+  <meta property="og:title" content="Resumen análisis 1">
+  <meta property="og:description" content="Resumen para análisis 1">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-03-18T12:13:32+05:30">
+    <meta property="article:modified_time" content="2020-03-18T12:13:32+05:30">
+    <meta property="article:tag" content="Notes">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Resumen análisis 1">
+  <meta name="twitter:description" content="Resumen para análisis 1">
+
+  <link rel="canonical" href="https://z101ctrl.github.io/posts/resumen_analisis_1/" />
+</head>
+<body class="text-black duration-200 ease-out dark:text-white"><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="https://z101ctrl.github.io/"
+      >z101ctrl</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none dark:bg-black"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >Home</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/posts"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/notes"
+        >Class Notes</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/books/"
+        >Reading list</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About me</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/z101ctrl"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://z101ctrl.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >rss</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Resumen análisis 1</h1><div class="text-xs antialiased opacity-60"><time>Mar 18, 2020</time></div></header>
+
+  <section><p>Resumen realizado con el nuevo programa de la materia.</p>
+<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#continuidad">Continuidad</a></li>
+    <li><a href="#límite-por-definición">Límite por definición</a>
+      <ul>
+        <li><a href="#trucos-con-los-limites">Trucos con los limites</a></li>
+      </ul>
+    </li>
+    <li><a href="#límites-iterados">Límites iterados</a></li>
+    <li><a href="#aproximación-por-curvas">Aproximación por curvas</a></li>
+    <li><a href="#continuidad-1">Continuidad</a></li>
+    <li><a href="#derivadas-parciales">Derivadas parciales</a></li>
+    <li><a href="#teorema-de-clairaut-schwarz">Teorema de Clairaut-Schwarz</a></li>
+    <li><a href="#gradiente">Gradiente</a></li>
+    <li><a href="#diferenciabilidad">Diferenciabilidad</a>
+      <ul>
+        <li><a href="#definición">Definición</a></li>
+      </ul>
+    </li>
+    <li><a href="#clase-ck">Clase $C^{k}$</a></li>
+    <li><a href="#plano-tangente">Plano tangente</a></li>
+    <li><a href="#regla-de-la-cadena">Regla de la cadena</a></li>
+    <li><a href="#derivada-direccional">Derivada direccional</a>
+      <ul>
+        <li><a href="#teorema">Teorema</a></li>
+      </ul>
+    </li>
+    <li><a href="#teorema-de-la-función-implícita">Teorema de la función implícita</a></li>
+    <li><a href="#plano-tangente-de-manera-implícita">Plano tangente de manera implícita</a>
+      <ul>
+        <li><a href="#idea">Idea</a></li>
+        <li><a href="#definición-1">Definición</a></li>
+      </ul>
+    </li>
+    <li><a href="#polinomio-de-taylor">Polinomio de Taylor</a>
+      <ul>
+        <li><a href="#definición-para-órden-n-1-variable">Definición para órden n (1 variable)</a></li>
+        <li><a href="#propiedades">Propiedades</a></li>
+      </ul>
+    </li>
+    <li><a href="#resto">Resto</a>
+      <ul>
+        <li><a href="#propiedad">Propiedad</a></li>
+        <li><a href="#fórmula-de-lagrange-del-resto">Fórmula de Lagrange del resto</a></li>
+      </ul>
+    </li>
+    <li><a href="#definición-para-orden-n-varias-variables">Definición para orden n (varias variables)</a>
+      <ul>
+        <li><a href="#propiedad-1">Propiedad</a></li>
+      </ul>
+    </li>
+    <li><a href="#matriz-hessiana">Matriz Hessiana</a></li>
+    <li><a href="#teorema-de-lagrange-del-resto">Teorema de Lagrange del resto.</a></li>
+    <li><a href="#extremos-locales">Extremos locales</a></li>
+    <li><a href="#puntos-críticos">Puntos críticos</a></li>
+    <li><a href="#criterio-del-hessiano">Criterio del Hessiano</a></li>
+    <li><a href="#teorema-de-weierstrass">Teorema de Weierstrass</a>
+      <ul>
+        <li><a href="#versión-1">Versión 1</a></li>
+        <li><a href="#version-2">Version 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiplicadores-de-lagrange">Multiplicadores de Lagrange</a>
+      <ul>
+        <li><a href="#una-restricción">Una restricción</a></li>
+        <li><a href="#dos-restricciones">Dos restricciones</a></li>
+      </ul>
+    </li>
+    <li><a href="#suma-de-riemann">Suma de Riemann</a>
+      <ul>
+        <li><a href="#en-mathbbr">En $\mathbb{R}$</a></li>
+        <li><a href="#en-mathbbr2">En $\mathbb{R}^{2}$</a></li>
+        <li><a href="#en-mathbbr3">En $\mathbb{R}^{3}$</a></li>
+      </ul>
+    </li>
+    <li><a href="#cambio-de-variable">Cambio de variable</a>
+      <ul>
+        <li><a href="#jacobiano-en-mathbbr2">Jacobiano en $\mathbb{R}^{2}$</a></li>
+        <li><a href="#jacobiano-en-mathbbr3">Jacobiano en $\mathbb{R}^{3}$</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<h2 id="continuidad">Continuidad</h2>
+<p>Sea $f:\mathbb{R}^{2}\to \mathbb{R}$ y $\left( a,b \right) \in D$. Decimos que $f$ es continua en $\left( a,b \right)$ sii:</p>
+<p>$$
+\lim_{\left( x,y \right)  \to \left( 0,0 \right) } f\left( x,y \right) = f\left( a,b \right) .
+$$</p>
+<h2 id="límite-por-definición">Límite por definición</h2>
+<ul>
+<li>
+<p>Se dice que $\lim_{\left( x,y \right)  \to \left( a,b \right) } f\left( x,y \right)  = L$ si y solo si dado $\epsilon &gt; 0$, existe  $\delta &gt; 0$ tal que $\left| f\left( x,y \right) - L \right| &lt; \epsilon$ si $0 &lt;|\left( x,y \right) ,\left( a,b \right) | &lt; \delta$.</p>
+</li>
+<li>
+<p>$\lim_{\left( x,y \right)  \to \left( a,b \right) } f\left( x,y \right)  = L \Leftrightarrow  \forall \epsilon &gt; 0 \exists \delta\left( \epsilon \right)  &gt; 0 \text{ tal que } \text{dist}\left( \left( x,y \right) - \left( a,b \right)  \right)  \implies \left| f\left( x,y \right) - L \right| &lt; \epsilon$ si $0 &lt;|\left( x,y \right) ,\left( a,b \right) | &lt; \delta$.</p>
+</li>
+</ul>
+<p>La única forma de verificar límites.</p>
+<h3 id="trucos-con-los-limites">Trucos con los limites</h3>
+<ul>
+<li>$\sin x \le x$.</li>
+</ul>
+<h2 id="límites-iterados">Límites iterados</h2>
+<p>Si $\lim_{\left( x,y \right)  \to \left( a,b \right) } f\left( x,y \right) = L \implies \lim_{y \to b}\left( \lim_{x \to a} f\left( x,y \right)  \right) = \lim_{x \to a} \left( \lim_{y \to b} f\left( x,y \right)  \right) = L$ .</p>
+<p>En caso de ser $\neq$, no existe el límite. En el caso de que den iguales tengo un candidato para límite.</p>
+<h2 id="aproximación-por-curvas">Aproximación por curvas</h2>
+<p>Si</p>
+<p>$$
+\lim_{\left( x,y \right)  \to \left( a,b \right) } f\left( x,y \right) = L \implies  \exists ;\vec{r}\left( t \right) / \lim_{t \to t_0} \vec{r}\left( t \right) = \left( a,b \right)
+$$</p>
+<p>luego</p>
+<p>$$
+\lim_{t \to t_0} f\left( \vec{r}\left( t \right)  \right) = L .
+$$</p>
+<p>La curva debe pasar por el punto al que tiende.</p>
+<h2 id="continuidad-1">Continuidad</h2>
+<p>Sea $f:\mathbb{R}^{2}\to \mathbb{R}$ y $\left( a,b \right) \in D$. Decimos que $f$ es continua en $\left( a,b \right)$ sii:
+$$
+\lim_{\left( x,y \right)  \to \left( a,b \right) } f\left( x,y \right) = f\left( a,b \right) .
+$$</p>
+<h2 id="derivadas-parciales">Derivadas parciales</h2>
+<ul>
+<li>$f_{x}\left( x_{0},y_{0} \right) = \lim_{h \to 0} \frac{f\left( x_{0}+h, y_0 \right) - f\left( x_{0}, y_0) \right)}{h}$.</li>
+<li>$f_{y}\left( x_{0},y_{0} \right) = \lim_{h \to 0} \frac{f\left( x_{0}, y_0 +h \right) - f\left( x_{0}, y_0) \right)}{h}$.</li>
+</ul>
+<h2 id="teorema-de-clairaut-schwarz">Teorema de Clairaut-Schwarz</h2>
+<p>Si $f_{x}$ y $f_{y}$ son continuas en un disco $D \subset \mathbb{R}^{2}$, entonces con  $\left( a,b \right) \in D$ se tiene</p>
+<p>$$
+\frac{\partial^{2} f}{\partial x \partial y}\left( a,b \right) = \frac{\partial^{2} f}{\partial y \partial x}\left( a,b \right) .
+$$</p>
+<h2 id="gradiente">Gradiente</h2>
+<p>Se define como $\nabla f =\left( \frac{\partial f}{\partial x}\left( x_0, y_0 \right) , \frac{\partial f}{\partial y} \left( x_0, y_0 \right)  \right)$.</p>
+<h2 id="diferenciabilidad">Diferenciabilidad</h2>
+<h3 id="definición">Definición</h3>
+<p>$f$ es diferenciable en $\left( x_0, y_0 \right)$ si:</p>
+<ol>
+<li>Existen las derivadas parciales en $\left( x_{0}, y_{0} \right)$.</li>
+<li></li>
+</ol>
+<p>$$
+\lim_{\left( x,y \right)  \to \left( x_0,y_0 \right) } \frac{f\left( x,y \right) - f\left( x_0, y_0 \right) - \nabla f\left( x_0, y_0 \right) \cdot \left( x-x_0, y- y_0 \right) }{|\left( x - x_0, y - y_0 \right) |} = 0 .
+$$</p>
+<h2 id="clase-ck">Clase $C^{k}$</h2>
+<p>Sea $f:A \subset \mathbb{R}^{n}\to \mathbb{R}^{m}$, dado $k \in \mathbb{N}$ decimos que $f$ es de clase $C^{k}$ en $A$ si $\forall P \in A$ existen las derivadas parciales hasta orden $k$ y son funciones continuas en $A$.</p>
+<h2 id="plano-tangente">Plano tangente</h2>
+<p>El plano tangente a $f$ en $\left( x_0, y_0, f\left( x_0, y_0 \right)  \right)$ es igual a
+$$
+z = \nabla f\left( x_0, y_0 \right)  \cdot \left( x - x_0, y - y_0 \right) + f\left( x_0,y_0 \right) .
+$$</p>
+<h2 id="regla-de-la-cadena">Regla de la cadena</h2>
+<p>Sea $z=f\left( x,y \right)$ diferenciable en $\left( a,b \right)$ y $\vec{r}\left( t \right) = \left( g\left( t \right) ,f\left( t \right)  \right)$ una función vectorial tal que $\vec{r}\left( t_0 \right) = \left( a,b \right)$ y $\vec{r}$ es diferenciable en $t_0$. Entonces $f \circ \vec{r}$ es diferenciable en $t_0$ y:</p>
+<p>$$
+\left( f \circ \vec{r} \right)&rsquo;\left( t_0 \right) = \frac{\partial f}{\partial x}\left( a,b \right) \cdot g&rsquo;\left( t_0 \right) + \frac{\partial f}{\partial y} \left( a,b \right) \cdot h&rsquo;\left( t_0 \right)
+$$
+o
+$$
+\left( f \circ \vec{r}\left( t \right)  \right)&rsquo; = \nabla f\left( \vec{r}\left( t \right) \right) \left( \vec{r}\left( t \right)  \right)&rsquo; .
+$$</p>
+<h2 id="derivada-direccional">Derivada direccional</h2>
+<p>Dado un vector unitario $\vec{u}= \left( a,b \right)$, se define la derivada direccional de $f$ dada por $\vec{u}$ a
+$$
+D_{u}f\left( x_0,y_0 \right) = \frac{\partial f}{\partial u}\left( x_0, y_0 \right) = \lim_{h \to 0}   \frac{f\left( x_0 + ah, y_0 + bh \right) - f\left( x_0, y_0 \right)}{h} .
+$$
+Si $f$ es diferenciable en $\left( x_0, y_0 \right)$, entonces</p>
+<p>$$
+D_{u}f\left( x_0, y_0 \right) = \nabla f\left( x_0, y_0 \right) \cdot \vec{u} .
+$$</p>
+<h3 id="teorema">Teorema</h3>
+<p>Sea $f:D \subset \mathbb{R}^{2}\to \mathbb{R}$, $\left( x_0, y_0 \right) \in D$ $f$ diferenciable en $\left( x_0, y_0 \right)$. El vector $u$ donde  $D_{u}f\left( x_0,y_0 \right)$ es máximo viene dado por
+$$
+\vec{u} = \frac{\nabla f\left( x_0,y_0 \right)}{|\nabla f\left( x_{0},y_0 \right) |}
+$$
+si $\nabla f\left( x_0, y_0 \right) \neq \left( 0,0 \right)$.
+El valor máximo de $D_{u}f\left( x_0,y_0 \right)$ es $| \nabla f\left( x_0, y_0 \right)|$.</p>
+<h2 id="teorema-de-la-función-implícita">Teorema de la función implícita</h2>
+<p>Sea $f\left( x,y \right)$ una función de clase $C^{1}$, $\left( x_0,y_0 \right)\in \mathbb{R}^{2}$ tal que $f\left( x_0, y_0 \right) = k$ y supongamos que $\frac{\partial f}{\partial y}\left( x_{0},y_0 \right) \neq 0$. Entonces existe $\Phi\left( x \right)$ tal que $\Phi\left( x \right) =y_0$ es de clase $C^{1}$ y $f\left( x,\Phi\left( x \right)  \right) = k ; \forall x$.
+$$
+\Phi&rsquo; \left( x,y \right) = - \frac{f_{x}\left( x_0, y_0 \right) }{f_{y}\left( x_0,y_0 \right) }
+$$ Con tres variables:
+$$
+\Phi_{x} \left( x,y \right) = - \frac{f_{x}\left( x,y,z \right) }{f_{z}\left( x,y,z \right) }
+\Phi_{y} \left( x,y \right) = - \frac{f_{x}\left( x,y,z \right) }{f_{z}\left( x,y,z \right) }
+$$</p>
+<h2 id="plano-tangente-de-manera-implícita">Plano tangente de manera implícita</h2>
+<h3 id="idea">Idea</h3>
+<p>Se tiene un conjunto de nivel $S_{k} = \left{ \left( x,y,z \right) \in \mathbb{R}^{3}: f\left( x,y,z \right) = k \right}$. Sea $\vec{r}\left( t \right) = \left( x\left( t \right) , y\left( t \right) ,z\left( t \right)  \right)$ una curva que cumple que $r\left( t \right) \in S ; \forall  t$ entonces</p>
+<p>$$
+\frac{d}{dt}\left( f\left( \vec{r}\left( t \right)  \right)  \right) = 0 \
+\left&lt;\nabla f\left( \vec{r}\left( t \right)  \right) , r&rsquo;\left( t \right)  \right&gt; = 0 \implies \nabla f \perp r&rsquo;\left( t \right) ; .
+$$</p>
+<h3 id="definición-1">Definición</h3>
+<p>Por lo que el plano tangente a un punto $P$ será
+$$
+\Pi: \left&lt; \nabla f\left( P \right) , \left[ \left( x,y,z \right) - P \right]  \right&gt; = 0
+$$</p>
+<h2 id="polinomio-de-taylor">Polinomio de Taylor</h2>
+<ul>
+<li>Como $P\left( Q \right) \approx f\left( Q \right)$ alrededor de un punto $Q$, lo podemos usar para calcular límites.</li>
+</ul>
+<h3 id="definición-para-órden-n-1-variable">Definición para órden n (1 variable)</h3>
+<p>Centrado en $x_0$</p>
+<p>$$
+f\left( x \right) \approx \sum^{n}\frac{f^{n}\left( x_0 \right)}{n!} \cdot \left( x - x_0 \right)^{n}
+$$</p>
+<h3 id="propiedades">Propiedades</h3>
+<p>Siendo $P_{n}\left( x \right)$ un polinomio de Taylor de grado $n$ tendremos</p>
+<ul>
+<li>
+<p>$P_{n}\left( x \right)$ es el único polinomio de grado $\le n$ tal que
+$$
+\lim_{x \to a}  \frac{f\left( x \right) - Q\left( x \right)}{\left( x-a \right)^{n}} = 0
+$$</p>
+</li>
+<li>
+<p>$f\left( x \right) = P_{n}\left( x \right) + R_{n}\left( x \right)$.</p>
+</li>
+</ul>
+<h2 id="resto">Resto</h2>
+<h3 id="propiedad">Propiedad</h3>
+<p>$$
+\lim_{x \to a} \frac{R_{n}\left( x \right) }{\left( x-a \right)^{n}} = 0.
+$$</p>
+<h3 id="fórmula-de-lagrange-del-resto">Fórmula de Lagrange del resto</h3>
+<p>Sea $f:I\to \mathbb{R}$, $n+1$ veces derivable en $I$
+$$
+R_{n}\left( x \right) = f\left( x \right) - P_{n}\left( x \right) = \frac{f^{\left( n+1 \right)}\left( c \right) }{\left( n+1 \right)!} \left( x-a \right)^{n+1}
+$$</p>
+<h2 id="definición-para-orden-n-varias-variables">Definición para orden n (varias variables)</h2>
+<p>Sea $f\left( x,y \right)$, $f:D\subset \mathbb{R}^{2}\to \mathbb{R}$ una función de clase $C^{2}$.  El polinomio de Taylor de orden 2 de $f$ centrado en  $P=\left( a,b \right)$, se define:</p>
+<p>$$
+P_{2}\left( x,y \right) = f\left( a,b \right) + f_{x}\left( a,b \right) \left( x-a \right) + f_{x} \left( x-a \right) + f_{y}\left( a,b \right) \left( y-a  \right) + \
+\frac{1}{2!} f_{xx}\left( a,b \right) \left( x-a \right)^{2} + f_{xy}\left( x-a \right)\left( y-b \right) + \frac{1}{2!}f_{yy}\left( a,b \right)\left( a-b \right)
+$$</p>
+<h3 id="propiedad-1">Propiedad</h3>
+<ul>
+<li>$P_{n}$ polinomio de orden $n$.</li>
+</ul>
+<p>$$
+\lim_{\left( x,y \right)  \to \left( a,b \right) } \frac{f\left( x,y \right) - P_{n}\left( x,y \right) }{|\left( x-a,y-b \right) |^{n}} = 0
+$$</p>
+<h2 id="matriz-hessiana">Matriz Hessiana</h2>
+<p>Sea $f= f\left( x,y \right)$ la matriz de Hessiana de $f$ se define como
+$$
+H_{f} = \begin{pmatrix} f_{xx} &amp; f_{xy} \ f_{yx} &amp; f_{yy} \end{pmatrix}.
+$$
+Si $f = f\left( x,y,z \right)$:
+$$
+H_{f} = \begin{pmatrix}
+f_{xx} &amp; f_{xy} &amp; f_{xz} \
+f_{yx} &amp; f_{yy} &amp; f_{yz} \
+f_{zx} &amp; f_{zy} &amp; f_{zz}
+\end{pmatrix}
+$$</p>
+<h2 id="teorema-de-lagrange-del-resto">Teorema de Lagrange del resto.</h2>
+<p>Sea $f\left( x,y \right)$ una función de clase $C^{3}$ en un disco centrado en $P=\left( a,b \right)$. Entre $\left( a,b \right)$ y $\left( x,y \right)$ hay un punto $Q=\left( c,d \right)$ tal que se define el resto de orden 2 como</p>
+<p>$$
+R_{2}\left( x,y \right) = \frac{f_{xxx}}{3!} \left( x-a \right)^{3} + \frac{f_{x x y}\left( Q \right)}{2}\left( x-a \right)^{2} \left( y-b \right) +  \frac{f_{x y y}\left( Q \right)}{2} \left( x-a  \right) \left( y-b \right)^{2} + \frac{f_{yyy}\left( Q \right)}{3!}\left( y-b \right)^{3}
+$$</p>
+<h2 id="extremos-locales">Extremos locales</h2>
+<p>Sea $f\left( x,y \right)$ se dice que</p>
+<ul>
+<li>
+<p>$f$ tiene un máximo local en $\left( a,b \right)$ si hay un disco $D$ centrado en  $\left( a,b \right)$ tal que $\forall \left( x,y \right) \in D, f\left( x,y \right) \le f\left( a,b \right)$. Si $f\left( x,y \right) \le f \left( a,b \right) ; \forall \left( x,y \right) \in \text{Dom}\left( f \right) \implies \left( a,b \right)$ es en máximo absoluto.</p>
+</li>
+<li>
+<p>$f$ tiene un mínimo local en $\left( a,b \right)$ si hay un disco $D$ centrado en $\left( a,b \right)$ tal que $\forall ; \left( x,y \right)  \in D, ; f\left( x,y \right) \ge f\left( a,b \right)$. Si $f\left( x,y \right) \ge $</p>
+</li>
+</ul>
+<h2 id="puntos-críticos">Puntos críticos</h2>
+<p>Puntos $\left( a,b \right)$ tal que</p>
+<p>$$
+\nabla f\left( a,b \right)  = \vec{0}.
+$$</p>
+<h2 id="criterio-del-hessiano">Criterio del Hessiano</h2>
+<p>Sea $f\left( x,y \right)$ una función de clase $C^{2}$ en un disco $D$.  Hay un cierto punto $\left( a,b \right) \in D$ que es punto crítico de $f$. Siendo  $d = \text{det}\left( H_{f}\left( a,b \right) \right)$ entonces</p>
+<ul>
+<li>Si $f_{x x} &gt; 0$ y $d &gt; 0 ; \implies$ en $\left( a,b \right)$ hay un <strong>mínimo local estricto</strong>  en $D$.</li>
+<li>Si  $f_{x x}\left( a,b \right) &lt; 0$ y $d&gt;0 ; \implies$ en $\left( a,b \right)$ hay un <strong>máximo local estricto</strong> en $D$.</li>
+<li>Si  $d&lt;0 ; \implies$ en $\left( a,b \right)$ hay un <strong>punto silla</strong> en $D$.</li>
+<li>Si $d=0$ el criterio no nos sirve.</li>
+</ul>
+<h2 id="teorema-de-weierstrass">Teorema de Weierstrass</h2>
+<h3 id="versión-1">Versión 1</h3>
+<p>Sea $g:\left[ a,b \right] \to \mathbb{R}$ una función continua, entonces $g$ alcanza mínimos y máximos absolutos en $\left[ a,b \right]$.</p>
+<h3 id="version-2">Version 2</h3>
+<p>Sea  $f:A \subset \mathbb{R}^{2}\to \mathbb{R}$ una funció continua y $A$ un conjunto compacto, entonces $f$ alcanza máximos y mínimos absolutos en $A$.</p>
+<h2 id="multiplicadores-de-lagrange">Multiplicadores de Lagrange</h2>
+<h3 id="una-restricción">Una restricción</h3>
+<p>Supongamos que una función $\left( f = f\left( x,y \right) ; \text{ó} ; f = f\left( x,y,z \right)  \right)$ con un dominio dado por una ecuación $\left( g\left( x,y \right) =l ; \text{ó} ; g\left( x,y,z \right) = k \right)$ tiene un extremo (local) en $P$. Además $f,g$ son diferenciables en  $P$ y  $\nabla g \neq \vec{0}$. Entonces</p>
+<p>$$
+\nabla f\left( P \right) = \lambda \nabla g\left( P \right) .
+$$</p>
+<h3 id="dos-restricciones">Dos restricciones</h3>
+<p>Sea $f = f\left( x,y,z \right)$ en un dominio $g\left( x,y,z \right) =k$ y $h\left( x,y,z \right) =l$, con un extremo en $P$. Además $f,g,h$ son diferenciables en $P$ y  $\nabla g\left( P \right)$ y $\nabla h\left( P \right)$ no son múltiplos. Entonces
+$$
+\nabla f\left( P \right) = \lambda \nabla g\left( P \right) + \mu \nabla h\left( P \right) .
+$$</p>
+<h2 id="suma-de-riemann">Suma de Riemann</h2>
+<h3 id="en-mathbbr">En $\mathbb{R}$</h3>
+<p>Sea $f:\left[ a,b \right] \to \mathbb{R}$ una función continua. En general vale</p>
+<p>$$
+f_{\text{promedio}} = \frac{\int_{a}^{b}f\left( x \right) dx}{b-a}.
+$$</p>
+<h3 id="en-mathbbr2">En $\mathbb{R}^{2}$</h3>
+<p>Sea $f:R\to \mathbb{R}=\left{ \left( x,y \right) \in \mathbb{R}^{2} x \in \left[ a,b \right] ,y \in \left[ c,d \right]  \right}$ una función continua. Si la función es positiva la doble integral es el volumen debajo de la superficie. En general vale
+$$
+f_{\text{promedio}} = \frac{\iint_{R} f\left( x,y \right) dA}{\left( b-a \right)\left( d-c \right) }.
+$$</p>
+<h3 id="en-mathbbr3">En $\mathbb{R}^{3}$</h3>
+<h2 id="cambio-de-variable">Cambio de variable</h2>
+<h3 id="jacobiano-en-mathbbr2">Jacobiano en $\mathbb{R}^{2}$</h3>
+<p>$$
+JT\left( u,v \right) = \frac{\partial\left( x,y \right)}{\partial\left( u,v \right) } =
+\text{det}\begin{pmatrix} x_{u} &amp; x_{v} \
+y_{u} &amp; y_{v}  \
+\end{pmatrix} .
+$$</p>
+<h3 id="jacobiano-en-mathbbr3">Jacobiano en $\mathbb{R}^{3}$</h3>
+<p>Jacobiano de T se define como:</p>
+<p>$$
+JT\left( u,v,w \right) = \frac{\partial\left( x,y,z \right)}{\partial\left( u,v,w \right) } =
+\text{det}\begin{pmatrix} \nabla \vec{x} \ \nabla \vec{y} \ \nabla \vec{z} \end{pmatrix} =
+\text{det}\begin{pmatrix} x_{u} &amp; x_{v} &amp; x_{w} \
+y_{u} &amp; y_{v} &amp; y_{w} \
+z_{u} &amp; z_{v} &amp; z_{w}
+\end{pmatrix} .
+$$</p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="https://z101ctrl.github.io/tags/notes"
+      >notes</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://z101ctrl.github.io/posts/resumen_f4/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Resumen física 4</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">© z101ctrl</div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

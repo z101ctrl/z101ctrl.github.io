@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on z101ctrl</title>
+    <link>https://z101ctrl.github.io/tags/posts/</link>
+    <description>Recent content in Posts on z101ctrl</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© z101ctrl</copyright>
+    <lastBuildDate>Sun, 18 Jun 2023 12:13:32 +0530</lastBuildDate>
+    <atom:link href="https://z101ctrl.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My personal server setup</title>
+      <link>https://z101ctrl.github.io/posts/personal_server/</link>
+      <pubDate>Sun, 18 Jun 2023 12:13:32 +0530</pubDate>
+      <guid>https://z101ctrl.github.io/posts/personal_server/</guid>
+      <description>&lt;p&gt;During the COVID pandemic I found myself with quite an amount of free time, so I became really obsessed with Linux systems. Approximately one and a half year ago I got an old Lenovo M82 Workstation into my hands, so I opted to repurpose it into a server.&lt;/p&gt;&#xA;&lt;p&gt;In this post I’m describing the general setup of my server, that has been running with almost no downtime for ten months.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

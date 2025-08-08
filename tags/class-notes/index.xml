@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Class-Notes on z101ctrl</title>
+    <link>http://localhost:1313/tags/class-notes/</link>
+    <description>Recent content in Class-Notes on z101ctrl</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© z101ctrl</copyright>
+    <lastBuildDate>Sun, 22 Jun 2025 12:13:32 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/class-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laboratorio de datos</title>
+      <link>http://localhost:1313/posts/data_laboratory/</link>
+      <pubDate>Sun, 22 Jun 2025 12:13:32 +0530</pubDate>
+      <guid>http://localhost:1313/posts/data_laboratory/</guid>
+      <description>&lt;div&gt;&#xA;    &lt;h2&gt;Table Of Contents&lt;/h2&gt;&#xA;    &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#aprendizaje-supervisado-vs-no-supervisado&#34;&gt;Aprendizaje supervisado vs no supervisado&lt;/a&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#supervisado&#34;&gt;Supervisado&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#no-supervisado&#34;&gt;No supervisado&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#clustering&#34;&gt;Clustering&lt;/a&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#k-means&#34;&gt;K-means&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#dbscan&#34;&gt;DBSCAN&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#clasificación&#34;&gt;Clasificación&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;aprendizaje-supervisado-vs-no-supervisado&#34;&gt;Aprendizaje supervisado vs no supervisado&lt;/h2&gt;&#xA;&lt;h3 id=&#34;supervisado&#34;&gt;Supervisado&lt;/h3&gt;&#xA;&lt;p&gt;Queremos predecir una variable respuesta a partir de variables explicativas. Conocemos la respuesta correcta para un conjunto de datos y los utilizamos para construir el modelo.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Ejemplo&lt;/em&gt;: regresión, clasificación.&lt;/p&gt;&#xA;&lt;h3 id=&#34;no-supervisado&#34;&gt;No supervisado&lt;/h3&gt;&#xA;&lt;p&gt;Queremos encontrar patrones o estructuras ocultas en los datos. No conocemos, o no hay, respuesta correcta.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Ejemplo&lt;/em&gt;: clustering, reducción de dimensionalidad.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

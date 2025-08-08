@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resumen on z101ctrl</title>
+    <link>https://z101ctrl.github.io/tags/resumen/</link>
+    <description>Recent content in resumen on z101ctrl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© z101ctrl</copyright>
+    <lastBuildDate>Sun, 18 Mar 2018 12:13:32 +0530</lastBuildDate><atom:link href="https://z101ctrl.github.io/tags/resumen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notas análisis avanzado</title>
+      <link>https://z101ctrl.github.io/posts/resumen_analisis_avanzado/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/resumen_analisis_avanzado/</guid>
+      <description>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.
+ Table Of Contents   </description>
+    </item>
+    
+    <item>
+      <title>Notas cálculo numérico</title>
+      <link>https://z101ctrl.github.io/posts/calculo_numerico/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/calculo_numerico/</guid>
+      <description>Table Of Contents  Cota para el error global para métodos de un paso Convergencia   Norma de una matriz Número de condición de una matriz  Aplicación Condición de una matriz y matrices singulares Chebyshev en $[a,b]$      Métodos de un paso Cota para el error global para métodos de un paso Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable.</description>
+    </item>
+    
+    <item>
+      <title>Resumen análisis 1</title>
+      <link>https://z101ctrl.github.io/posts/resumen/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/resumen/</guid>
+      <description>Resumen realizado con el nuevo programa de la materia.
+ Table Of Contents  Continuidad Límite por definición  Trucos con los limites   Límites iterados Aproximación por curvas Continuidad Derivadas parciales Teorema de Clairaut-Schwarz Gradiente Diferenciabilidad  Definición   Clase $C^{k}$ Plano tangente Regla de la cadena Derivada direccional  Teorema   Teorema de la función implícita Plano tangente de manera implícita  Idea Definición   Polinomio de Taylor  Definición para órden n (1 variable) Propiedades   Resto  Propiedad Fórmula de Lagrange del resto   Definición para orden n (varias variables)  Propiedad   Matriz Hessiana Teorema de Lagrange del resto.</description>
+    </item>
+    
+    <item>
+      <title>Resumen física 4</title>
+      <link>https://z101ctrl.github.io/posts/resumenf4/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/resumenf4/</guid>
+      <description>Apuntes tomados 2C de 2022, dado por C. Giribet. Se transcribieron los conceptos importantes de su apunte. Las demostraciones de los conceptos son triviales y quedan como ejercicio para el lector.
+ Table Of Contents  Primer principio de la termodinámica Calor específico o capacidad calorífica  Para un gas ideal Diferencia de energía para un gas ideal   Segundo principio de la termodinámica Fuente térmica Eficiencia de una máquina térmica Desigualdad de Clausius Otro enunciado para el segundo principio Potenciales termodinámicos  Entalpía $\left( H \right) $ Función de Helmholtz o energía libre de Helmholtz $\left( F \right) $ Función de Gibbs o energía libre de Gibbs $\left( G \right) $ Relaciones de Maxwell Potencial químico   Tercer principio de la termodinámica Mecánica estadística  Propiedades Distribución de Maxwell-Boltzmann Integrales útiles   Teorema de equipartición   Cuerpo negro  Stefan-Boltzmann Efecto fotoeléctrico Efecto Compton Ley de Wien   Dispersión de Rutherford Teoría atómica de Bohr Formalismo de Schrödinger  Relaciones entre funciones de onda      Termodinámica Para un proceso reversible: $P_{int} = P_{ext} \equiv P$.</description>
+    </item>
+    
+    <item>
+      <title>Server setup</title>
+      <link>https://z101ctrl.github.io/posts/personal-server/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://z101ctrl.github.io/posts/personal-server/</guid>
+      <description>During the COVID pandemic I found myself with quite an amount of free time, so I became really obsessed with linux systems. Aproximately one and a half year ago I got an old Lenovo into my hands, so I opted to repurpose it into a server.
+In this post I&amp;rsquo;m describing the general setup of my server, that has been running with almost no downtime for ten months Firstly, I decided to put Debian as it has already well tested stable software in its repositories.</description>
+    </item>
+    
+  </channel>
+</rss>

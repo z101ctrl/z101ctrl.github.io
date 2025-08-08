@@ -1,0 +1,252 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>z101ctrl</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  <meta
+    name="description"
+    content="A personal blog"
+  />
+  <meta name="author" content="z101ctrl" /><link rel="preload stylesheet" as="style" href="https://z101ctrl.github.io/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/theme.png" />
+
+  <link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/47115021?v=4e8ac53c42a326bd803508b2cb88fe1f8?s=160&amp;d=identicon" />
+
+  <link rel="preload" as="image" href="https://z101ctrl.github.io/github.svg" /><link rel="preload" as="image" href="https://z101ctrl.github.io/rss.svg" />
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script><script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+
+  
+  <link
+    rel="icon"
+    href="https://z101ctrl.github.io/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://z101ctrl.github.io/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.148.1">
+  <meta itemprop="name" content="z101ctrl">
+  <meta itemprop="datePublished" content="2025-06-22T12:13:32+05:30">
+  <meta itemprop="dateModified" content="2025-06-22T12:13:32+05:30"><meta property="og:url" content="https://z101ctrl.github.io/">
+  <meta property="og:site_name" content="z101ctrl">
+  <meta property="og:title" content="z101ctrl">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="z101ctrl">
+<link
+    rel="alternate"
+    type="application/rss&#43;xml"
+    href="https://z101ctrl.github.io/index.xml"
+    title="z101ctrl"
+  />
+  <link rel="canonical" href="https://z101ctrl.github.io/" />
+</head>
+<body class="text-black duration-200 ease-out dark:text-white"><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="https://z101ctrl.github.io/"
+      >z101ctrl</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none dark:bg-black"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >Home</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/posts"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/notes"
+        >Class Notes</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/books/"
+        >Reading list</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About me</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/z101ctrl"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://z101ctrl.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >rss</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    >
+
+
+<div class="-mt-2 mb-12 flex items-center"><div
+    class="h-24 w-24 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 ltr:mr-5 ltr:-ml-1 rtl:-mr-1 rtl:ml-5 dark:!bg-white/90"
+  >
+    <img
+      class="not-prose my-0 h-full w-full rounded-full !bg-black/5 hover:animate-spin dark:!bg-black/80"
+      src="https://avatars.githubusercontent.com/u/47115021?v=4e8ac53c42a326bd803508b2cb88fe1f8?s=160&amp;d=identicon"
+      alt="z101ctrl"
+    />
+  </div><div>
+    <div class="mt-3 mb-1 text-2xl font-medium text-black dark:text-white">z101ctrl</div>
+    <div class="break-words">zzzzzz</div>
+  </div></div><section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><h2 class="!my-0">My personal server setup</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Jun 18, 2023</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="https://z101ctrl.github.io/posts/personal_server/"
+    >My personal server setup</a
+  >
+</section></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">© z101ctrl</div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>
