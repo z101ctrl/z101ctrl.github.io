@@ -20,7 +20,7 @@
   />
 
   
-  <title>Laboratorio de datos-z101ctrl</title>
+  <title>Análisis avanzado-z101ctrl</title>
 
   
   <meta name="theme-color" />
@@ -29,17 +29,21 @@
     Table Of Contents
     
   
-    Aprendizaje supervisado vs no supervisado
+    Cardinalidad
       
-        Supervisado
-        No supervisado
+        Conjuntos coordinables
+        Definición cardinalidad
+        Conjuntos según su cardinalidad
+        Teorema de Cantor
       
     
-    Clustering
+    Espacios métricos
+    Métrica
+    Bolas
+    Interior, derivado, frontera
       
-        K-means
-        DBSCAN
-        Clasificación
+        Propiedades relacionadas
+        Conjunto acotado
       
     
   
@@ -47,13 +51,16 @@
 
 
 
-Aprendizaje supervisado vs no supervisado
-Supervisado
-Queremos predecir una variable respuesta a partir de variables explicativas. Conocemos la respuesta correcta para un conjunto de datos y los utilizamos para construir el modelo.
-Ejemplo: regresión, clasificación.
-No supervisado
-Queremos encontrar patrones o estructuras ocultas en los datos. No conocemos, o no hay, respuesta correcta.
-Ejemplo: clustering, reducción de dimensionalidad." />
+Cardinalidad
+Sean A, B conjuntos
+
+$|A| = |B|$ si $ \exists f:A \to B $ biyectiva.
+$|A| \geq |B|$ si $ \exists f:A \to B $ sobreyectiva.
+$|A| \leq |B|$ si $ \exists f:A \to B $ inyectiva.
+Si $ A \subseteq B \Rightarrow |A| &lt;= |B|$
+
+Conjuntos coordinables
+Decimos que dos conjuntos $A$ y $B$ son coordinables (equipotentes, tienen el mismo cardinal). Si $\exists f: A \to B$ biyectiva. En este caso notamos $A \sim B$." />
   <meta name="author" content="z101ctrl" /><link rel="preload stylesheet" as="style" href="https://z101ctrl.github.io/main.min.css" />
 
   
@@ -111,27 +118,27 @@ Ejemplo: clustering, reducción de dimensionalidad." />
   />
 
   <meta name="generator" content="Hugo 0.152.2">
-  <meta itemprop="name" content="Laboratorio de datos">
-  <meta itemprop="description" content="Notas sobre la materia laboratorio de datos.">
-  <meta itemprop="datePublished" content="2025-06-22T12:13:32+05:30">
-  <meta itemprop="dateModified" content="2025-06-22T12:13:32+05:30">
-  <meta itemprop="wordCount" content="278">
-  <meta itemprop="keywords" content="Notes"><meta property="og:url" content="https://z101ctrl.github.io/posts/data_laboratory/">
+  <meta itemprop="name" content="Análisis avanzado">
+  <meta itemprop="description" content="Notas sobre la materia analisis avanzado.">
+  <meta itemprop="datePublished" content="2025-10-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-10-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="484">
+  <meta itemprop="keywords" content="Notes"><meta property="og:url" content="https://z101ctrl.github.io/posts/analisis_avanzado/">
   <meta property="og:site_name" content="z101ctrl">
-  <meta property="og:title" content="Laboratorio de datos">
-  <meta property="og:description" content="Notas sobre la materia laboratorio de datos.">
+  <meta property="og:title" content="Análisis avanzado">
+  <meta property="og:description" content="Notas sobre la materia analisis avanzado.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-06-22T12:13:32+05:30">
-    <meta property="article:modified_time" content="2025-06-22T12:13:32+05:30">
+    <meta property="article:published_time" content="2025-10-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-01T00:00:00+00:00">
     <meta property="article:tag" content="Notes">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Laboratorio de datos">
-  <meta name="twitter:description" content="Notas sobre la materia laboratorio de datos.">
+  <meta name="twitter:title" content="Análisis avanzado">
+  <meta name="twitter:description" content="Notas sobre la materia analisis avanzado.">
 
-  <link rel="canonical" href="https://z101ctrl.github.io/posts/data_laboratory/" />
+  <link rel="canonical" href="https://z101ctrl.github.io/posts/analisis_avanzado/" />
 </head>
 <body class="text-black duration-200 ease-out dark:text-white"><header
   class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
@@ -246,23 +253,27 @@ Ejemplo: clustering, reducción de dimensionalidad." />
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="!my-0 pb-2.5">Laboratorio de datos</h1><div class="text-xs antialiased opacity-60"><time>Jun 22, 2025</time></div></header>
+    <h1 class="!my-0 pb-2.5">Análisis avanzado</h1><div class="text-xs antialiased opacity-60"><time>Oct 1, 2025</time></div></header>
 
   <section><div>
     <h2>Table Of Contents</h2>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#aprendizaje-supervisado-vs-no-supervisado">Aprendizaje supervisado vs no supervisado</a>
+    <li><a href="#cardinalidad">Cardinalidad</a>
       <ul>
-        <li><a href="#supervisado">Supervisado</a></li>
-        <li><a href="#no-supervisado">No supervisado</a></li>
+        <li><a href="#conjuntos-coordinables">Conjuntos coordinables</a></li>
+        <li><a href="#definición-cardinalidad">Definición cardinalidad</a></li>
+        <li><a href="#conjuntos-según-su-cardinalidad">Conjuntos según su cardinalidad</a></li>
+        <li><a href="#teorema-de-cantor">Teorema de Cantor</a></li>
       </ul>
     </li>
-    <li><a href="#clustering">Clustering</a>
+    <li><a href="#espacios-métricos">Espacios métricos</a></li>
+    <li><a href="#métrica">Métrica</a></li>
+    <li><a href="#bolas">Bolas</a></li>
+    <li><a href="#interior-derivado-frontera">Interior, derivado, frontera</a>
       <ul>
-        <li><a href="#k-means">K-means</a></li>
-        <li><a href="#dbscan">DBSCAN</a></li>
-        <li><a href="#clasificación">Clasificación</a></li>
+        <li><a href="#propiedades-relacionadas">Propiedades relacionadas</a></li>
+        <li><a href="#conjunto-acotado">Conjunto acotado</a></li>
       </ul>
     </li>
   </ul>
@@ -270,49 +281,81 @@ Ejemplo: clustering, reducción de dimensionalidad." />
 </div>
 
 <hr>
-<h2 id="aprendizaje-supervisado-vs-no-supervisado">Aprendizaje supervisado vs no supervisado</h2>
-<h3 id="supervisado">Supervisado</h3>
-<p>Queremos predecir una variable respuesta a partir de variables explicativas. Conocemos la respuesta correcta para un conjunto de datos y los utilizamos para construir el modelo.</p>
-<p><em>Ejemplo</em>: regresión, clasificación.</p>
-<h3 id="no-supervisado">No supervisado</h3>
-<p>Queremos encontrar patrones o estructuras ocultas en los datos. No conocemos, o no hay, respuesta correcta.</p>
-<p><em>Ejemplo</em>: clustering, reducción de dimensionalidad.</p>
-<h2 id="clustering">Clustering</h2>
-<h3 id="k-means">K-means</h3>
-<p>Definimos centros para cada cluster, cada punto pertenecerá al cluster de centro más cercano.</p>
-<h4 id="algoritmo-naive">Algoritmo (naive)</h4>
-<ol start="0">
-<li>Defino centros aleatorios.</li>
-<li>Para cada punto, le asignamos el cluster de centro más cercano al punto.</li>
-<li>Vuelvo a calcular el centro de cada cluster.</li>
-</ol>
-<p>Si las etiquetas no cambian entre pasos, llegué a la convergencia del método. Para definir el $k$ utilizo el método del codo.</p>
-<h4 id="ventajas-y-desventajas">Ventajas y desventajas</h4>
+<h2 id="cardinalidad">Cardinalidad</h2>
+<p>Sean A, B conjuntos</p>
 <ul>
-<li><em>Ventajas</em>: sencillo y facil de implementar, escalable para grandes conjuntos de datos.</li>
-<li><em>Desventajas</em>
+<li>$|A| = |B|$ si $ \exists f:A \to B $ biyectiva.</li>
+<li>$|A| \geq |B|$ si $ \exists f:A \to B $ sobreyectiva.</li>
+<li>$|A| \leq |B|$ si $ \exists f:A \to B $ inyectiva.</li>
+<li>Si $ A \subseteq B \Rightarrow |A| &lt;= |B|$</li>
+</ul>
+<h3 id="conjuntos-coordinables">Conjuntos coordinables</h3>
+<p>Decimos que dos conjuntos $A$ y $B$ son coordinables (equipotentes, tienen el mismo cardinal). Si $\exists f: A \to B$ biyectiva. En este caso notamos $A \sim B$.</p>
+<p><em>Obs: esto es una relación de equivalencia</em></p>
+<h3 id="definición-cardinalidad">Definición cardinalidad</h3>
+<p>Definimos <strong>el cardinal de un conjunto</strong> $X$ como la clase de equivalencia de todos los conjuntos coordinables con $X$ y lo notamos $|X|$ con
+$$
+|X| = \{ Y: Y \sim X \}
+$$</p>
+<h3 id="conjuntos-según-su-cardinalidad">Conjuntos según su cardinalidad</h3>
+<p>Sea $A$ un conjunto este se dice</p>
 <ul>
-<li>Requiere especificar el número $k$ de clusters de antemano.</li>
-<li>Sensible a la elección de centroides iniciales.</li>
-<li>Puede converger a mínimos locales.</li>
+<li><strong>Finito</strong>: si $\exists \; m$ tal que $A \sim \{1, 2, 3, \ldots, m \}$</li>
+<li><strong>Contable</strong>: si es finito o numerable, es decir si $|A| \leq \aleph_0$.</li>
+<li><strong>Numerable:</strong> si $|A| \sim \mathbb{N}$.</li>
 </ul>
-</li>
-</ul>
-<p><strong>Observación:</strong> los clusters son ésfericos, con el mismo radio para todas las direcciones.</p>
-<h3 id="dbscan">DBSCAN</h3>
-<p>Depende de dos parámetros: un radio epsilon y un valor $m$ que indica cuantos puntos se espera encontrar en la vecindad de un punto de un cluster.</p>
-<p>Dados esos parámetros, los puntos se clasifican en:</p>
+<h3 id="teorema-de-cantor">Teorema de Cantor</h3>
+<p>Sean A, B conjuntos tal que
+$$
+|A| \geq |B| \wedge |B| \leq |A|
+$$
+entonces $|A| = |B|$</p>
+<h2 id="espacios-métricos">Espacios métricos</h2>
+<p>Sea $E$ un conjunto, sea $d$ una métrica, entonces $(E, d)$ es un espacio métrico.</p>
+<h2 id="métrica">Métrica</h2>
+<p>Sea $d$ una función de $d: \mathbb{R} \to \mathbb{R}$</p>
 <ol>
-<li><em>Puntos centrales $p$</em></li>
-<li><em>Puntos directamente alcabzables $q$</em> desde un punto central $p$.</li>
-<li><em>Punto $q$ alcanzable</em> desde un punto central $p$.</li>
-<li><em>Puntos atípicos</em>, que son todos los puntos que no son alcanzables desde ningún punto central.</li>
+<li>$d(x,y) = 0 \Leftrightarrow x = y$</li>
+<li>$d(x,y) = d(y,x)$</li>
+<li>$d(x,y) \leq d(x,z) + d(z,y)$</li>
 </ol>
-<h3 id="clasificación">Clasificación</h3>
-<h4 id="regresión-lineal">Regresión lineal</h4>
-<p>TODO</p>
-<h4 id="k-nn">K-NN</h4>
-<p><em>Idea</em>: clasificámos el $n$-ésimo punto fijándonos a qué categoría pertenecen los $k$ puntos más cercanos.</p>
+<h2 id="bolas">Bolas</h2>
+<ul>
+<li>$B(x,r) = \{ y \in E / d(x,r) &lt; r \}$ (bola abierta)</li>
+<li>$\overline{B(x,r)} = \{ y \in E / d(x,r) \leq r \}$ (bola cerrada)</li>
+</ul>
+<h2 id="interior-derivado-frontera">Interior, derivado, frontera</h2>
+<p>Sea $A$ un conjunto, llamamos:</p>
+<ul>
+<li><strong>Interior</strong>: contiene los puntos interiores de $A$, es decir
+$$
+A^\circ = \{x \in E/ \exists r &gt; 0 : B(x,r) \in A \}
+$$</li>
+<li><strong>Derivado</strong>: contiene los puntos de acumulación de $A$, es decir
+$$
+A&rsquo; = \{x \in E/ \exists r &gt; 0 : B(x,r) \cap A \setminus \{ x \} \neq \emptyset \}
+$$</li>
+<li><strong>Clausura</strong>: contiene los puntos de adherencia de A, es decir
+$$
+\overline{A} = \{x \in E / \forall r &gt; 0 : B(x,r) \cap A \neq \emptyset \}
+$$</li>
+<li><strong>Frontera</strong>: contiene los puntos frontera de $A$, es decir
+$$
+\partial A = \{x \in E / \forall r &gt; 0 : B(x,r) \cap A \neq \emptyset \wedge B(x,r) \cap (E \setminus A) \neq \emptyset \}
+$$</li>
+</ul>
+<h3 id="propiedades-relacionadas">Propiedades relacionadas</h3>
+<p>Sea $(a_n)_{n \in \mathbb{N}}$ sucesión en $A$ entonces</p>
+<p>$$
+x \in \overline{A} \Leftrightarrow \exists ( a^{(m)} )_{m \in \mathbb{N}} \subseteq A \text{ tal que } d(a^{(m)}, x) \rightarrow 0 \text{ cuando } m \rightarrow \infty
+$$</p>
+<p>donde $(a^{(m)})_{m \in \mathbb{N}}$ subsucesión.</p>
+<h3 id="conjunto-acotado">Conjunto acotado</h3>
+<p>$A \subseteq E$ es acotada si todo punto es punto interior. Es decir si $A \subseteq A^\circ \Rightarrow A = A^\circ$.</p>
+<h4 id="propiedades">Propiedades</h4>
+<ul>
+<li>$A = A^\circ \Leftrightarrow A$ abierto.</li>
+</ul>
 </section>
 
   <footer class="mt-12 flex flex-wrap"><a
@@ -321,12 +364,10 @@ Ejemplo: clustering, reducción de dimensionalidad." />
       >notes</a
     ></footer><nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="https://z101ctrl.github.io/posts/analisis_avanzado/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Análisis avanzado</span></a
-    ><a
+  ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="https://z101ctrl.github.io/posts/calculo_numerico/"
-      ><span>Cálculo numérico</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+      href="https://z101ctrl.github.io/posts/data_laboratory/"
+      ><span>Laboratorio de datos</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >

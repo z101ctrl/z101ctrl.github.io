@@ -1,0 +1,59 @@
+---
+title: "Analisis avanzado"
+date: 2025-06-22T12:13:32+05:30
+description: "Notas sobre la materia analisis avanzado."
+tags: [notes]
+math: true 
+katex: true
+---
+
+{{< toc >}}
+
+---
+
+## Aprendizaje supervisado vs no supervisado
+### Supervisado
+Queremos predecir una variable respuesta a partir de variables explicativas. Conocemos la respuesta correcta para un conjunto de datos y los utilizamos para construir el modelo.
+
+*Ejemplo*: regresión, clasificación.
+
+### No supervisado
+Queremos encontrar patrones o estructuras ocultas en los datos. No conocemos, o no hay, respuesta correcta.
+
+*Ejemplo*: clustering, reducción de dimensionalidad.
+
+
+## Clustering
+### K-means
+Definimos centros para cada cluster, cada punto pertenecerá al cluster de centro más cercano.
+
+#### Algoritmo (naive)
+0. Defino centros aleatorios.
+1. Para cada punto, le asignamos el cluster de centro más cercano al punto.
+2. Vuelvo a calcular el centro de cada cluster.
+
+Si las etiquetas no cambian entre pasos, llegué a la convergencia del método. Para definir el $k$ utilizo el método del codo.
+
+#### Ventajas y desventajas
+- *Ventajas*: sencillo y facil de implementar, escalable para grandes conjuntos de datos.
+- *Desventajas*
+    - Requiere especificar el número $k$ de clusters de antemano.
+    - Sensible a la elección de centroides iniciales.
+    - Puede converger a mínimos locales.
+
+**Observación:** los clusters son ésfericos, con el mismo radio para todas las direcciones.
+
+### DBSCAN
+Depende de dos parámetros: un radio epsilon y un valor $m$ que indica cuantos puntos se espera encontrar en la vecindad de un punto de un cluster.
+
+Dados esos parámetros, los puntos se clasifican en:
+1. *Puntos centrales $p$*
+2. *Puntos directamente alcabzables $q$* desde un punto central $p$.
+3. *Punto $q$ alcanzable* desde un punto central $p$.
+4. *Puntos atípicos*, que son todos los puntos que no son alcanzables desde ningún punto central.
+
+### Clasificación
+#### Regresión lineal
+TODO
+#### K-NN
+*Idea*: clasificámos el $n$-ésimo punto fijándonos a qué categoría pertenecen los $k$ puntos más cercanos.

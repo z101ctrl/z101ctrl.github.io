@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© z101ctrl</copyright>
-    <lastBuildDate>Sun, 22 Jun 2025 12:13:32 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://z101ctrl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Análisis avanzado</title>
+      <link>https://z101ctrl.github.io/posts/analisis_avanzado/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://z101ctrl.github.io/posts/analisis_avanzado/</guid>
+      <description>&lt;div&gt;&#xA;    &lt;h2&gt;Table Of Contents&lt;/h2&gt;&#xA;    &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#cardinalidad&#34;&gt;Cardinalidad&lt;/a&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#conjuntos-coordinables&#34;&gt;Conjuntos coordinables&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#definición-cardinalidad&#34;&gt;Definición cardinalidad&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#conjuntos-según-su-cardinalidad&#34;&gt;Conjuntos según su cardinalidad&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#teorema-de-cantor&#34;&gt;Teorema de Cantor&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#espacios-métricos&#34;&gt;Espacios métricos&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#métrica&#34;&gt;Métrica&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#bolas&#34;&gt;Bolas&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#interior-derivado-frontera&#34;&gt;Interior, derivado, frontera&lt;/a&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#propiedades-relacionadas&#34;&gt;Propiedades relacionadas&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#conjunto-acotado&#34;&gt;Conjunto acotado&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;cardinalidad&#34;&gt;Cardinalidad&lt;/h2&gt;&#xA;&lt;p&gt;Sean A, B conjuntos&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$|A| = |B|$ si $ \exists f:A \to B $ biyectiva.&lt;/li&gt;&#xA;&lt;li&gt;$|A| \geq |B|$ si $ \exists f:A \to B $ sobreyectiva.&lt;/li&gt;&#xA;&lt;li&gt;$|A| \leq |B|$ si $ \exists f:A \to B $ inyectiva.&lt;/li&gt;&#xA;&lt;li&gt;Si $ A \subseteq B \Rightarrow |A| &amp;lt;= |B|$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;conjuntos-coordinables&#34;&gt;Conjuntos coordinables&lt;/h3&gt;&#xA;&lt;p&gt;Decimos que dos conjuntos $A$ y $B$ son coordinables (equipotentes, tienen el mismo cardinal). Si $\exists f: A \to B$ biyectiva. En este caso notamos $A \sim B$.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Laboratorio de datos</title>
       <link>https://z101ctrl.github.io/posts/data_laboratory/</link>
@@ -31,18 +38,18 @@
       <description>&lt;p&gt;Read this book mainly because I really wanted to understand how the microservices architecture worked. It has some nice metrics for measuring code modularity. Seems like a good reference book.&lt;/p&gt;&#xA;&lt;p&gt;Main takeways are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Take network reliability, latency, bandwith capabilities, network security, network distribution and transport costs into account when designing. Do not take anything for granted.&lt;/li&gt;&#xA;&lt;li&gt;If you choose to have distributed systems that induces a team architecture also.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>Cálculo numérico</title>
+      <link>https://z101ctrl.github.io/posts/calculo_numerico/</link>
+      <pubDate>Sun, 18 Jun 2023 12:13:32 +0530</pubDate>
+      <guid>https://z101ctrl.github.io/posts/calculo_numerico/</guid>
+      <description>&lt;div&gt;&#xA;    &lt;h2&gt;Table Of Contents&lt;/h2&gt;&#xA;    &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#cota-para-el-error-global-para-métodos-de-un-paso&#34;&gt;Cota para el error global para métodos de un paso&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#convergencia&#34;&gt;Convergencia&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#norma-de-una-matriz&#34;&gt;Norma de una matriz&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#número-de-condición-de-una-matriz&#34;&gt;Número de condición de una matriz&lt;/a&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#aplicación&#34;&gt;Aplicación&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#condición-de-una-matriz-y-matrices-singulares&#34;&gt;Condición de una matriz y matrices singulares&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#chebyshev-en-ab&#34;&gt;Chebyshev en $[a,b]$&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;métodos-de-un-paso&#34;&gt;Métodos de un paso&lt;/h1&gt;&#xA;&lt;h2 id=&#34;cota-para-el-error-global-para-métodos-de-un-paso&#34;&gt;Cota para el error global para métodos de un paso&lt;/h2&gt;&#xA;&lt;p&gt;Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable. Entonces, se tiene&#xA;$$&#xA;\left| x\left( T \right) -x_{n} \right|  \le \frac{\tau_{max}}{K}\left( e^{K\left( T-t_0 \right) } -1 \right)&#xA;$$&#xA;donde $\tau_{max} = \max_{1 \le  i \le n}{\left| \tau_{i} \right|}$ el error de truncado local en el paso $i$ y $K$ la cte. de Lipschitz.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>My personal server setup</title>
       <link>https://z101ctrl.github.io/posts/personal_server/</link>
       <pubDate>Sun, 18 Jun 2023 12:13:32 +0530</pubDate>
       <guid>https://z101ctrl.github.io/posts/personal_server/</guid>
       <description>&lt;p&gt;During the COVID pandemic I found myself with quite an amount of free time, so I became really obsessed with Linux systems. Approximately one and a half year ago I got an old Lenovo M82 Workstation into my hands, so I opted to repurpose it into a server.&lt;/p&gt;&#xA;&lt;p&gt;In this post I’m describing the general setup of my server, that has been running with almost no downtime for ten months.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Notas cálculo numérico</title>
-      <link>https://z101ctrl.github.io/posts/calculo_numerico/</link>
-      <pubDate>Sun, 18 Jun 2023 12:13:32 +0530</pubDate>
-      <guid>https://z101ctrl.github.io/posts/calculo_numerico/</guid>
-      <description>&lt;div&gt;&#xA;    &lt;h2&gt;Table Of Contents&lt;/h2&gt;&#xA;    &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#cota-para-el-error-global-para-métodos-de-un-paso&#34;&gt;Cota para el error global para métodos de un paso&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#convergencia&#34;&gt;Convergencia&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#norma-de-una-matriz&#34;&gt;Norma de una matriz&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#número-de-condición-de-una-matriz&#34;&gt;Número de condición de una matriz&lt;/a&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#aplicación&#34;&gt;Aplicación&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#condición-de-una-matriz-y-matrices-singulares&#34;&gt;Condición de una matriz y matrices singulares&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#chebyshev-en-ab&#34;&gt;Chebyshev en $[a,b]$&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;métodos-de-un-paso&#34;&gt;Métodos de un paso&lt;/h1&gt;&#xA;&lt;h2 id=&#34;cota-para-el-error-global-para-métodos-de-un-paso&#34;&gt;Cota para el error global para métodos de un paso&lt;/h2&gt;&#xA;&lt;p&gt;Siendo $h = \frac{ \left(T - t_0 \right)}{n}$ con el método de un paso dado por $x_{i+1} = x_{i} + h\Phi\left( t_{i}, x_{i}, h \right)$ con $\Phi$ función Lipschitz en la segunda variable. Entonces, se tiene&#xA;$$&#xA;\left| x\left( T \right) -x_{n} \right|  \le \frac{\tau_{max}}{K}\left( e^{K\left( T-t_0 \right) } -1 \right)&#xA;$$&#xA;donde $\tau_{max} = \max_{1 \le  i \le n}{\left| \tau_{i} \right|}$ el error de truncado local en el paso $i$ y $K$ la cte. de Lipschitz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
@@ -52,7 +59,7 @@
       <description>&lt;p&gt;I am a Data Science student at UBA (Universidad de Buenos Aires) and a huge computer science enthusiast. In this page i&amp;rsquo;ll be uploading several university-related stuff + other things. If you notice something wrong or just want to contact me, feel free to contact me at zalazar.franco0 at gmail dot com&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://z101ctrl.github.io/capybara.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Resumen física 4</title>
+      <title>Física 4</title>
       <link>https://z101ctrl.github.io/posts/resumen_f4/</link>
       <pubDate>Fri, 18 Mar 2022 12:13:32 +0530</pubDate>
       <guid>https://z101ctrl.github.io/posts/resumen_f4/</guid>
