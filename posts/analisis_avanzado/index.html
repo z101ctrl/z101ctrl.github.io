@@ -20,7 +20,7 @@
   />
 
   
-  <title>Análisis avanzado-z101ctrl</title>
+  <title>Análisis avanzado - z101ctrl</title>
 
   
   <meta name="theme-color" />
@@ -28,6 +28,7 @@
   <meta name="description" content="
     Table Of Contents
     
+        
   
     Cardinalidad
       
@@ -46,21 +47,53 @@
         Conjunto acotado
       
     
+    Métricas equivalentes
+    Sucesiones de Cauchy
+      
+        Propiedades
+      
+    
+    Espacio métrico completo
+    Continuidad
+      
+        Definiciones equivalentes con bolas
+        Definición con sucesiones
+        Continuidad global
+      
+    
+    Función uniformemente continua
+    Compacidad
+      
+        Definición con sucesiones
+      
+    
+    Teorema de Heine-Borel
+    Punto fijo
+    Contracción
+    Teorema del punto fijo (Banach)
+    Norma
+      
+        Propiedades de las normas
+      
+    
+    Convergencia puntual de funciones
+    Convergencia uniforme de funciones
+    Convergencia de Cauchy de funciones
+    $\sigma$-álgebra
+      
+        $\sigma$-álgebra generada
+      
+    
+    $\sigma$-álgebra de Lebesgue
+    Integrales de Riemann-Stieltjes
   
 
+    
 
 
 
 Cardinalidad
-Sean A, B conjuntos
-
-$|A| = |B|$ si $ \exists f:A \to B $ biyectiva.
-$|A| \geq |B|$ si $ \exists f:A \to B $ sobreyectiva.
-$|A| \leq |B|$ si $ \exists f:A \to B $ inyectiva.
-Si $ A \subseteq B \Rightarrow |A| &lt;= |B|$
-
-Conjuntos coordinables
-Decimos que dos conjuntos $A$ y $B$ son coordinables (equipotentes, tienen el mismo cardinal). Si $\exists f: A \to B$ biyectiva. En este caso notamos $A \sim B$." />
+Sean A, B conjuntos" />
   <meta name="author" content="z101ctrl" /><link rel="preload stylesheet" as="style" href="https://z101ctrl.github.io/main.min.css" />
 
   
@@ -117,12 +150,12 @@ Decimos que dos conjuntos $A$ y $B$ son coordinables (equipotentes, tienen el mi
     href="https://z101ctrl.github.io/apple-touch-icon.png"
   />
 
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.150.0">
   <meta itemprop="name" content="Análisis avanzado">
   <meta itemprop="description" content="Notas sobre la materia analisis avanzado.">
   <meta itemprop="datePublished" content="2025-10-01T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-10-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="484">
+  <meta itemprop="wordCount" content="1719">
   <meta itemprop="keywords" content="Notes"><meta property="og:url" content="https://z101ctrl.github.io/posts/analisis_avanzado/">
   <meta property="og:site_name" content="z101ctrl">
   <meta property="og:title" content="Análisis avanzado">
@@ -255,9 +288,10 @@ Decimos que dos conjuntos $A$ y $B$ son coordinables (equipotentes, tienen el mi
   <header class="mb-14">
     <h1 class="!my-0 pb-2.5">Análisis avanzado</h1><div class="text-xs antialiased opacity-60"><time>Oct 1, 2025</time></div></header>
 
-  <section><div>
-    <h2>Table Of Contents</h2>
-    <nav id="TableOfContents">
+  <section><details class="toc-container">
+    <summary class="toc-title">Table Of Contents</summary>
+    <div class="toc-content">
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#cardinalidad">Cardinalidad</a>
       <ul>
@@ -276,9 +310,49 @@ Decimos que dos conjuntos $A$ y $B$ son coordinables (equipotentes, tienen el mi
         <li><a href="#conjunto-acotado">Conjunto acotado</a></li>
       </ul>
     </li>
+    <li><a href="#métricas-equivalentes">Métricas equivalentes</a></li>
+    <li><a href="#sucesiones-de-cauchy">Sucesiones de Cauchy</a>
+      <ul>
+        <li><a href="#propiedades-1">Propiedades</a></li>
+      </ul>
+    </li>
+    <li><a href="#espacio-métrico-completo">Espacio métrico completo</a></li>
+    <li><a href="#continuidad">Continuidad</a>
+      <ul>
+        <li><a href="#definiciones-equivalentes-con-bolas">Definiciones equivalentes con bolas</a></li>
+        <li><a href="#definición-con-sucesiones">Definición con sucesiones</a></li>
+        <li><a href="#continuidad-global">Continuidad global</a></li>
+      </ul>
+    </li>
+    <li><a href="#función-uniformemente-continua">Función uniformemente continua</a></li>
+    <li><a href="#compacidad">Compacidad</a>
+      <ul>
+        <li><a href="#definición-con-sucesiones-1">Definición con sucesiones</a></li>
+      </ul>
+    </li>
+    <li><a href="#teorema-de-heine-borel">Teorema de Heine-Borel</a></li>
+    <li><a href="#punto-fijo">Punto fijo</a></li>
+    <li><a href="#contracción">Contracción</a></li>
+    <li><a href="#teorema-del-punto-fijo-banach">Teorema del punto fijo (Banach)</a></li>
+    <li><a href="#norma">Norma</a>
+      <ul>
+        <li><a href="#propiedades-de-las-normas">Propiedades de las normas</a></li>
+      </ul>
+    </li>
+    <li><a href="#convergencia-puntual-de-funciones">Convergencia puntual de funciones</a></li>
+    <li><a href="#convergencia-uniforme-de-funciones">Convergencia uniforme de funciones</a></li>
+    <li><a href="#convergencia-de-cauchy-de-funciones">Convergencia de Cauchy de funciones</a></li>
+    <li><a href="#sigma-álgebra">$\sigma$-álgebra</a>
+      <ul>
+        <li><a href="#sigma-álgebra-generada">$\sigma$-álgebra generada</a></li>
+      </ul>
+    </li>
+    <li><a href="#sigma-álgebra-de-lebesgue">$\sigma$-álgebra de Lebesgue</a></li>
+    <li><a href="#integrales-de-riemann-stieltjes">Integrales de Riemann-Stieltjes</a></li>
   </ul>
 </nav>
-</div>
+    </div>
+</details>
 
 <hr>
 <h2 id="cardinalidad">Cardinalidad</h2>
@@ -313,7 +387,7 @@ entonces $|A| = |B|$</p>
 <h2 id="espacios-métricos">Espacios métricos</h2>
 <p>Sea $E$ un conjunto, sea $d$ una métrica, entonces $(E, d)$ es un espacio métrico.</p>
 <h2 id="métrica">Métrica</h2>
-<p>Sea $d$ una función de $d: \mathbb{R} \to \mathbb{R}$</p>
+<p>Sea $d$ una función $d: E \times E \to \mathbb{R}$ tal que:</p>
 <ol>
 <li>$d(x,y) = 0 \Leftrightarrow x = y$</li>
 <li>$d(x,y) = d(y,x)$</li>
@@ -321,19 +395,19 @@ entonces $|A| = |B|$</p>
 </ol>
 <h2 id="bolas">Bolas</h2>
 <ul>
-<li>$B(x,r) = \{ y \in E / d(x,r) &lt; r \}$ (bola abierta)</li>
-<li>$\overline{B(x,r)} = \{ y \in E / d(x,r) \leq r \}$ (bola cerrada)</li>
+<li>$B(x,r) = \{ y \in E / d(x,y) &lt; r \}$ (bola abierta)</li>
+<li>$\overline{B(x,r)} = \{ y \in E / d(x,y) \leq r \}$ (bola cerrada)</li>
 </ul>
 <h2 id="interior-derivado-frontera">Interior, derivado, frontera</h2>
 <p>Sea $A$ un conjunto, llamamos:</p>
 <ul>
 <li><strong>Interior</strong>: contiene los puntos interiores de $A$, es decir
 $$
-A^\circ = \{x \in E/ \exists r &gt; 0 : B(x,r) \in A \}
+A^\circ = \{x \in E/ \exists r &gt; 0 : B(x,r) \subseteq A \}
 $$</li>
 <li><strong>Derivado</strong>: contiene los puntos de acumulación de $A$, es decir
 $$
-A&rsquo; = \{x \in E/ \exists r &gt; 0 : B(x,r) \cap A \setminus \{ x \} \neq \emptyset \}
+A&rsquo; = \{x \in E/ \forall r &gt; 0 : (B(x,r) \setminus \{x\}) \cap A \neq \emptyset \}
 $$</li>
 <li><strong>Clausura</strong>: contiene los puntos de adherencia de A, es decir
 $$
@@ -351,11 +425,132 @@ x \in \overline{A} \Leftrightarrow \exists ( a^{(m)} )_{m \in \mathbb{N}} \subse
 $$</p>
 <p>donde $(a^{(m)})_{m \in \mathbb{N}}$ subsucesión.</p>
 <h3 id="conjunto-acotado">Conjunto acotado</h3>
-<p>$A \subseteq E$ es acotada si todo punto es punto interior. Es decir si $A \subseteq A^\circ \Rightarrow A = A^\circ$.</p>
+<p>$A \subseteq E$ es acotado si $\exists x \in E, r &gt; 0$ tal que $A \subseteq B(x,r)$.</p>
 <h4 id="propiedades">Propiedades</h4>
 <ul>
 <li>$A = A^\circ \Leftrightarrow A$ abierto.</li>
+<li>$\overline{A} = A \cup A'$</li>
+<li>$\partial A = \overline{A} \setminus A^\circ$</li>
+<li>$A^\circ = E \setminus \overline{E \setminus A}$</li>
+<li>$\overline{A} = E \setminus (E \setminus A)^\circ$</li>
+<li>$x \in A^\circ \Leftrightarrow \exists r &gt; 0 : B(x,r) \subseteq A$</li>
+<li>$x \in A&rsquo; \Leftrightarrow \exists (a_n)_{n \in \mathbb{N}} \subseteq A \setminus {x}$ tal que $a_n \to x$</li>
+<li>$x \in \overline{A} \Leftrightarrow \exists (a_n)_{n \in \mathbb{N}} \subseteq A$ tal que $a_n \to x$</li>
+<li>$x \in \partial A \Leftrightarrow \forall r &gt; 0 : B(x,r) \cap A \neq \emptyset \wedge B(x,r) \cap (E \setminus A) \neq \emptyset$</li>
 </ul>
+<h2 id="métricas-equivalentes">Métricas equivalentes</h2>
+<p>Dos métricas $d_1$ y $d_2$ sobre $E$ son <strong>equivalentes</strong> si existen constantes $c_1, c_2 &gt; 0$ tales que:
+$$
+c_1 d_1(x,y) \leq d_2(x,y) \leq c_2 d_1(x,y) \quad \forall x,y \in E
+$$</p>
+<h2 id="sucesiones-de-cauchy">Sucesiones de Cauchy</h2>
+<p>Sea $(E,d)$ un espacio métrico. Una sucesión $(x_n)_{n \in \mathbb{N}} \subseteq E$ es de <strong>Cauchy</strong> si:
+$$
+\forall \varepsilon &gt; 0, \exists N \in \mathbb{N} : \forall n,m \geq N, d(x_n, x_m) &lt; \varepsilon
+$$</p>
+<h3 id="propiedades-1">Propiedades</h3>
+<ul>
+<li>Toda sucesión convergente es de Cauchy.</li>
+<li>Si $(x_n)$ es de Cauchy y tiene una subsucesión convergente, entonces $(x_n)$ converge.</li>
+<li>$x \in A&rsquo; \Leftrightarrow \exists (a_n)_{n \in \mathbb{N}} \subseteq A \setminus {x}$ de Cauchy tal que $a_n \to x$</li>
+</ul>
+<h2 id="espacio-métrico-completo">Espacio métrico completo</h2>
+<p>Un espacio métrico $(E,d)$ es <strong>completo</strong> si toda sucesión de Cauchy en $E$ converge a un punto de $E$.</p>
+<h2 id="continuidad">Continuidad</h2>
+<p>Sea $(E_1, d_1)$ y $(E_2, d_2)$ espacios métricos, $f: E_1 \to E_2$ y $a \in E_1$. Decimos que $f$ es <strong>continua en $a$</strong> si:
+$$
+\forall \varepsilon &gt; 0, \exists \delta &gt; 0 : \forall x \in E_1, d_1(x,a) &lt; \delta \Rightarrow d_2(f(x), f(a)) &lt; \varepsilon
+$$</p>
+<h3 id="definiciones-equivalentes-con-bolas">Definiciones equivalentes con bolas</h3>
+<ul>
+<li>$f$ es continua en $a$ si $\forall \varepsilon &gt; 0, \exists \delta &gt; 0 : f(B(a,\delta)) \subseteq B(f(a), \varepsilon)$</li>
+<li>$f$ es continua en $a$ si $\forall \varepsilon &gt; 0, \exists \delta &gt; 0 : B(a,\delta) \subseteq f^{-1}(B(f(a), \varepsilon))$</li>
+</ul>
+<h3 id="definición-con-sucesiones">Definición con sucesiones</h3>
+<p>$f$ es continua en $a$ si y solo si para toda sucesión $(x_n)_{n \in \mathbb{N}} \subseteq E_1$ tal que $x_n \to a$, se tiene que $f(x_n) \to f(a)$.</p>
+<h3 id="continuidad-global">Continuidad global</h3>
+<p>$f$ es <strong>continua</strong> si es continua en todo punto de $E_1$.</p>
+<h2 id="función-uniformemente-continua">Función uniformemente continua</h2>
+<p>Sea $(E_1, d_1)$ y $(E_2, d_2)$ espacios métricos, $f: E_1 \to E_2$. Decimos que $f$ es <strong>uniformemente continua</strong> si:
+$$
+\forall \varepsilon &gt; 0, \exists \delta &gt; 0 : \forall x,y \in E_1, d_1(x,y) &lt; \delta \Rightarrow d_2(f(x), f(y)) &lt; \varepsilon
+$$</p>
+<p><em>Obs: la diferencia con la continuidad es que $\delta$ no depende del punto, sino que es uniforme para todo el dominio.</em></p>
+<h2 id="compacidad">Compacidad</h2>
+<p>Un conjunto $K \subseteq E$ es <strong>compacto</strong> si todo cubrimiento abierto de $K$ tiene un subcubrimiento finito. Es decir, si $U_i$ con $i \in I$ es una familia de abiertos tal que $K \subseteq \bigcup_{i \in I} U_i$, entonces existen $i_1, \ldots, i_n \in I$ tales que $K \subseteq U_{i_1} \cup \cdots \cup U_{i_n}$.</p>
+<h3 id="definición-con-sucesiones-1">Definición con sucesiones</h3>
+<p>$K$ es compacto si y solo si toda sucesión $(x_n)_{n \in \mathbb{N}} \subseteq K$ tiene una subsucesión convergente a un punto de $K$.</p>
+<h2 id="teorema-de-heine-borel">Teorema de Heine-Borel</h2>
+<p>En $\mathbb{R}^n$ con la métrica euclidiana, un conjunto es compacto si y solo si es cerrado y acotado.</p>
+<h2 id="punto-fijo">Punto fijo</h2>
+<p>Sea $(E,d)$ un espacio métrico y $T: E \to E$ una función. Decimos que $x' \in E$ es un <strong>punto fijo</strong> de $T$ si $T(x') = x'$.</p>
+<h2 id="contracción">Contracción</h2>
+<p>Sea $(E,d)$ un espacio métrico y $T: E \to E$ una función. Decimos que $T$ es una <strong>contracción</strong> si existe $0 &lt; k &lt; 1$ tal que:
+$$
+d(T(x), T(y)) \leq k \cdot d(x,y) \quad \forall x,y \in E
+$$</p>
+<p>El número $k$ se llama <strong>constante de contracción</strong>.</p>
+<h2 id="teorema-del-punto-fijo-banach">Teorema del punto fijo (Banach)</h2>
+<p>Sea $(E,d)$ un espacio métrico completo y $T: E \to E$ una contracción. Entonces $T$ tiene un único punto fijo $x' \in E$ tal que $T(x') = x'$.</p>
+<h2 id="norma">Norma</h2>
+<p>Sea $V$ un espacio vectorial sobre $\mathbb{R}$. Una <strong>norma</strong> sobre $V$ es una función $|\cdot|: V \to \mathbb{R}$ tal que:</p>
+<ol>
+<li>$|x| \geq 0$ y $|x| = 0 \Leftrightarrow x = 0$</li>
+<li>$|\lambda x| = |\lambda| |x|$ para todo escalar $\lambda$</li>
+<li>$|x + y| \leq |x| + |y|$ (desigualdad triangular)</li>
+</ol>
+<h3 id="propiedades-de-las-normas">Propiedades de las normas</h3>
+<ul>
+<li>$||x| - |y|| \leq |x - y|$</li>
+<li>Toda norma induce una métrica: $d(x,y) = |x - y|$</li>
+<li>En espacios vectoriales de dimensión finita, todas las normas son equivalentes.</li>
+</ul>
+<h2 id="convergencia-puntual-de-funciones">Convergencia puntual de funciones</h2>
+<p>Sea $(f_n)_{n \in \mathbb{N}}$ una sucesión de funciones $f_n: E \to \mathbb{R}$ (o $\mathbb{C}$). Decimos que $(f_n)$ <strong>converge puntualmente</strong> a $f: E \to \mathbb{R}$ si:
+$$
+\forall x \in E, \forall \varepsilon &gt; 0, \exists N \in \mathbb{N} : \forall n \geq N, |f_n(x) - f(x)| &lt; \varepsilon
+$$</p>
+<p>Es decir, $f_n(x) \to f(x)$ para cada $x \in E$ fijo.</p>
+<h2 id="convergencia-uniforme-de-funciones">Convergencia uniforme de funciones</h2>
+<p>Sea $(f_n)_{n \in \mathbb{N}}$ una sucesión de funciones $f_n: E \to \mathbb{R}$. Decimos que $(f_n)$ <strong>converge uniformemente</strong> a $f: E \to \mathbb{R}$ si:
+$$
+\forall \varepsilon &gt; 0, \exists N \in \mathbb{N} : \forall n \geq N, \forall x \in E, |f_n(x) - f(x)| &lt; \varepsilon
+$$</p>
+<p>La diferencia con la convergencia puntual es que $N$ no depende de $x$, sino que es uniforme para todo $x \in E$.</p>
+<p><em>Notación: $f_n \rightrightarrows f$ para convergencia uniforme.</em></p>
+<h2 id="convergencia-de-cauchy-de-funciones">Convergencia de Cauchy de funciones</h2>
+<p>Sea $(f_n)_{n \in \mathbb{N}}$ una sucesión de funciones $f_n: E \to \mathbb{R}$. Decimos que $(f_n)$ es de <strong>Cauchy uniforme</strong> si:
+$$
+\forall \varepsilon &gt; 0, \exists N \in \mathbb{N} : \forall n,m \geq N, \forall x \in E, |f_n(x) - f_m(x)| &lt; \varepsilon
+$$</p>
+<p>Si $E$ es completo, entonces $(f_n)$ converge uniformemente si y solo si es de Cauchy uniforme.</p>
+<h2 id="sigma-álgebra">$\sigma$-álgebra</h2>
+<p>Sea $X$ un conjunto. Una <strong>$\sigma$-álgebra</strong> (o sigma-álgebra) sobre $X$ es una familia $\mathcal{A} \subseteq \mathcal{P}(X)$ tal que:</p>
+<ol>
+<li>$X \in \mathcal{A}$</li>
+<li>Si $A \in \mathcal{A}$, entonces $X \setminus A \in \mathcal{A}$</li>
+<li>Si $A_n \in \mathcal{A}$ para todo $n \in \mathbb{N}$, entonces $\bigcup_{n=1}^{\infty} A_n \in \mathcal{A}$</li>
+</ol>
+<p>Los elementos de $\mathcal{A}$ se llaman <strong>conjuntos medibles</strong>.</p>
+<h3 id="sigma-álgebra-generada">$\sigma$-álgebra generada</h3>
+<p>Sea $\mathcal{E} \subseteq \mathcal{P}(X)$ una familia de subconjuntos de $X$. La <strong>$\sigma$-álgebra generada por $\mathcal{E}$</strong>, denotada $\sigma(\mathcal{E})$, es la menor $\sigma$-álgebra sobre $X$ que contiene a $\mathcal{E}$. Es decir:</p>
+<ul>
+<li>$\mathcal{E} \subseteq \sigma(\mathcal{E})$</li>
+<li>Si $\mathcal{A}$ es una $\sigma$-álgebra tal que $\mathcal{E} \subseteq \mathcal{A}$, entonces $\sigma(\mathcal{E}) \subseteq \mathcal{A}$</li>
+</ul>
+<h2 id="sigma-álgebra-de-lebesgue">$\sigma$-álgebra de Lebesgue</h2>
+<p>La <strong>$\sigma$-álgebra de Lebesgue</strong> es la $\sigma$-álgebra generada por los conjuntos abiertos de $\mathbb{R}^n$ completada con todos los subconjuntos de conjuntos de medida cero. Es decir, contiene:</p>
+<ul>
+<li>Todos los conjuntos abiertos (y por lo tanto todos los conjuntos que se pueden obtener a partir de ellos mediante uniones numerables, intersecciones y complementos)</li>
+<li>Todos los subconjuntos de conjuntos de medida cero (conjuntos de medida nula)</li>
+</ul>
+<h2 id="integrales-de-riemann-stieltjes">Integrales de Riemann-Stieltjes</h2>
+<p>Sea $f, \alpha: [a,b] \to \mathbb{R}$ funciones. La <strong>integral de Riemann-Stieltjes</strong> de $f$ respecto a $\alpha$ se define como:
+$$
+\int_a^b f , d\alpha = \lim_{||P|| \to 0} \sum_{i=1}^{n} f(\xi_i)[\alpha(x_i) - \alpha(x_{i-1})]
+$$</p>
+<p>donde $P = \{a = x_0 &lt; x_1 &lt; \cdots &lt; x_n = b\}$ es una partición de $[a,b]$, $||P|| = \max\{x_i - x_{i-1}\}$ y $\xi_i \in [x_{i-1}, x_i]$.</p>
+<p>Si $\alpha(x) = x$, recuperamos la integral de Riemann usual.</p>
 </section>
 
   <footer class="mt-12 flex flex-wrap"><a

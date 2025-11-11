@@ -20,7 +20,7 @@
   />
 
   
-  <title>Cálculo numérico-z101ctrl</title>
+  <title>Cálculo numérico - z101ctrl</title>
 
   
   <meta name="theme-color" />
@@ -28,6 +28,7 @@
   <meta name="description" content="
     Table Of Contents
     
+        
   
     Cota para el error global para métodos de un paso
     Convergencia
@@ -44,6 +45,7 @@
     
   
 
+    
 
 
 Métodos de un paso
@@ -109,7 +111,7 @@ donde $\tau_{max} = \max_{1 \le  i \le n}{\left| \tau_{i} \right|}$ el error de 
     href="https://z101ctrl.github.io/apple-touch-icon.png"
   />
 
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.150.0">
   <meta itemprop="name" content="Cálculo numérico">
   <meta itemprop="description" content="Notas sobre conceptos de cálculo numérico.">
   <meta itemprop="datePublished" content="2023-06-18T12:13:32+05:30">
@@ -247,9 +249,10 @@ donde $\tau_{max} = \max_{1 \le  i \le n}{\left| \tau_{i} \right|}$ el error de 
   <header class="mb-14">
     <h1 class="!my-0 pb-2.5">Cálculo numérico</h1><div class="text-xs antialiased opacity-60"><time>Jun 18, 2023</time></div></header>
 
-  <section><div>
-    <h2>Table Of Contents</h2>
-    <nav id="TableOfContents">
+  <section><details class="toc-container">
+    <summary class="toc-title">Table Of Contents</summary>
+    <div class="toc-content">
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#cota-para-el-error-global-para-métodos-de-un-paso">Cota para el error global para métodos de un paso</a></li>
     <li><a href="#convergencia">Convergencia</a></li>
@@ -266,7 +269,8 @@ donde $\tau_{max} = \max_{1 \le  i \le n}{\left| \tau_{i} \right|}$ el error de 
     </li>
   </ul>
 </nav>
-</div>
+    </div>
+</details>
 
 <h1 id="métodos-de-un-paso">Métodos de un paso</h1>
 <h2 id="cota-para-el-error-global-para-métodos-de-un-paso">Cota para el error global para métodos de un paso</h2>
@@ -276,8 +280,7 @@ $$
 $$
 donde $\tau_{max} = \max_{1 \le  i \le n}{\left| \tau_{i} \right|}$ el error de truncado local en el paso $i$ y $K$ la cte. de Lipschitz.</p>
 <blockquote>
-<p><em>Idea dem.: escribir el error e ir acumulándolo. Acotar.</em></p>
-</blockquote>
+<p><em>Idea dem.: escribir el error e ir acumulándolo. Acotar.</em></p></blockquote>
 <h2 id="convergencia">Convergencia</h2>
 <p>El método se llama convergente si $\lim_{h \to 0} \tau_{max} = 0$. Para un método de un paso se tiene que
 $$
@@ -290,8 +293,7 @@ $$
 || A || = \max_{0 \neq x \in \mathbb{R}^{n}} \frac{| | A x | |}{| | x | |}.
 $$</p>
 <blockquote>
-<p><em>Intuición: lo máximo que agranda nuestra matriz al espacio de vectores</em>.</p>
-</blockquote>
+<p><em>Intuición: lo máximo que agranda nuestra matriz al espacio de vectores</em>.</p></blockquote>
 <h2 id="número-de-condición-de-una-matriz">Número de condición de una matriz</h2>
 <p>Sea $A \in \mathbb{R}^{nxn}$ matriz inversible y sea $| | \quad | |$ una norma en  $\mathbb{R}^{n}$, definimos el número de condición de $A$ como
 $$
@@ -303,16 +305,14 @@ $$
 \frac{| | \Delta x | |}{| | x | |} \le Cond\left( A \right) \frac{| | \Delta b | |}{| | b | |}
 $$</p>
 <blockquote>
-<p><em>Idea: $Cond\left( A \right)$ de alguna manera mide qué tan susceptible es mi matriz a una perturbación en los datos iniciales.</em></p>
-</blockquote>
+<p><em>Idea: $Cond\left( A \right)$ de alguna manera mide qué tan susceptible es mi matriz a una perturbación en los datos iniciales.</em></p></blockquote>
 <h3 id="condición-de-una-matriz-y-matrices-singulares">Condición de una matriz y matrices singulares</h3>
 <p>Dada  $A \in  \mathbb{R}^{nxn}$ inversible y una norma de vectores cualquiera se tiene
 $$
 Cond\left( A \right) = \sup_{B \ singular \in \mathbb{R}^{nxn}} \frac{| | A | |}{| | A - B | |}.
 $$</p>
 <blockquote>
-<p><em>Recordatorio: $B$ singular $\Leftrightarrow$ no tiene inversa.</em></p>
-</blockquote>
+<p><em>Recordatorio: $B$ singular $\Leftrightarrow$ no tiene inversa.</em></p></blockquote>
 <h3 id="chebyshev-en-ab">Chebyshev en $[a,b]$</h3>
 <p>$F : [a,b] \to [-1, 1]$ con $F(x) = 2\frac{(x-a)}{b-a} - 1$.</p>
 </section>

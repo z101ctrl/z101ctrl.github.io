@@ -1,1 +1,35 @@
-/* Custom styles */ 
+/* Custom styles */
+.toc-container {
+    margin: 1.5em 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0.5em;
+}
+
+.toc-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0.5em;
+    list-style: none;
+}
+
+.toc-title::-webkit-details-marker {
+    display: none;
+}
+
+.toc-title::before {
+    content: "▶ ";
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: transform 0.2s;
+}
+
+.toc-container[open] .toc-title::before {
+    transform: rotate(90deg);
+}
+
+.toc-content {
+    margin-top: 0.5em;
+    padding: 0.5em;
+} 
