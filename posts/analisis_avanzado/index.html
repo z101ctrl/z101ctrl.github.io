@@ -51,9 +51,11 @@
     Sucesiones de Cauchy
       
         Propiedades
+        Relación con espacios vectoriales
       
     
     Espacio métrico completo
+    Conjunto completo
     Continuidad
       
         Definiciones equivalentes con bolas
@@ -62,6 +64,10 @@
       
     
     Función uniformemente continua
+      
+        Teorema: funciones continuas sobre compactos
+      
+    
     Compacidad
       
         Definición con sucesiones
@@ -76,9 +82,28 @@
         Propiedades de las normas
       
     
+    Normas equivalentes
+    Espacios normados
+      
+        Propiedades de espacios normados
+      
+    
+    Espacio de Banach
     Convergencia puntual de funciones
     Convergencia uniforme de funciones
     Convergencia de Cauchy de funciones
+    Isomorfismo, homeomorfismo, isometría
+    Operador lineal continuo
+      
+        Equivalencias para operadores lineales
+      
+    
+    Operador lineal acotado
+      
+        Equivalencia: continuo si y solo si acotado
+      
+    
+    Funcional lineal
     $\sigma$-álgebra
       
         $\sigma$-álgebra generada
@@ -155,7 +180,7 @@ Sean A, B conjuntos" />
   <meta itemprop="description" content="Notas sobre la materia analisis avanzado.">
   <meta itemprop="datePublished" content="2025-10-01T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-10-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1719">
+  <meta itemprop="wordCount" content="2301">
   <meta itemprop="keywords" content="Notes"><meta property="og:url" content="https://z101ctrl.github.io/posts/analisis_avanzado/">
   <meta property="og:site_name" content="z101ctrl">
   <meta property="og:title" content="Análisis avanzado">
@@ -314,9 +339,11 @@ Sean A, B conjuntos" />
     <li><a href="#sucesiones-de-cauchy">Sucesiones de Cauchy</a>
       <ul>
         <li><a href="#propiedades-1">Propiedades</a></li>
+        <li><a href="#relación-con-espacios-vectoriales">Relación con espacios vectoriales</a></li>
       </ul>
     </li>
     <li><a href="#espacio-métrico-completo">Espacio métrico completo</a></li>
+    <li><a href="#conjunto-completo">Conjunto completo</a></li>
     <li><a href="#continuidad">Continuidad</a>
       <ul>
         <li><a href="#definiciones-equivalentes-con-bolas">Definiciones equivalentes con bolas</a></li>
@@ -324,7 +351,11 @@ Sean A, B conjuntos" />
         <li><a href="#continuidad-global">Continuidad global</a></li>
       </ul>
     </li>
-    <li><a href="#función-uniformemente-continua">Función uniformemente continua</a></li>
+    <li><a href="#función-uniformemente-continua">Función uniformemente continua</a>
+      <ul>
+        <li><a href="#teorema-funciones-continuas-sobre-compactos">Teorema: funciones continuas sobre compactos</a></li>
+      </ul>
+    </li>
     <li><a href="#compacidad">Compacidad</a>
       <ul>
         <li><a href="#definición-con-sucesiones-1">Definición con sucesiones</a></li>
@@ -339,9 +370,28 @@ Sean A, B conjuntos" />
         <li><a href="#propiedades-de-las-normas">Propiedades de las normas</a></li>
       </ul>
     </li>
+    <li><a href="#normas-equivalentes">Normas equivalentes</a></li>
+    <li><a href="#espacios-normados">Espacios normados</a>
+      <ul>
+        <li><a href="#propiedades-de-espacios-normados">Propiedades de espacios normados</a></li>
+      </ul>
+    </li>
+    <li><a href="#espacio-de-banach">Espacio de Banach</a></li>
     <li><a href="#convergencia-puntual-de-funciones">Convergencia puntual de funciones</a></li>
     <li><a href="#convergencia-uniforme-de-funciones">Convergencia uniforme de funciones</a></li>
     <li><a href="#convergencia-de-cauchy-de-funciones">Convergencia de Cauchy de funciones</a></li>
+    <li><a href="#isomorfismo-homeomorfismo-isometría">Isomorfismo, homeomorfismo, isometría</a></li>
+    <li><a href="#operador-lineal-continuo">Operador lineal continuo</a>
+      <ul>
+        <li><a href="#equivalencias-para-operadores-lineales">Equivalencias para operadores lineales</a></li>
+      </ul>
+    </li>
+    <li><a href="#operador-lineal-acotado">Operador lineal acotado</a>
+      <ul>
+        <li><a href="#equivalencia-continuo-si-y-solo-si-acotado">Equivalencia: continuo si y solo si acotado</a></li>
+      </ul>
+    </li>
+    <li><a href="#funcional-lineal">Funcional lineal</a></li>
     <li><a href="#sigma-álgebra">$\sigma$-álgebra</a>
       <ul>
         <li><a href="#sigma-álgebra-generada">$\sigma$-álgebra generada</a></li>
@@ -454,8 +504,12 @@ $$</p>
 <li>Si $(x_n)$ es de Cauchy y tiene una subsucesión convergente, entonces $(x_n)$ converge.</li>
 <li>$x \in A&rsquo; \Leftrightarrow \exists (a_n)_{n \in \mathbb{N}} \subseteq A \setminus {x}$ de Cauchy tal que $a_n \to x$</li>
 </ul>
+<h3 id="relación-con-espacios-vectoriales">Relación con espacios vectoriales</h3>
+<p>En espacios vectoriales normados, una sucesión $(x_n)$ es de Cauchy si y solo si para todo $\varepsilon &gt; 0$ existe $N \in \mathbb{N}$ tal que $|x_n - x_m| &lt; \varepsilon$ para todo $n,m \geq N$. La estructura vectorial permite trabajar con diferencias $x_n - x_m$ de manera natural, lo que facilita el estudio de la completitud en estos espacios.</p>
 <h2 id="espacio-métrico-completo">Espacio métrico completo</h2>
 <p>Un espacio métrico $(E,d)$ es <strong>completo</strong> si toda sucesión de Cauchy en $E$ converge a un punto de $E$.</p>
+<h2 id="conjunto-completo">Conjunto completo</h2>
+<p>Sea $(E,d)$ un espacio métrico. Un conjunto $A \subseteq E$ es <strong>completo</strong> si toda sucesión de Cauchy en $A$ converge a un punto de $A$. Es decir, $(A, d|_A)$ es un espacio métrico completo.</p>
 <h2 id="continuidad">Continuidad</h2>
 <p>Sea $(E_1, d_1)$ y $(E_2, d_2)$ espacios métricos, $f: E_1 \to E_2$ y $a \in E_1$. Decimos que $f$ es <strong>continua en $a$</strong> si:
 $$
@@ -476,6 +530,8 @@ $$
 \forall \varepsilon &gt; 0, \exists \delta &gt; 0 : \forall x,y \in E_1, d_1(x,y) &lt; \delta \Rightarrow d_2(f(x), f(y)) &lt; \varepsilon
 $$</p>
 <p><em>Obs: la diferencia con la continuidad es que $\delta$ no depende del punto, sino que es uniforme para todo el dominio.</em></p>
+<h3 id="teorema-funciones-continuas-sobre-compactos">Teorema: funciones continuas sobre compactos</h3>
+<p>Si $f: E_1 \to E_2$ es continua y $K \subseteq E_1$ es compacto, entonces $f$ es uniformemente continua en $K$.</p>
 <h2 id="compacidad">Compacidad</h2>
 <p>Un conjunto $K \subseteq E$ es <strong>compacto</strong> si todo cubrimiento abierto de $K$ tiene un subcubrimiento finito. Es decir, si $U_i$ con $i \in I$ es una familia de abiertos tal que $K \subseteq \bigcup_{i \in I} U_i$, entonces existen $i_1, \ldots, i_n \in I$ tales que $K \subseteq U_{i_1} \cup \cdots \cup U_{i_n}$.</p>
 <h3 id="definición-con-sucesiones-1">Definición con sucesiones</h3>
@@ -505,6 +561,21 @@ $$</p>
 <li>Toda norma induce una métrica: $d(x,y) = |x - y|$</li>
 <li>En espacios vectoriales de dimensión finita, todas las normas son equivalentes.</li>
 </ul>
+<h2 id="normas-equivalentes">Normas equivalentes</h2>
+<p>Dos normas $|\cdot|_1$ y $|\cdot|_2$ sobre un espacio vectorial $V$ son <strong>equivalentes</strong> si existen constantes $c_1, c_2 &gt; 0$ tales que:
+$$
+c_1 |x|_1 \leq |x|_2 \leq c_2 |x|_1 \quad \forall x \in V
+$$</p>
+<h2 id="espacios-normados">Espacios normados</h2>
+<p>Sea $V$ un espacio vectorial sobre $\mathbb{R}$ (o $\mathbb{C}$) y $|\cdot|$ una norma sobre $V$. El par $(V, |\cdot|)$ se llama <strong>espacio normado</strong>.</p>
+<h3 id="propiedades-de-espacios-normados">Propiedades de espacios normados</h3>
+<ul>
+<li>Todas las normas en $\mathbb{R}^n$ son equivalentes.</li>
+<li>Todo espacio normado de dimensión finita es completo.</li>
+<li>En un espacio normado de dimensión finita, los conjuntos cerrados y acotados son compactos.</li>
+</ul>
+<h2 id="espacio-de-banach">Espacio de Banach</h2>
+<p>Un <strong>espacio de Banach</strong> es un espacio normado completo. Es decir, un espacio vectorial normado $(V, |\cdot|)$ tal que toda sucesión de Cauchy converge a un punto de $V$.</p>
 <h2 id="convergencia-puntual-de-funciones">Convergencia puntual de funciones</h2>
 <p>Sea $(f_n)_{n \in \mathbb{N}}$ una sucesión de funciones $f_n: E \to \mathbb{R}$ (o $\mathbb{C}$). Decimos que $(f_n)$ <strong>converge puntualmente</strong> a $f: E \to \mathbb{R}$ si:
 $$
@@ -524,6 +595,33 @@ $$
 \forall \varepsilon &gt; 0, \exists N \in \mathbb{N} : \forall n,m \geq N, \forall x \in E, |f_n(x) - f_m(x)| &lt; \varepsilon
 $$</p>
 <p>Si $E$ es completo, entonces $(f_n)$ converge uniformemente si y solo si es de Cauchy uniforme.</p>
+<h2 id="isomorfismo-homeomorfismo-isometría">Isomorfismo, homeomorfismo, isometría</h2>
+<p>Sea $(E_1, d_1)$ y $(E_2, d_2)$ espacios métricos y $f: E_1 \to E_2$ una función.</p>
+<ul>
+<li><strong>Isomorfismo</strong>: $f$ es un isomorfismo si es biyectiva y tanto $f$ como $f^{-1}$ preservan la estructura algebraica (en el caso de espacios vectoriales, preservan las operaciones lineales).</li>
+<li><strong>Homeomorfismo</strong>: $f$ es un homeomorfismo si es biyectiva, continua y $f^{-1}$ es continua. Dos espacios métricos son <strong>homeomorfos</strong> si existe un homeomorfismo entre ellos.</li>
+<li><strong>Isometría</strong>: $f$ es una isometría si preserva distancias, es decir, $d_2(f(x), f(y)) = d_1(x,y)$ para todo $x,y \in E_1$. Toda isometría es inyectiva y uniformemente continua.</li>
+</ul>
+<h2 id="operador-lineal-continuo">Operador lineal continuo</h2>
+<p>Sea $(V_1, |\cdot|_1)$ y $(V_2, |\cdot|_2)$ espacios normados y $T: V_1 \to V_2$ un operador lineal (transformación lineal). Decimos que $T$ es <strong>continuo</strong> si es continuo como función entre espacios métricos.</p>
+<h3 id="equivalencias-para-operadores-lineales">Equivalencias para operadores lineales</h3>
+<p>Sea $T: V_1 \to V_2$ un operador lineal. Las siguientes afirmaciones son equivalentes:</p>
+<ol>
+<li>$T$ es continuo en el origen (en $0$).</li>
+<li>$T$ es continuo en algún punto $x_0 \in V_1$.</li>
+<li>$T$ es continuo (en todo punto).</li>
+<li>$T$ es uniformemente continuo.</li>
+</ol>
+<h2 id="operador-lineal-acotado">Operador lineal acotado</h2>
+<p>Sea $(V_1, |\cdot|_1)$ y $(V_2, |\cdot|_2)$ espacios normados y $T: V_1 \to V_2$ un operador lineal. Decimos que $T$ es <strong>acotado</strong> si existe $M &gt; 0$ tal que:
+$$
+|T(x)|_2 \leq M |x|_1 \quad \forall x \in V_1
+$$</p>
+<p>El menor de tales $M$ se llama <strong>norma del operador</strong> y se denota $|T|$.</p>
+<h3 id="equivalencia-continuo-si-y-solo-si-acotado">Equivalencia: continuo si y solo si acotado</h3>
+<p>Sea $T: V_1 \to V_2$ un operador lineal. Entonces $T$ es continuo si y solo si $T$ es acotado.</p>
+<h2 id="funcional-lineal">Funcional lineal</h2>
+<p>Sea $(V, |\cdot|)$ un espacio normado. Un <strong>funcional lineal</strong> es un operador lineal $f: V \to \mathbb{R}$. Es decir, una función que preserva las operaciones lineales y toma valores escalares.</p>
 <h2 id="sigma-álgebra">$\sigma$-álgebra</h2>
 <p>Sea $X$ un conjunto. Una <strong>$\sigma$-álgebra</strong> (o sigma-álgebra) sobre $X$ es una familia $\mathcal{A} \subseteq \mathcal{P}(X)$ tal que:</p>
 <ol>
